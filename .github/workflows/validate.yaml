@@ -1,0 +1,14 @@
+name: Pull Request validation
+
+on: [pull_request]
+
+
+jobs:
+  Jointly-contracts-ci:
+    name: Run Jointly-contracts validation
+    uses: ./.github/workflows/Jointly-contracts-ci.yaml
+
+  Jointly-frontend-ci:
+    name: Run Jointly-frontend validation
+    uses: ./.github/workflows/Jointly-frontend-ci.yaml
+

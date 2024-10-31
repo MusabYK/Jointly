@@ -1,0 +1,38 @@
+name: Release
+
+on:
+  push:
+    branches:
+      - main
+    paths-ignore:
+      - 'docs/**'
+      - '**.md'
+      - '.vscode/**'
+      - '.idea/**'
+
+permissions:
+  contents: read
+  packages: read
+
+jobs:
+  Jointly-contracts-validate:
+    name: Run Jointly-contracts release
+    secrets: inherit
+    uses: ./.github/workflows/Jointly-contracts-ci.yaml
+
+  Jointly-contracts-release:
+    name: Run Jointly-contracts release
+    secrets: inherit
+    uses: ./.github/workflows/Jointly-contracts-cd.yaml
+    needs: Jointly-contracts-validate
+
+  Jointly-frontend-validate:
+    name: Run Jointly-frontend release
+    secrets: inherit
+    uses: ./.github/workflows/Jointly-frontend-ci.yaml
+
+  Jointly-frontend-release:
+    name: Run Jointly-frontend release
+    secrets: inherit
+    uses: ./.github/workflows/Jointly-frontend-cd.yaml
+    needs: Jointly-frontend-validate
