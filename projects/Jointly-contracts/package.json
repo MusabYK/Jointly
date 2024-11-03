@@ -7,7 +7,7 @@
     "compile-contract": "tealscript contracts/*.algo.ts contracts/artifacts",
     "generate-components": "algokit-generate-component contracts/artifacts/JointlyContracts.arc32.json contracts/artifacts/components",
     "build": "npm run compile-contract && npm run generate-client",
-    "test": "npm run build && jest",
+    "test": "jest",
     "lint": "eslint . --ext .ts",
     "fix": "eslint . --ext .ts --fix"
   },

@@ -1,0 +1,5006 @@
+[
+  {
+    "teal": 1,
+    "source": "contracts\\Jointly.algo.ts:32",
+    "pc": [
+      0
+    ]
+  },
+  {
+    "teal": 2,
+    "source": "contracts\\Jointly.algo.ts:32",
+    "pc": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8
+    ]
+  },
+  {
+    "teal": 3,
+    "source": "contracts\\Jointly.algo.ts:32",
+    "pc": [
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      21,
+      22,
+      23,
+      24,
+      25,
+      26,
+      27,
+      28,
+      29,
+      30,
+      31,
+      32,
+      33,
+      34,
+      35,
+      36,
+      37,
+      38,
+      39,
+      40,
+      41,
+      42,
+      43,
+      44,
+      45,
+      46,
+      47,
+      48,
+      49,
+      50,
+      51,
+      52,
+      53,
+      54,
+      55,
+      56,
+      57,
+      58,
+      59,
+      60,
+      61,
+      62,
+      63,
+      64,
+      65,
+      66,
+      67,
+      68,
+      69,
+      70,
+      71,
+      72,
+      73,
+      74,
+      75,
+      76,
+      77,
+      78,
+      79,
+      80,
+      81,
+      82,
+      83,
+      84,
+      85,
+      86,
+      87,
+      88,
+      89,
+      90,
+      91,
+      92,
+      93,
+      94,
+      95,
+      96,
+      97,
+      98,
+      99,
+      100,
+      101,
+      102,
+      103
+    ]
+  },
+  {
+    "teal": 15,
+    "source": "contracts\\Jointly.algo.ts:32",
+    "pc": [
+      104,
+      105
+    ]
+  },
+  {
+    "teal": 16,
+    "source": "contracts\\Jointly.algo.ts:32",
+    "pc": [
+      106
+    ]
+  },
+  {
+    "teal": 17,
+    "source": "contracts\\Jointly.algo.ts:32",
+    "pc": [
+      107,
+      108
+    ]
+  },
+  {
+    "teal": 18,
+    "source": "contracts\\Jointly.algo.ts:32",
+    "pc": [
+      109
+    ]
+  },
+  {
+    "teal": 19,
+    "source": "contracts\\Jointly.algo.ts:32",
+    "pc": [
+      110,
+      111
+    ]
+  },
+  {
+    "teal": 20,
+    "source": "contracts\\Jointly.algo.ts:32",
+    "pc": [
+      112
+    ]
+  },
+  {
+    "teal": 21,
+    "source": "contracts\\Jointly.algo.ts:32",
+    "pc": [
+      113,
+      114,
+      115,
+      116,
+      117,
+      118,
+      119,
+      120,
+      121,
+      122,
+      123,
+      124,
+      125,
+      126,
+      127,
+      128,
+      129,
+      130,
+      131,
+      132,
+      133,
+      134,
+      135,
+      136,
+      137,
+      138
+    ]
+  },
+  {
+    "teal": 25,
+    "source": "contracts\\Jointly.algo.ts:32",
+    "errorMessage": "The requested action is not implemented in this contract. Are you using the correct OnComplete? Did you set your app ID?",
+    "pc": [
+      139
+    ]
+  },
+  {
+    "teal": 30,
+    "source": "contracts\\Jointly.algo.ts:50",
+    "pc": [
+      140,
+      141,
+      142
+    ]
+  },
+  {
+    "teal": 31,
+    "source": "contracts\\Jointly.algo.ts:50",
+    "pc": [
+      143
+    ]
+  },
+  {
+    "teal": 32,
+    "source": "contracts\\Jointly.algo.ts:50",
+    "pc": [
+      144
+    ]
+  },
+  {
+    "teal": 36,
+    "source": "contracts\\Jointly.algo.ts:50",
+    "pc": [
+      145,
+      146,
+      147
+    ]
+  },
+  {
+    "teal": 40,
+    "source": "contracts\\Jointly.algo.ts:51",
+    "pc": [
+      148,
+      149
+    ]
+  },
+  {
+    "teal": 41,
+    "source": "contracts\\Jointly.algo.ts:51",
+    "pc": [
+      150
+    ]
+  },
+  {
+    "teal": 42,
+    "source": "contracts\\Jointly.algo.ts:51",
+    "pc": [
+      151
+    ]
+  },
+  {
+    "teal": 46,
+    "source": "contracts\\Jointly.algo.ts:52",
+    "pc": [
+      152,
+      153
+    ]
+  },
+  {
+    "teal": 47,
+    "source": "contracts\\Jointly.algo.ts:52",
+    "pc": [
+      154
+    ]
+  },
+  {
+    "teal": 48,
+    "source": "contracts\\Jointly.algo.ts:52",
+    "pc": [
+      155,
+      156
+    ]
+  },
+  {
+    "teal": 49,
+    "source": "contracts\\Jointly.algo.ts:52",
+    "pc": [
+      157
+    ]
+  },
+  {
+    "teal": 50,
+    "source": "contracts\\Jointly.algo.ts:52",
+    "pc": [
+      158,
+      159
+    ]
+  },
+  {
+    "teal": 51,
+    "source": "contracts\\Jointly.algo.ts:52",
+    "pc": [
+      160
+    ]
+  },
+  {
+    "teal": 52,
+    "source": "contracts\\Jointly.algo.ts:52",
+    "pc": [
+      161
+    ]
+  },
+  {
+    "teal": 56,
+    "source": "contracts\\Jointly.algo.ts:53",
+    "pc": [
+      162
+    ]
+  },
+  {
+    "teal": 57,
+    "source": "contracts\\Jointly.algo.ts:53",
+    "pc": [
+      163
+    ]
+  },
+  {
+    "teal": 58,
+    "source": "contracts\\Jointly.algo.ts:53",
+    "pc": [
+      164
+    ]
+  },
+  {
+    "teal": 59,
+    "source": "contracts\\Jointly.algo.ts:50",
+    "pc": [
+      165
+    ]
+  },
+  {
+    "teal": 64,
+    "source": "contracts\\Jointly.algo.ts:56",
+    "pc": [
+      166,
+      167,
+      168
+    ]
+  },
+  {
+    "teal": 65,
+    "source": "contracts\\Jointly.algo.ts:56",
+    "pc": [
+      169
+    ]
+  },
+  {
+    "teal": 66,
+    "source": "contracts\\Jointly.algo.ts:56",
+    "pc": [
+      170
+    ]
+  },
+  {
+    "teal": 70,
+    "source": "contracts\\Jointly.algo.ts:56",
+    "pc": [
+      171,
+      172,
+      173
+    ]
+  },
+  {
+    "teal": 74,
+    "source": "contracts\\Jointly.algo.ts:57",
+    "pc": [
+      174,
+      175
+    ]
+  },
+  {
+    "teal": 75,
+    "source": "contracts\\Jointly.algo.ts:57",
+    "pc": [
+      176,
+      177,
+      178
+    ]
+  },
+  {
+    "teal": 76,
+    "source": "contracts\\Jointly.algo.ts:57",
+    "pc": [
+      179,
+      180
+    ]
+  },
+  {
+    "teal": 77,
+    "source": "contracts\\Jointly.algo.ts:57",
+    "pc": [
+      181
+    ]
+  },
+  {
+    "teal": 78,
+    "source": "contracts\\Jointly.algo.ts:57",
+    "pc": [
+      182
+    ]
+  },
+  {
+    "teal": 81,
+    "source": "contracts\\Jointly.algo.ts:57",
+    "errorMessage": "you are not authorize(app creator)",
+    "pc": [
+      183
+    ]
+  },
+  {
+    "teal": 82,
+    "source": "contracts\\Jointly.algo.ts:56",
+    "pc": [
+      184
+    ]
+  },
+  {
+    "teal": 87,
+    "source": "contracts\\Jointly.algo.ts:60",
+    "pc": [
+      185,
+      186,
+      187
+    ]
+  },
+  {
+    "teal": 88,
+    "source": "contracts\\Jointly.algo.ts:60",
+    "pc": [
+      188,
+      189,
+      190
+    ]
+  },
+  {
+    "teal": 91,
+    "source": "contracts\\Jointly.algo.ts:60",
+    "pc": [
+      191,
+      192,
+      193
+    ]
+  },
+  {
+    "teal": 92,
+    "source": "contracts\\Jointly.algo.ts:60",
+    "pc": [
+      194
+    ]
+  },
+  {
+    "teal": 93,
+    "source": "contracts\\Jointly.algo.ts:60",
+    "pc": [
+      195
+    ]
+  },
+  {
+    "teal": 94,
+    "source": "contracts\\Jointly.algo.ts:60",
+    "pc": [
+      196
+    ]
+  },
+  {
+    "teal": 95,
+    "source": "contracts\\Jointly.algo.ts:60",
+    "pc": [
+      197
+    ]
+  },
+  {
+    "teal": 98,
+    "source": "contracts\\Jointly.algo.ts:60",
+    "errorMessage": "argument 1 (memberAddress) for addMember must be a address",
+    "pc": [
+      198
+    ]
+  },
+  {
+    "teal": 101,
+    "source": "contracts\\Jointly.algo.ts:60",
+    "pc": [
+      199,
+      200
+    ]
+  },
+  {
+    "teal": 102,
+    "source": "contracts\\Jointly.algo.ts:60",
+    "pc": [
+      201
+    ]
+  },
+  {
+    "teal": 103,
+    "source": "contracts\\Jointly.algo.ts:60",
+    "pc": [
+      202
+    ]
+  },
+  {
+    "teal": 104,
+    "source": "contracts\\Jointly.algo.ts:60",
+    "pc": [
+      203
+    ]
+  },
+  {
+    "teal": 105,
+    "source": "contracts\\Jointly.algo.ts:60",
+    "pc": [
+      204,
+      205
+    ]
+  },
+  {
+    "teal": 106,
+    "source": "contracts\\Jointly.algo.ts:60",
+    "pc": [
+      206
+    ]
+  },
+  {
+    "teal": 107,
+    "source": "contracts\\Jointly.algo.ts:60",
+    "pc": [
+      207
+    ]
+  },
+  {
+    "teal": 110,
+    "source": "contracts\\Jointly.algo.ts:60",
+    "errorMessage": "argument 2 (mbrPay) for addMember must be a pay transaction",
+    "pc": [
+      208
+    ]
+  },
+  {
+    "teal": 113,
+    "source": "contracts\\Jointly.algo.ts:60",
+    "pc": [
+      209,
+      210,
+      211
+    ]
+  },
+  {
+    "teal": 114,
+    "source": "contracts\\Jointly.algo.ts:60",
+    "pc": [
+      212
+    ]
+  },
+  {
+    "teal": 115,
+    "source": "contracts\\Jointly.algo.ts:60",
+    "pc": [
+      213
+    ]
+  },
+  {
+    "teal": 119,
+    "source": "contracts\\Jointly.algo.ts:60",
+    "pc": [
+      214,
+      215,
+      216
+    ]
+  },
+  {
+    "teal": 123,
+    "source": "contracts\\Jointly.algo.ts:61",
+    "pc": [
+      217,
+      218,
+      219
+    ]
+  },
+  {
+    "teal": 127,
+    "source": "contracts\\Jointly.algo.ts:62",
+    "pc": [
+      220,
+      221
+    ]
+  },
+  {
+    "teal": 128,
+    "source": "contracts\\Jointly.algo.ts:62",
+    "pc": [
+      222
+    ]
+  },
+  {
+    "teal": 129,
+    "source": "contracts\\Jointly.algo.ts:62",
+    "pc": [
+      223
+    ]
+  },
+  {
+    "teal": 130,
+    "source": "contracts\\Jointly.algo.ts:62",
+    "pc": [
+      224
+    ]
+  },
+  {
+    "teal": 131,
+    "source": "contracts\\Jointly.algo.ts:62",
+    "pc": [
+      225
+    ]
+  },
+  {
+    "teal": 134,
+    "source": "contracts\\Jointly.algo.ts:62",
+    "errorMessage": "Member already exist",
+    "pc": [
+      226
+    ]
+  },
+  {
+    "teal": 143,
+    "source": "contracts\\Jointly.algo.ts:63",
+    "pc": [
+      227,
+      228
+    ]
+  },
+  {
+    "teal": 144,
+    "source": "contracts\\Jointly.algo.ts:64",
+    "pc": [
+      229,
+      230
+    ]
+  },
+  {
+    "teal": 145,
+    "source": "contracts\\Jointly.algo.ts:64",
+    "pc": [
+      231,
+      232,
+      233
+    ]
+  },
+  {
+    "teal": 146,
+    "source": "contracts\\Jointly.algo.ts:64",
+    "pc": [
+      234,
+      235
+    ]
+  },
+  {
+    "teal": 147,
+    "source": "contracts\\Jointly.algo.ts:64",
+    "pc": [
+      236
+    ]
+  },
+  {
+    "teal": 148,
+    "source": "contracts\\Jointly.algo.ts:64",
+    "pc": [
+      237
+    ]
+  },
+  {
+    "teal": 151,
+    "source": "contracts\\Jointly.algo.ts:64",
+    "errorMessage": "transaction verification failed: {\"txn\":\"mbrPay\",\"field\":\"sender\",\"expected\":\"this.app.creator\"}",
+    "pc": [
+      238
+    ]
+  },
+  {
+    "teal": 154,
+    "source": "contracts\\Jointly.algo.ts:63",
+    "pc": [
+      239,
+      240
+    ]
+  },
+  {
+    "teal": 155,
+    "source": "contracts\\Jointly.algo.ts:65",
+    "pc": [
+      241,
+      242
+    ]
+  },
+  {
+    "teal": 156,
+    "source": "contracts\\Jointly.algo.ts:65",
+    "pc": [
+      243,
+      244
+    ]
+  },
+  {
+    "teal": 157,
+    "source": "contracts\\Jointly.algo.ts:65",
+    "pc": [
+      245
+    ]
+  },
+  {
+    "teal": 160,
+    "source": "contracts\\Jointly.algo.ts:65",
+    "errorMessage": "transaction verification failed: {\"txn\":\"mbrPay\",\"field\":\"receiver\",\"expected\":\"this.app.address\"}",
+    "pc": [
+      246
+    ]
+  },
+  {
+    "teal": 163,
+    "source": "contracts\\Jointly.algo.ts:63",
+    "pc": [
+      247,
+      248
+    ]
+  },
+  {
+    "teal": 164,
+    "source": "contracts\\Jointly.algo.ts:66",
+    "pc": [
+      249,
+      250
+    ]
+  },
+  {
+    "teal": 165,
+    "source": "contracts\\Jointly.algo.ts:14",
+    "pc": [
+      251,
+      252,
+      253,
+      254
+    ]
+  },
+  {
+    "teal": 166,
+    "source": "contracts\\Jointly.algo.ts:66",
+    "pc": [
+      255
+    ]
+  },
+  {
+    "teal": 169,
+    "source": "contracts\\Jointly.algo.ts:66",
+    "errorMessage": "transaction verification failed: {\"txn\":\"mbrPay\",\"field\":\"amount\",\"expected\":\"membersMbr\"}",
+    "pc": [
+      256
+    ]
+  },
+  {
+    "teal": 176,
+    "source": "contracts\\Jointly.algo.ts:69",
+    "pc": [
+      257,
+      258
+    ]
+  },
+  {
+    "teal": 177,
+    "source": "contracts\\Jointly.algo.ts:69",
+    "pc": [
+      259
+    ]
+  },
+  {
+    "teal": 178,
+    "source": "contracts\\Jointly.algo.ts:69",
+    "pc": [
+      260
+    ]
+  },
+  {
+    "teal": 179,
+    "source": "contracts\\Jointly.algo.ts:69",
+    "pc": [
+      261
+    ]
+  },
+  {
+    "teal": 180,
+    "source": "contracts\\Jointly.algo.ts:69",
+    "pc": [
+      262
+    ]
+  },
+  {
+    "teal": 181,
+    "source": "contracts\\Jointly.algo.ts:69",
+    "pc": [
+      263
+    ]
+  },
+  {
+    "teal": 182,
+    "source": "contracts\\Jointly.algo.ts:69",
+    "pc": [
+      264,
+      265,
+      266,
+      267
+    ]
+  },
+  {
+    "teal": 183,
+    "source": "contracts\\Jointly.algo.ts:70",
+    "pc": [
+      268,
+      269
+    ]
+  },
+  {
+    "teal": 184,
+    "source": "contracts\\Jointly.algo.ts:70",
+    "pc": [
+      270,
+      271,
+      272
+    ]
+  },
+  {
+    "teal": 185,
+    "source": "contracts\\Jointly.algo.ts:71",
+    "pc": [
+      273,
+      274
+    ]
+  },
+  {
+    "teal": 186,
+    "source": "contracts\\Jointly.algo.ts:71",
+    "pc": [
+      275
+    ]
+  },
+  {
+    "teal": 187,
+    "source": "contracts\\Jointly.algo.ts:71",
+    "pc": [
+      276
+    ]
+  },
+  {
+    "teal": 188,
+    "source": "contracts\\Jointly.algo.ts:71",
+    "pc": [
+      277
+    ]
+  },
+  {
+    "teal": 189,
+    "source": "contracts\\Jointly.algo.ts:71",
+    "pc": [
+      278,
+      279,
+      280
+    ]
+  },
+  {
+    "teal": 190,
+    "source": "contracts\\Jointly.algo.ts:71",
+    "pc": [
+      281
+    ]
+  },
+  {
+    "teal": 191,
+    "source": "contracts\\Jointly.algo.ts:71",
+    "pc": [
+      282
+    ]
+  },
+  {
+    "teal": 192,
+    "source": "contracts\\Jointly.algo.ts:71",
+    "pc": [
+      283,
+      284,
+      285
+    ]
+  },
+  {
+    "teal": 193,
+    "source": "contracts\\Jointly.algo.ts:69",
+    "pc": [
+      286
+    ]
+  },
+  {
+    "teal": 194,
+    "source": "contracts\\Jointly.algo.ts:69",
+    "pc": [
+      287
+    ]
+  },
+  {
+    "teal": 195,
+    "source": "contracts\\Jointly.algo.ts:69",
+    "pc": [
+      288
+    ]
+  },
+  {
+    "teal": 199,
+    "source": "contracts\\Jointly.algo.ts:73",
+    "pc": [
+      289,
+      290
+    ]
+  },
+  {
+    "teal": 200,
+    "source": "contracts\\Jointly.algo.ts:73",
+    "pc": [
+      291
+    ]
+  },
+  {
+    "teal": 201,
+    "source": "contracts\\Jointly.algo.ts:73",
+    "pc": [
+      292
+    ]
+  },
+  {
+    "teal": 202,
+    "source": "contracts\\Jointly.algo.ts:73",
+    "pc": [
+      293
+    ]
+  },
+  {
+    "teal": 203,
+    "source": "contracts\\Jointly.algo.ts:73",
+    "pc": [
+      294
+    ]
+  },
+  {
+    "teal": 204,
+    "source": "contracts\\Jointly.algo.ts:73",
+    "pc": [
+      295
+    ]
+  },
+  {
+    "teal": 205,
+    "source": "contracts\\Jointly.algo.ts:60",
+    "pc": [
+      296
+    ]
+  },
+  {
+    "teal": 210,
+    "source": "contracts\\Jointly.algo.ts:76",
+    "pc": [
+      297,
+      298,
+      299,
+      300,
+      301,
+      302
+    ]
+  },
+  {
+    "teal": 213,
+    "source": "contracts\\Jointly.algo.ts:76",
+    "pc": [
+      303,
+      304,
+      305
+    ]
+  },
+  {
+    "teal": 214,
+    "source": "contracts\\Jointly.algo.ts:76",
+    "pc": [
+      306
+    ]
+  },
+  {
+    "teal": 215,
+    "source": "contracts\\Jointly.algo.ts:76",
+    "pc": [
+      307
+    ]
+  },
+  {
+    "teal": 216,
+    "source": "contracts\\Jointly.algo.ts:76",
+    "pc": [
+      308
+    ]
+  },
+  {
+    "teal": 217,
+    "source": "contracts\\Jointly.algo.ts:76",
+    "pc": [
+      309
+    ]
+  },
+  {
+    "teal": 218,
+    "source": "contracts\\Jointly.algo.ts:76",
+    "pc": [
+      310
+    ]
+  },
+  {
+    "teal": 222,
+    "source": "contracts\\Jointly.algo.ts:76",
+    "pc": [
+      311,
+      312,
+      313
+    ]
+  },
+  {
+    "teal": 226,
+    "source": "contracts\\Jointly.algo.ts:77",
+    "pc": [
+      314,
+      315,
+      316,
+      317,
+      318,
+      319,
+      320,
+      321,
+      322,
+      323,
+      324,
+      325,
+      326,
+      327,
+      328,
+      329,
+      330,
+      331,
+      332,
+      333,
+      334,
+      335,
+      336,
+      337
+    ]
+  },
+  {
+    "teal": 227,
+    "source": "contracts\\Jointly.algo.ts:77",
+    "pc": [
+      338
+    ]
+  },
+  {
+    "teal": 228,
+    "source": "contracts\\Jointly.algo.ts:76",
+    "pc": [
+      339
+    ]
+  },
+  {
+    "teal": 233,
+    "source": "contracts\\Jointly.algo.ts:80",
+    "pc": [
+      340,
+      341,
+      342
+    ]
+  },
+  {
+    "teal": 234,
+    "source": "contracts\\Jointly.algo.ts:80",
+    "pc": [
+      343,
+      344,
+      345
+    ]
+  },
+  {
+    "teal": 237,
+    "source": "contracts\\Jointly.algo.ts:80",
+    "pc": [
+      346,
+      347,
+      348
+    ]
+  },
+  {
+    "teal": 238,
+    "source": "contracts\\Jointly.algo.ts:80",
+    "pc": [
+      349,
+      350,
+      351
+    ]
+  },
+  {
+    "teal": 241,
+    "source": "contracts\\Jointly.algo.ts:80",
+    "pc": [
+      352,
+      353,
+      354
+    ]
+  },
+  {
+    "teal": 242,
+    "source": "contracts\\Jointly.algo.ts:80",
+    "pc": [
+      355
+    ]
+  },
+  {
+    "teal": 243,
+    "source": "contracts\\Jointly.algo.ts:80",
+    "pc": [
+      356
+    ]
+  },
+  {
+    "teal": 244,
+    "source": "contracts\\Jointly.algo.ts:80",
+    "pc": [
+      357
+    ]
+  },
+  {
+    "teal": 245,
+    "source": "contracts\\Jointly.algo.ts:80",
+    "pc": [
+      358
+    ]
+  },
+  {
+    "teal": 248,
+    "source": "contracts\\Jointly.algo.ts:80",
+    "errorMessage": "argument 2 (proposerAddress) for setProposal must be a address",
+    "pc": [
+      359
+    ]
+  },
+  {
+    "teal": 251,
+    "source": "contracts\\Jointly.algo.ts:80",
+    "pc": [
+      360,
+      361
+    ]
+  },
+  {
+    "teal": 252,
+    "source": "contracts\\Jointly.algo.ts:80",
+    "pc": [
+      362
+    ]
+  },
+  {
+    "teal": 253,
+    "source": "contracts\\Jointly.algo.ts:80",
+    "pc": [
+      363
+    ]
+  },
+  {
+    "teal": 254,
+    "source": "contracts\\Jointly.algo.ts:80",
+    "pc": [
+      364
+    ]
+  },
+  {
+    "teal": 255,
+    "source": "contracts\\Jointly.algo.ts:80",
+    "pc": [
+      365,
+      366
+    ]
+  },
+  {
+    "teal": 256,
+    "source": "contracts\\Jointly.algo.ts:80",
+    "pc": [
+      367
+    ]
+  },
+  {
+    "teal": 257,
+    "source": "contracts\\Jointly.algo.ts:80",
+    "pc": [
+      368
+    ]
+  },
+  {
+    "teal": 260,
+    "source": "contracts\\Jointly.algo.ts:80",
+    "errorMessage": "argument 3 (mbrPay) for setProposal must be a pay transaction",
+    "pc": [
+      369
+    ]
+  },
+  {
+    "teal": 263,
+    "source": "contracts\\Jointly.algo.ts:80",
+    "pc": [
+      370,
+      371,
+      372
+    ]
+  },
+  {
+    "teal": 264,
+    "source": "contracts\\Jointly.algo.ts:80",
+    "pc": [
+      373
+    ]
+  },
+  {
+    "teal": 265,
+    "source": "contracts\\Jointly.algo.ts:80",
+    "pc": [
+      374
+    ]
+  },
+  {
+    "teal": 269,
+    "source": "contracts\\Jointly.algo.ts:80",
+    "pc": [
+      375,
+      376,
+      377
+    ]
+  },
+  {
+    "teal": 273,
+    "source": "contracts\\Jointly.algo.ts:81",
+    "pc": [
+      378,
+      379
+    ]
+  },
+  {
+    "teal": 274,
+    "source": "contracts\\Jointly.algo.ts:81",
+    "pc": [
+      380
+    ]
+  },
+  {
+    "teal": 275,
+    "source": "contracts\\Jointly.algo.ts:81",
+    "pc": [
+      381
+    ]
+  },
+  {
+    "teal": 276,
+    "source": "contracts\\Jointly.algo.ts:81",
+    "pc": [
+      382
+    ]
+  },
+  {
+    "teal": 277,
+    "source": "contracts\\Jointly.algo.ts:81",
+    "pc": [
+      383
+    ]
+  },
+  {
+    "teal": 278,
+    "source": "contracts\\Jointly.algo.ts:81",
+    "pc": [
+      384
+    ]
+  },
+  {
+    "teal": 281,
+    "source": "contracts\\Jointly.algo.ts:81",
+    "errorMessage": "There is an ongoing proposal",
+    "pc": [
+      385
+    ]
+  },
+  {
+    "teal": 285,
+    "source": "contracts\\Jointly.algo.ts:82",
+    "pc": [
+      386,
+      387
+    ]
+  },
+  {
+    "teal": 286,
+    "source": "contracts\\Jointly.algo.ts:82",
+    "pc": [
+      388
+    ]
+  },
+  {
+    "teal": 287,
+    "source": "contracts\\Jointly.algo.ts:82",
+    "pc": [
+      389
+    ]
+  },
+  {
+    "teal": 288,
+    "source": "contracts\\Jointly.algo.ts:82",
+    "pc": [
+      390
+    ]
+  },
+  {
+    "teal": 291,
+    "source": "contracts\\Jointly.algo.ts:82",
+    "errorMessage": "Member does not exist",
+    "pc": [
+      391
+    ]
+  },
+  {
+    "teal": 295,
+    "source": "contracts\\Jointly.algo.ts:83",
+    "pc": [
+      392
+    ]
+  },
+  {
+    "teal": 296,
+    "source": "contracts\\Jointly.algo.ts:83",
+    "pc": [
+      393
+    ]
+  },
+  {
+    "teal": 297,
+    "source": "contracts\\Jointly.algo.ts:83",
+    "pc": [
+      394
+    ]
+  },
+  {
+    "teal": 298,
+    "source": "contracts\\Jointly.algo.ts:83",
+    "pc": [
+      395
+    ]
+  },
+  {
+    "teal": 299,
+    "source": "contracts\\Jointly.algo.ts:83",
+    "pc": [
+      396
+    ]
+  },
+  {
+    "teal": 300,
+    "source": "contracts\\Jointly.algo.ts:83",
+    "pc": [
+      397
+    ]
+  },
+  {
+    "teal": 301,
+    "source": "contracts\\Jointly.algo.ts:83",
+    "pc": [
+      398
+    ]
+  },
+  {
+    "teal": 304,
+    "source": "contracts\\Jointly.algo.ts:83",
+    "errorMessage": "Proposal already exist",
+    "pc": [
+      399
+    ]
+  },
+  {
+    "teal": 308,
+    "source": "contracts\\Jointly.algo.ts:84",
+    "pc": [
+      400,
+      401,
+      402,
+      403,
+      404,
+      405,
+      406,
+      407,
+      408,
+      409,
+      410,
+      411,
+      412,
+      413
+    ]
+  },
+  {
+    "teal": 309,
+    "source": "contracts\\Jointly.algo.ts:84",
+    "pc": [
+      414,
+      415
+    ]
+  },
+  {
+    "teal": 310,
+    "source": "contracts\\Jointly.algo.ts:84",
+    "pc": [
+      416
+    ]
+  },
+  {
+    "teal": 311,
+    "source": "contracts\\Jointly.algo.ts:84",
+    "pc": [
+      417
+    ]
+  },
+  {
+    "teal": 312,
+    "source": "contracts\\Jointly.algo.ts:84",
+    "pc": [
+      418
+    ]
+  },
+  {
+    "teal": 313,
+    "source": "contracts\\Jointly.algo.ts:84",
+    "pc": [
+      419,
+      420,
+      421
+    ]
+  },
+  {
+    "teal": 314,
+    "source": "contracts\\Jointly.algo.ts:84",
+    "pc": [
+      422
+    ]
+  },
+  {
+    "teal": 315,
+    "source": "contracts\\Jointly.algo.ts:84",
+    "pc": [
+      423
+    ]
+  },
+  {
+    "teal": 316,
+    "source": "contracts\\Jointly.algo.ts:84",
+    "pc": [
+      424
+    ]
+  },
+  {
+    "teal": 320,
+    "source": "contracts\\Jointly.algo.ts:85",
+    "pc": [
+      425,
+      426
+    ]
+  },
+  {
+    "teal": 321,
+    "source": "contracts\\Jointly.algo.ts:85",
+    "pc": [
+      427,
+      428
+    ]
+  },
+  {
+    "teal": 322,
+    "source": "contracts\\Jointly.algo.ts:85",
+    "pc": [
+      429
+    ]
+  },
+  {
+    "teal": 323,
+    "source": "contracts\\Jointly.algo.ts:85",
+    "pc": [
+      430
+    ]
+  },
+  {
+    "teal": 324,
+    "source": "contracts\\Jointly.algo.ts:85",
+    "pc": [
+      431
+    ]
+  },
+  {
+    "teal": 325,
+    "source": "contracts\\Jointly.algo.ts:85",
+    "pc": [
+      432,
+      433,
+      434
+    ]
+  },
+  {
+    "teal": 326,
+    "source": "contracts\\Jointly.algo.ts:85",
+    "pc": [
+      435
+    ]
+  },
+  {
+    "teal": 327,
+    "source": "contracts\\Jointly.algo.ts:85",
+    "pc": [
+      436
+    ]
+  },
+  {
+    "teal": 328,
+    "source": "contracts\\Jointly.algo.ts:85",
+    "pc": [
+      437
+    ]
+  },
+  {
+    "teal": 332,
+    "source": "contracts\\Jointly.algo.ts:86",
+    "pc": [
+      438
+    ]
+  },
+  {
+    "teal": 333,
+    "source": "contracts\\Jointly.algo.ts:86",
+    "pc": [
+      439
+    ]
+  },
+  {
+    "teal": 334,
+    "source": "contracts\\Jointly.algo.ts:86",
+    "pc": [
+      440
+    ]
+  },
+  {
+    "teal": 338,
+    "source": "contracts\\Jointly.algo.ts:87",
+    "pc": [
+      441
+    ]
+  },
+  {
+    "teal": 339,
+    "source": "contracts\\Jointly.algo.ts:87",
+    "pc": [
+      442
+    ]
+  },
+  {
+    "teal": 340,
+    "source": "contracts\\Jointly.algo.ts:87",
+    "pc": [
+      443
+    ]
+  },
+  {
+    "teal": 344,
+    "source": "contracts\\Jointly.algo.ts:88",
+    "pc": [
+      444,
+      445
+    ]
+  },
+  {
+    "teal": 345,
+    "source": "contracts\\Jointly.algo.ts:88",
+    "pc": [
+      446
+    ]
+  },
+  {
+    "teal": 346,
+    "source": "contracts\\Jointly.algo.ts:88",
+    "pc": [
+      447
+    ]
+  },
+  {
+    "teal": 355,
+    "source": "contracts\\Jointly.algo.ts:90",
+    "pc": [
+      448,
+      449
+    ]
+  },
+  {
+    "teal": 356,
+    "source": "contracts\\Jointly.algo.ts:91",
+    "pc": [
+      450,
+      451
+    ]
+  },
+  {
+    "teal": 357,
+    "source": "contracts\\Jointly.algo.ts:91",
+    "pc": [
+      452,
+      453,
+      454
+    ]
+  },
+  {
+    "teal": 358,
+    "source": "contracts\\Jointly.algo.ts:91",
+    "pc": [
+      455,
+      456
+    ]
+  },
+  {
+    "teal": 359,
+    "source": "contracts\\Jointly.algo.ts:91",
+    "pc": [
+      457
+    ]
+  },
+  {
+    "teal": 360,
+    "source": "contracts\\Jointly.algo.ts:91",
+    "pc": [
+      458
+    ]
+  },
+  {
+    "teal": 363,
+    "source": "contracts\\Jointly.algo.ts:91",
+    "errorMessage": "transaction verification failed: {\"txn\":\"mbrPay\",\"field\":\"sender\",\"expected\":\"this.app.creator\"}",
+    "pc": [
+      459
+    ]
+  },
+  {
+    "teal": 366,
+    "source": "contracts\\Jointly.algo.ts:90",
+    "pc": [
+      460,
+      461
+    ]
+  },
+  {
+    "teal": 367,
+    "source": "contracts\\Jointly.algo.ts:92",
+    "pc": [
+      462,
+      463
+    ]
+  },
+  {
+    "teal": 368,
+    "source": "contracts\\Jointly.algo.ts:92",
+    "pc": [
+      464,
+      465
+    ]
+  },
+  {
+    "teal": 369,
+    "source": "contracts\\Jointly.algo.ts:92",
+    "pc": [
+      466
+    ]
+  },
+  {
+    "teal": 372,
+    "source": "contracts\\Jointly.algo.ts:92",
+    "errorMessage": "transaction verification failed: {\"txn\":\"mbrPay\",\"field\":\"receiver\",\"expected\":\"this.app.address\"}",
+    "pc": [
+      467
+    ]
+  },
+  {
+    "teal": 375,
+    "source": "contracts\\Jointly.algo.ts:90",
+    "pc": [
+      468,
+      469
+    ]
+  },
+  {
+    "teal": 376,
+    "source": "contracts\\Jointly.algo.ts:93",
+    "pc": [
+      470,
+      471
+    ]
+  },
+  {
+    "teal": 377,
+    "source": "contracts\\Jointly.algo.ts:30",
+    "pc": [
+      472,
+      473,
+      474,
+      475
+    ]
+  },
+  {
+    "teal": 378,
+    "source": "contracts\\Jointly.algo.ts:93",
+    "pc": [
+      476
+    ]
+  },
+  {
+    "teal": 381,
+    "source": "contracts\\Jointly.algo.ts:93",
+    "errorMessage": "transaction verification failed: {\"txn\":\"mbrPay\",\"field\":\"amount\",\"expected\":\"proposalMbr\"}",
+    "pc": [
+      477
+    ]
+  },
+  {
+    "teal": 393,
+    "source": "contracts\\Jointly.algo.ts:96",
+    "pc": [
+      478
+    ]
+  },
+  {
+    "teal": 394,
+    "source": "contracts\\Jointly.algo.ts:96",
+    "pc": [
+      479
+    ]
+  },
+  {
+    "teal": 395,
+    "source": "contracts\\Jointly.algo.ts:96",
+    "pc": [
+      480
+    ]
+  },
+  {
+    "teal": 396,
+    "source": "contracts\\Jointly.algo.ts:96",
+    "pc": [
+      481
+    ]
+  },
+  {
+    "teal": 397,
+    "source": "contracts\\Jointly.algo.ts:96",
+    "pc": [
+      482
+    ]
+  },
+  {
+    "teal": 398,
+    "source": "contracts\\Jointly.algo.ts:96",
+    "pc": [
+      483
+    ]
+  },
+  {
+    "teal": 399,
+    "source": "contracts\\Jointly.algo.ts:96",
+    "pc": [
+      484
+    ]
+  },
+  {
+    "teal": 400,
+    "source": "contracts\\Jointly.algo.ts:96",
+    "pc": [
+      485
+    ]
+  },
+  {
+    "teal": 401,
+    "source": "contracts\\Jointly.algo.ts:96",
+    "pc": [
+      486,
+      487
+    ]
+  },
+  {
+    "teal": 402,
+    "source": "contracts\\Jointly.algo.ts:97",
+    "pc": [
+      488,
+      489
+    ]
+  },
+  {
+    "teal": 403,
+    "source": "contracts\\Jointly.algo.ts:97",
+    "pc": [
+      490,
+      491,
+      492
+    ]
+  },
+  {
+    "teal": 404,
+    "source": "contracts\\Jointly.algo.ts:98",
+    "pc": [
+      493,
+      494
+    ]
+  },
+  {
+    "teal": 405,
+    "source": "contracts\\Jointly.algo.ts:98",
+    "pc": [
+      495,
+      496,
+      497
+    ]
+  },
+  {
+    "teal": 406,
+    "source": "contracts\\Jointly.algo.ts:99",
+    "pc": [
+      498,
+      499
+    ]
+  },
+  {
+    "teal": 407,
+    "source": "contracts\\Jointly.algo.ts:99",
+    "pc": [
+      500,
+      501,
+      502
+    ]
+  },
+  {
+    "teal": 408,
+    "source": "contracts\\Jointly.algo.ts:100",
+    "pc": [
+      503,
+      504
+    ]
+  },
+  {
+    "teal": 409,
+    "source": "contracts\\Jointly.algo.ts:100",
+    "pc": [
+      505,
+      506,
+      507
+    ]
+  },
+  {
+    "teal": 410,
+    "source": "contracts\\Jointly.algo.ts:101",
+    "pc": [
+      508,
+      509
+    ]
+  },
+  {
+    "teal": 411,
+    "source": "contracts\\Jointly.algo.ts:101",
+    "pc": [
+      510,
+      511,
+      512
+    ]
+  },
+  {
+    "teal": 412,
+    "source": "contracts\\Jointly.algo.ts:102",
+    "pc": [
+      513,
+      514
+    ]
+  },
+  {
+    "teal": 413,
+    "source": "contracts\\Jointly.algo.ts:102",
+    "pc": [
+      515
+    ]
+  },
+  {
+    "teal": 414,
+    "source": "contracts\\Jointly.algo.ts:102",
+    "pc": [
+      516
+    ]
+  },
+  {
+    "teal": 415,
+    "source": "contracts\\Jointly.algo.ts:102",
+    "pc": [
+      517
+    ]
+  },
+  {
+    "teal": 416,
+    "source": "contracts\\Jointly.algo.ts:102",
+    "pc": [
+      518,
+      519,
+      520
+    ]
+  },
+  {
+    "teal": 417,
+    "source": "contracts\\Jointly.algo.ts:102",
+    "pc": [
+      521
+    ]
+  },
+  {
+    "teal": 418,
+    "source": "contracts\\Jointly.algo.ts:102",
+    "pc": [
+      522
+    ]
+  },
+  {
+    "teal": 419,
+    "source": "contracts\\Jointly.algo.ts:102",
+    "pc": [
+      523,
+      524,
+      525
+    ]
+  },
+  {
+    "teal": 420,
+    "source": "contracts\\Jointly.algo.ts:103",
+    "pc": [
+      526,
+      527
+    ]
+  },
+  {
+    "teal": 421,
+    "source": "contracts\\Jointly.algo.ts:103",
+    "pc": [
+      528
+    ]
+  },
+  {
+    "teal": 422,
+    "source": "contracts\\Jointly.algo.ts:103",
+    "pc": [
+      529
+    ]
+  },
+  {
+    "teal": 423,
+    "source": "contracts\\Jointly.algo.ts:103",
+    "pc": [
+      530
+    ]
+  },
+  {
+    "teal": 424,
+    "source": "contracts\\Jointly.algo.ts:103",
+    "pc": [
+      531,
+      532,
+      533
+    ]
+  },
+  {
+    "teal": 425,
+    "source": "contracts\\Jointly.algo.ts:103",
+    "pc": [
+      534
+    ]
+  },
+  {
+    "teal": 426,
+    "source": "contracts\\Jointly.algo.ts:103",
+    "pc": [
+      535
+    ]
+  },
+  {
+    "teal": 427,
+    "source": "contracts\\Jointly.algo.ts:103",
+    "pc": [
+      536,
+      537,
+      538
+    ]
+  },
+  {
+    "teal": 428,
+    "source": "contracts\\Jointly.algo.ts:96",
+    "pc": [
+      539
+    ]
+  },
+  {
+    "teal": 429,
+    "source": "contracts\\Jointly.algo.ts:96",
+    "pc": [
+      540
+    ]
+  },
+  {
+    "teal": 430,
+    "source": "contracts\\Jointly.algo.ts:96",
+    "pc": [
+      541
+    ]
+  },
+  {
+    "teal": 434,
+    "source": "contracts\\Jointly.algo.ts:105",
+    "pc": [
+      542,
+      543
+    ]
+  },
+  {
+    "teal": 435,
+    "source": "contracts\\Jointly.algo.ts:105",
+    "pc": [
+      544
+    ]
+  },
+  {
+    "teal": 436,
+    "source": "contracts\\Jointly.algo.ts:105",
+    "pc": [
+      545,
+      546
+    ]
+  },
+  {
+    "teal": 437,
+    "source": "contracts\\Jointly.algo.ts:105",
+    "pc": [
+      547
+    ]
+  },
+  {
+    "teal": 438,
+    "source": "contracts\\Jointly.algo.ts:105",
+    "pc": [
+      548,
+      549
+    ]
+  },
+  {
+    "teal": 439,
+    "source": "contracts\\Jointly.algo.ts:105",
+    "pc": [
+      550
+    ]
+  },
+  {
+    "teal": 440,
+    "source": "contracts\\Jointly.algo.ts:105",
+    "pc": [
+      551
+    ]
+  },
+  {
+    "teal": 441,
+    "source": "contracts\\Jointly.algo.ts:80",
+    "pc": [
+      552
+    ]
+  },
+  {
+    "teal": 446,
+    "source": "contracts\\Jointly.algo.ts:108",
+    "pc": [
+      553,
+      554,
+      555
+    ]
+  },
+  {
+    "teal": 447,
+    "source": "contracts\\Jointly.algo.ts:108",
+    "pc": [
+      556
+    ]
+  },
+  {
+    "teal": 448,
+    "source": "contracts\\Jointly.algo.ts:108",
+    "pc": [
+      557
+    ]
+  },
+  {
+    "teal": 449,
+    "source": "contracts\\Jointly.algo.ts:108",
+    "pc": [
+      558
+    ]
+  },
+  {
+    "teal": 450,
+    "source": "contracts\\Jointly.algo.ts:108",
+    "pc": [
+      559
+    ]
+  },
+  {
+    "teal": 453,
+    "source": "contracts\\Jointly.algo.ts:108",
+    "errorMessage": "argument 0 (memberAddress) for vote must be a address",
+    "pc": [
+      560
+    ]
+  },
+  {
+    "teal": 456,
+    "source": "contracts\\Jointly.algo.ts:108",
+    "pc": [
+      561,
+      562,
+      563
+    ]
+  },
+  {
+    "teal": 457,
+    "source": "contracts\\Jointly.algo.ts:108",
+    "pc": [
+      564
+    ]
+  },
+  {
+    "teal": 458,
+    "source": "contracts\\Jointly.algo.ts:108",
+    "pc": [
+      565
+    ]
+  },
+  {
+    "teal": 459,
+    "source": "contracts\\Jointly.algo.ts:108",
+    "pc": [
+      566
+    ]
+  },
+  {
+    "teal": 460,
+    "source": "contracts\\Jointly.algo.ts:108",
+    "pc": [
+      567
+    ]
+  },
+  {
+    "teal": 463,
+    "source": "contracts\\Jointly.algo.ts:108",
+    "errorMessage": "argument 1 (inFavor) for vote must be a bool",
+    "pc": [
+      568
+    ]
+  },
+  {
+    "teal": 464,
+    "source": "contracts\\Jointly.algo.ts:108",
+    "pc": [
+      569
+    ]
+  },
+  {
+    "teal": 465,
+    "source": "contracts\\Jointly.algo.ts:108",
+    "pc": [
+      570
+    ]
+  },
+  {
+    "teal": 468,
+    "source": "contracts\\Jointly.algo.ts:108",
+    "pc": [
+      571,
+      572,
+      573
+    ]
+  },
+  {
+    "teal": 469,
+    "source": "contracts\\Jointly.algo.ts:108",
+    "pc": [
+      574
+    ]
+  },
+  {
+    "teal": 470,
+    "source": "contracts\\Jointly.algo.ts:108",
+    "pc": [
+      575
+    ]
+  },
+  {
+    "teal": 474,
+    "source": "contracts\\Jointly.algo.ts:108",
+    "pc": [
+      576,
+      577,
+      578
+    ]
+  },
+  {
+    "teal": 478,
+    "source": "contracts\\Jointly.algo.ts:109",
+    "pc": [
+      579,
+      580
+    ]
+  },
+  {
+    "teal": 479,
+    "source": "contracts\\Jointly.algo.ts:109",
+    "pc": [
+      581
+    ]
+  },
+  {
+    "teal": 480,
+    "source": "contracts\\Jointly.algo.ts:109",
+    "pc": [
+      582
+    ]
+  },
+  {
+    "teal": 481,
+    "source": "contracts\\Jointly.algo.ts:109",
+    "pc": [
+      583
+    ]
+  },
+  {
+    "teal": 482,
+    "source": "contracts\\Jointly.algo.ts:109",
+    "pc": [
+      584
+    ]
+  },
+  {
+    "teal": 486,
+    "source": "contracts\\Jointly.algo.ts:110",
+    "pc": [
+      585,
+      586
+    ]
+  },
+  {
+    "teal": 487,
+    "source": "contracts\\Jointly.algo.ts:110",
+    "pc": [
+      587
+    ]
+  },
+  {
+    "teal": 488,
+    "source": "contracts\\Jointly.algo.ts:110",
+    "pc": [
+      588
+    ]
+  },
+  {
+    "teal": 489,
+    "source": "contracts\\Jointly.algo.ts:110",
+    "pc": [
+      589
+    ]
+  },
+  {
+    "teal": 490,
+    "source": "contracts\\Jointly.algo.ts:110",
+    "pc": [
+      590
+    ]
+  },
+  {
+    "teal": 491,
+    "source": "contracts\\Jointly.algo.ts:110",
+    "pc": [
+      591
+    ]
+  },
+  {
+    "teal": 494,
+    "source": "contracts\\Jointly.algo.ts:110",
+    "errorMessage": "There is no ongoing proposal",
+    "pc": [
+      592
+    ]
+  },
+  {
+    "teal": 498,
+    "source": "contracts\\Jointly.algo.ts:112",
+    "pc": [
+      593
+    ]
+  },
+  {
+    "teal": 499,
+    "source": "contracts\\Jointly.algo.ts:112",
+    "pc": [
+      594
+    ]
+  },
+  {
+    "teal": 500,
+    "source": "contracts\\Jointly.algo.ts:112",
+    "pc": [
+      595
+    ]
+  },
+  {
+    "teal": 501,
+    "source": "contracts\\Jointly.algo.ts:112",
+    "pc": [
+      596
+    ]
+  },
+  {
+    "teal": 502,
+    "source": "contracts\\Jointly.algo.ts:112",
+    "pc": [
+      597
+    ]
+  },
+  {
+    "teal": 503,
+    "source": "contracts\\Jointly.algo.ts:112",
+    "pc": [
+      598
+    ]
+  },
+  {
+    "teal": 508,
+    "source": "contracts\\Jointly.algo.ts:113",
+    "pc": [
+      599,
+      600
+    ]
+  },
+  {
+    "teal": 509,
+    "source": "contracts\\Jointly.algo.ts:113",
+    "pc": [
+      601,
+      602,
+      603
+    ]
+  },
+  {
+    "teal": 514,
+    "source": "contracts\\Jointly.algo.ts:114",
+    "pc": [
+      604
+    ]
+  },
+  {
+    "teal": 515,
+    "source": "contracts\\Jointly.algo.ts:114",
+    "pc": [
+      605
+    ]
+  },
+  {
+    "teal": 516,
+    "source": "contracts\\Jointly.algo.ts:114",
+    "pc": [
+      606
+    ]
+  },
+  {
+    "teal": 517,
+    "source": "contracts\\Jointly.algo.ts:114",
+    "pc": [
+      607
+    ]
+  },
+  {
+    "teal": 518,
+    "source": "contracts\\Jointly.algo.ts:114",
+    "pc": [
+      608
+    ]
+  },
+  {
+    "teal": 519,
+    "source": "contracts\\Jointly.algo.ts:114",
+    "pc": [
+      609
+    ]
+  },
+  {
+    "teal": 520,
+    "source": "contracts\\Jointly.algo.ts:113",
+    "pc": [
+      610,
+      611,
+      612
+    ]
+  },
+  {
+    "teal": 525,
+    "source": "contracts\\Jointly.algo.ts:116",
+    "pc": [
+      613,
+      614
+    ]
+  },
+  {
+    "teal": 526,
+    "source": "contracts\\Jointly.algo.ts:116",
+    "pc": [
+      615
+    ]
+  },
+  {
+    "teal": 527,
+    "source": "contracts\\Jointly.algo.ts:116",
+    "pc": [
+      616
+    ]
+  },
+  {
+    "teal": 528,
+    "source": "contracts\\Jointly.algo.ts:116",
+    "pc": [
+      617
+    ]
+  },
+  {
+    "teal": 529,
+    "source": "contracts\\Jointly.algo.ts:116",
+    "pc": [
+      618
+    ]
+  },
+  {
+    "teal": 530,
+    "source": "contracts\\Jointly.algo.ts:116",
+    "pc": [
+      619
+    ]
+  },
+  {
+    "teal": 535,
+    "source": "contracts\\Jointly.algo.ts:118",
+    "pc": [
+      620,
+      621,
+      622
+    ]
+  },
+  {
+    "teal": 536,
+    "source": "contracts\\Jointly.algo.ts:108",
+    "pc": [
+      623
+    ]
+  },
+  {
+    "teal": 540,
+    "source": "contracts\\Jointly.algo.ts:121",
+    "pc": [
+      624,
+      625,
+      626
+    ]
+  },
+  {
+    "teal": 543,
+    "source": "contracts\\Jointly.algo.ts:121",
+    "pc": [
+      627
+    ]
+  },
+  {
+    "teal": 544,
+    "source": "contracts\\Jointly.algo.ts:121",
+    "pc": [
+      628,
+      629
+    ]
+  },
+  {
+    "teal": 548,
+    "source": "contracts\\Jointly.algo.ts:122",
+    "pc": [
+      630
+    ]
+  },
+  {
+    "teal": 549,
+    "source": "contracts\\Jointly.algo.ts:122",
+    "pc": [
+      631,
+      632
+    ]
+  },
+  {
+    "teal": 554,
+    "source": "contracts\\Jointly.algo.ts:123",
+    "pc": [
+      633,
+      634
+    ]
+  },
+  {
+    "teal": 555,
+    "source": "contracts\\Jointly.algo.ts:123",
+    "pc": [
+      635
+    ]
+  },
+  {
+    "teal": 556,
+    "source": "contracts\\Jointly.algo.ts:123",
+    "pc": [
+      636
+    ]
+  },
+  {
+    "teal": 557,
+    "source": "contracts\\Jointly.algo.ts:123",
+    "pc": [
+      637
+    ]
+  },
+  {
+    "teal": 558,
+    "source": "contracts\\Jointly.algo.ts:123",
+    "pc": [
+      638,
+      639,
+      640
+    ]
+  },
+  {
+    "teal": 563,
+    "source": "contracts\\Jointly.algo.ts:124",
+    "pc": [
+      641,
+      642
+    ]
+  },
+  {
+    "teal": 564,
+    "source": "contracts\\Jointly.algo.ts:124",
+    "pc": [
+      643
+    ]
+  },
+  {
+    "teal": 565,
+    "source": "contracts\\Jointly.algo.ts:124",
+    "pc": [
+      644
+    ]
+  },
+  {
+    "teal": 566,
+    "source": "contracts\\Jointly.algo.ts:124",
+    "pc": [
+      645
+    ]
+  },
+  {
+    "teal": 567,
+    "source": "contracts\\Jointly.algo.ts:124",
+    "pc": [
+      646,
+      647
+    ]
+  },
+  {
+    "teal": 573,
+    "source": "contracts\\Jointly.algo.ts:127",
+    "pc": [
+      648
+    ]
+  },
+  {
+    "teal": 574,
+    "source": "contracts\\Jointly.algo.ts:127",
+    "pc": [
+      649
+    ]
+  },
+  {
+    "teal": 575,
+    "source": "contracts\\Jointly.algo.ts:127",
+    "pc": [
+      650,
+      651
+    ]
+  },
+  {
+    "teal": 576,
+    "source": "contracts\\Jointly.algo.ts:127",
+    "pc": [
+      652
+    ]
+  },
+  {
+    "teal": 577,
+    "source": "contracts\\Jointly.algo.ts:127",
+    "pc": [
+      653
+    ]
+  },
+  {
+    "teal": 578,
+    "source": "contracts\\Jointly.algo.ts:127",
+    "pc": [
+      654,
+      655,
+      656
+    ]
+  },
+  {
+    "teal": 579,
+    "source": "contracts\\Jointly.algo.ts:127",
+    "pc": [
+      657
+    ]
+  },
+  {
+    "teal": 580,
+    "source": "contracts\\Jointly.algo.ts:127",
+    "pc": [
+      658
+    ]
+  },
+  {
+    "teal": 581,
+    "source": "contracts\\Jointly.algo.ts:127",
+    "pc": [
+      659,
+      660
+    ]
+  },
+  {
+    "teal": 582,
+    "source": "contracts\\Jointly.algo.ts:127",
+    "pc": [
+      661
+    ]
+  },
+  {
+    "teal": 583,
+    "source": "contracts\\Jointly.algo.ts:127",
+    "pc": [
+      662
+    ]
+  },
+  {
+    "teal": 584,
+    "source": "contracts\\Jointly.algo.ts:127",
+    "pc": [
+      663
+    ]
+  },
+  {
+    "teal": 587,
+    "source": "contracts\\Jointly.algo.ts:127",
+    "pc": [
+      664,
+      665,
+      666
+    ]
+  },
+  {
+    "teal": 592,
+    "source": "contracts\\Jointly.algo.ts:128",
+    "pc": [
+      667
+    ]
+  },
+  {
+    "teal": 593,
+    "source": "contracts\\Jointly.algo.ts:128",
+    "pc": [
+      668
+    ]
+  },
+  {
+    "teal": 594,
+    "source": "contracts\\Jointly.algo.ts:128",
+    "pc": [
+      669
+    ]
+  },
+  {
+    "teal": 595,
+    "source": "contracts\\Jointly.algo.ts:128",
+    "pc": [
+      670
+    ]
+  },
+  {
+    "teal": 598,
+    "source": "contracts\\Jointly.algo.ts:128",
+    "errorMessage": "box value does not exist: this.proposalListings({key:this.counter.value}).value",
+    "pc": [
+      671
+    ]
+  },
+  {
+    "teal": 599,
+    "source": "contracts\\Jointly.algo.ts:128",
+    "pc": [
+      672,
+      673
+    ]
+  },
+  {
+    "teal": 600,
+    "source": "contracts\\Jointly.algo.ts:128",
+    "pc": [
+      674,
+      675
+    ]
+  },
+  {
+    "teal": 601,
+    "source": "contracts\\Jointly.algo.ts:128",
+    "pc": [
+      676,
+      677,
+      678
+    ]
+  },
+  {
+    "teal": 602,
+    "source": "contracts\\Jointly.algo.ts:128",
+    "pc": [
+      679,
+      680
+    ]
+  },
+  {
+    "teal": 606,
+    "source": "contracts\\Jointly.algo.ts:129",
+    "pc": [
+      681
+    ]
+  },
+  {
+    "teal": 607,
+    "source": "contracts\\Jointly.algo.ts:129",
+    "pc": [
+      682
+    ]
+  },
+  {
+    "teal": 608,
+    "source": "contracts\\Jointly.algo.ts:129",
+    "pc": [
+      683
+    ]
+  },
+  {
+    "teal": 609,
+    "source": "contracts\\Jointly.algo.ts:129",
+    "pc": [
+      684
+    ]
+  },
+  {
+    "teal": 612,
+    "source": "contracts\\Jointly.algo.ts:129",
+    "errorMessage": "box value does not exist: this.proposalListings({key:this.counter.value}).value",
+    "pc": [
+      685
+    ]
+  },
+  {
+    "teal": 613,
+    "source": "contracts\\Jointly.algo.ts:129",
+    "pc": [
+      686,
+      687
+    ]
+  },
+  {
+    "teal": 614,
+    "source": "contracts\\Jointly.algo.ts:129",
+    "pc": [
+      688,
+      689
+    ]
+  },
+  {
+    "teal": 615,
+    "source": "contracts\\Jointly.algo.ts:129",
+    "pc": [
+      690,
+      691
+    ]
+  },
+  {
+    "teal": 616,
+    "source": "contracts\\Jointly.algo.ts:129",
+    "pc": [
+      692,
+      693
+    ]
+  },
+  {
+    "teal": 617,
+    "source": "contracts\\Jointly.algo.ts:129",
+    "pc": [
+      694,
+      695
+    ]
+  },
+  {
+    "teal": 618,
+    "source": "contracts\\Jointly.algo.ts:129",
+    "pc": [
+      696
+    ]
+  },
+  {
+    "teal": 619,
+    "source": "contracts\\Jointly.algo.ts:129",
+    "pc": [
+      697
+    ]
+  },
+  {
+    "teal": 620,
+    "source": "contracts\\Jointly.algo.ts:129",
+    "pc": [
+      698,
+      699
+    ]
+  },
+  {
+    "teal": 621,
+    "source": "contracts\\Jointly.algo.ts:129",
+    "pc": [
+      700
+    ]
+  },
+  {
+    "teal": 622,
+    "source": "contracts\\Jointly.algo.ts:129",
+    "pc": [
+      701
+    ]
+  },
+  {
+    "teal": 623,
+    "source": "contracts\\Jointly.algo.ts:129",
+    "pc": [
+      702
+    ]
+  },
+  {
+    "teal": 624,
+    "source": "contracts\\Jointly.algo.ts:129",
+    "pc": [
+      703
+    ]
+  },
+  {
+    "teal": 625,
+    "source": "contracts\\Jointly.algo.ts:129",
+    "pc": [
+      704
+    ]
+  },
+  {
+    "teal": 626,
+    "source": "contracts\\Jointly.algo.ts:129",
+    "pc": [
+      705
+    ]
+  },
+  {
+    "teal": 627,
+    "source": "contracts\\Jointly.algo.ts:129",
+    "pc": [
+      706
+    ]
+  },
+  {
+    "teal": 628,
+    "source": "contracts\\Jointly.algo.ts:129",
+    "pc": [
+      707,
+      708,
+      709
+    ]
+  },
+  {
+    "teal": 629,
+    "source": "contracts\\Jointly.algo.ts:129",
+    "pc": [
+      710,
+      711
+    ]
+  },
+  {
+    "teal": 633,
+    "source": "contracts\\Jointly.algo.ts:130",
+    "pc": [
+      712
+    ]
+  },
+  {
+    "teal": 634,
+    "source": "contracts\\Jointly.algo.ts:130",
+    "pc": [
+      713
+    ]
+  },
+  {
+    "teal": 635,
+    "source": "contracts\\Jointly.algo.ts:130",
+    "pc": [
+      714
+    ]
+  },
+  {
+    "teal": 636,
+    "source": "contracts\\Jointly.algo.ts:130",
+    "pc": [
+      715
+    ]
+  },
+  {
+    "teal": 639,
+    "source": "contracts\\Jointly.algo.ts:130",
+    "errorMessage": "box value does not exist: this.proposalListings({key:this.counter.value}).value",
+    "pc": [
+      716
+    ]
+  },
+  {
+    "teal": 640,
+    "source": "contracts\\Jointly.algo.ts:130",
+    "pc": [
+      717,
+      718
+    ]
+  },
+  {
+    "teal": 641,
+    "source": "contracts\\Jointly.algo.ts:130",
+    "pc": [
+      719,
+      720
+    ]
+  },
+  {
+    "teal": 642,
+    "source": "contracts\\Jointly.algo.ts:130",
+    "pc": [
+      721,
+      722
+    ]
+  },
+  {
+    "teal": 643,
+    "source": "contracts\\Jointly.algo.ts:130",
+    "pc": [
+      723,
+      724
+    ]
+  },
+  {
+    "teal": 644,
+    "source": "contracts\\Jointly.algo.ts:130",
+    "pc": [
+      725,
+      726
+    ]
+  },
+  {
+    "teal": 645,
+    "source": "contracts\\Jointly.algo.ts:130",
+    "pc": [
+      727
+    ]
+  },
+  {
+    "teal": 646,
+    "source": "contracts\\Jointly.algo.ts:130",
+    "pc": [
+      728
+    ]
+  },
+  {
+    "teal": 647,
+    "source": "contracts\\Jointly.algo.ts:130",
+    "pc": [
+      729,
+      730
+    ]
+  },
+  {
+    "teal": 648,
+    "source": "contracts\\Jointly.algo.ts:130",
+    "pc": [
+      731
+    ]
+  },
+  {
+    "teal": 649,
+    "source": "contracts\\Jointly.algo.ts:130",
+    "pc": [
+      732
+    ]
+  },
+  {
+    "teal": 650,
+    "source": "contracts\\Jointly.algo.ts:130",
+    "pc": [
+      733
+    ]
+  },
+  {
+    "teal": 651,
+    "source": "contracts\\Jointly.algo.ts:130",
+    "pc": [
+      734
+    ]
+  },
+  {
+    "teal": 652,
+    "source": "contracts\\Jointly.algo.ts:130",
+    "pc": [
+      735
+    ]
+  },
+  {
+    "teal": 653,
+    "source": "contracts\\Jointly.algo.ts:130",
+    "pc": [
+      736
+    ]
+  },
+  {
+    "teal": 654,
+    "source": "contracts\\Jointly.algo.ts:130",
+    "pc": [
+      737
+    ]
+  },
+  {
+    "teal": 655,
+    "source": "contracts\\Jointly.algo.ts:130",
+    "pc": [
+      738,
+      739,
+      740
+    ]
+  },
+  {
+    "teal": 656,
+    "source": "contracts\\Jointly.algo.ts:130",
+    "pc": [
+      741,
+      742
+    ]
+  },
+  {
+    "teal": 668,
+    "source": "contracts\\Jointly.algo.ts:131",
+    "pc": [
+      743
+    ]
+  },
+  {
+    "teal": 669,
+    "source": "contracts\\Jointly.algo.ts:131",
+    "pc": [
+      744
+    ]
+  },
+  {
+    "teal": 670,
+    "source": "contracts\\Jointly.algo.ts:131",
+    "pc": [
+      745
+    ]
+  },
+  {
+    "teal": 671,
+    "source": "contracts\\Jointly.algo.ts:131",
+    "pc": [
+      746
+    ]
+  },
+  {
+    "teal": 672,
+    "source": "contracts\\Jointly.algo.ts:131",
+    "pc": [
+      747
+    ]
+  },
+  {
+    "teal": 673,
+    "source": "contracts\\Jointly.algo.ts:131",
+    "pc": [
+      748
+    ]
+  },
+  {
+    "teal": 674,
+    "source": "contracts\\Jointly.algo.ts:131",
+    "pc": [
+      749
+    ]
+  },
+  {
+    "teal": 675,
+    "source": "contracts\\Jointly.algo.ts:131",
+    "pc": [
+      750
+    ]
+  },
+  {
+    "teal": 676,
+    "source": "contracts\\Jointly.algo.ts:131",
+    "pc": [
+      751,
+      752
+    ]
+  },
+  {
+    "teal": 677,
+    "source": "contracts\\Jointly.algo.ts:132",
+    "pc": [
+      753
+    ]
+  },
+  {
+    "teal": 678,
+    "source": "contracts\\Jointly.algo.ts:132",
+    "pc": [
+      754
+    ]
+  },
+  {
+    "teal": 679,
+    "source": "contracts\\Jointly.algo.ts:132",
+    "pc": [
+      755
+    ]
+  },
+  {
+    "teal": 680,
+    "source": "contracts\\Jointly.algo.ts:132",
+    "pc": [
+      756,
+      757,
+      758
+    ]
+  },
+  {
+    "teal": 681,
+    "source": "contracts\\Jointly.algo.ts:133",
+    "pc": [
+      759
+    ]
+  },
+  {
+    "teal": 682,
+    "source": "contracts\\Jointly.algo.ts:133",
+    "pc": [
+      760
+    ]
+  },
+  {
+    "teal": 683,
+    "source": "contracts\\Jointly.algo.ts:133",
+    "pc": [
+      761
+    ]
+  },
+  {
+    "teal": 684,
+    "source": "contracts\\Jointly.algo.ts:133",
+    "pc": [
+      762,
+      763,
+      764
+    ]
+  },
+  {
+    "teal": 685,
+    "source": "contracts\\Jointly.algo.ts:134",
+    "pc": [
+      765,
+      766
+    ]
+  },
+  {
+    "teal": 686,
+    "source": "contracts\\Jointly.algo.ts:134",
+    "pc": [
+      767
+    ]
+  },
+  {
+    "teal": 687,
+    "source": "contracts\\Jointly.algo.ts:134",
+    "pc": [
+      768
+    ]
+  },
+  {
+    "teal": 688,
+    "source": "contracts\\Jointly.algo.ts:134",
+    "pc": [
+      769,
+      770,
+      771
+    ]
+  },
+  {
+    "teal": 689,
+    "source": "contracts\\Jointly.algo.ts:135",
+    "pc": [
+      772,
+      773,
+      774,
+      775,
+      776,
+      777,
+      778,
+      779,
+      780,
+      781
+    ]
+  },
+  {
+    "teal": 690,
+    "source": "contracts\\Jointly.algo.ts:135",
+    "pc": [
+      782,
+      783,
+      784
+    ]
+  },
+  {
+    "teal": 691,
+    "source": "contracts\\Jointly.algo.ts:136",
+    "pc": [
+      785,
+      786
+    ]
+  },
+  {
+    "teal": 692,
+    "source": "contracts\\Jointly.algo.ts:136",
+    "pc": [
+      787,
+      788,
+      789
+    ]
+  },
+  {
+    "teal": 693,
+    "source": "contracts\\Jointly.algo.ts:137",
+    "pc": [
+      790,
+      791
+    ]
+  },
+  {
+    "teal": 694,
+    "source": "contracts\\Jointly.algo.ts:137",
+    "pc": [
+      792
+    ]
+  },
+  {
+    "teal": 695,
+    "source": "contracts\\Jointly.algo.ts:137",
+    "pc": [
+      793
+    ]
+  },
+  {
+    "teal": 696,
+    "source": "contracts\\Jointly.algo.ts:137",
+    "pc": [
+      794
+    ]
+  },
+  {
+    "teal": 697,
+    "source": "contracts\\Jointly.algo.ts:137",
+    "pc": [
+      795,
+      796,
+      797
+    ]
+  },
+  {
+    "teal": 698,
+    "source": "contracts\\Jointly.algo.ts:137",
+    "pc": [
+      798
+    ]
+  },
+  {
+    "teal": 699,
+    "source": "contracts\\Jointly.algo.ts:137",
+    "pc": [
+      799
+    ]
+  },
+  {
+    "teal": 700,
+    "source": "contracts\\Jointly.algo.ts:137",
+    "pc": [
+      800,
+      801,
+      802
+    ]
+  },
+  {
+    "teal": 701,
+    "source": "contracts\\Jointly.algo.ts:138",
+    "pc": [
+      803,
+      804
+    ]
+  },
+  {
+    "teal": 702,
+    "source": "contracts\\Jointly.algo.ts:138",
+    "pc": [
+      805
+    ]
+  },
+  {
+    "teal": 703,
+    "source": "contracts\\Jointly.algo.ts:138",
+    "pc": [
+      806
+    ]
+  },
+  {
+    "teal": 704,
+    "source": "contracts\\Jointly.algo.ts:138",
+    "pc": [
+      807
+    ]
+  },
+  {
+    "teal": 705,
+    "source": "contracts\\Jointly.algo.ts:138",
+    "pc": [
+      808,
+      809,
+      810
+    ]
+  },
+  {
+    "teal": 706,
+    "source": "contracts\\Jointly.algo.ts:138",
+    "pc": [
+      811
+    ]
+  },
+  {
+    "teal": 707,
+    "source": "contracts\\Jointly.algo.ts:138",
+    "pc": [
+      812
+    ]
+  },
+  {
+    "teal": 708,
+    "source": "contracts\\Jointly.algo.ts:138",
+    "pc": [
+      813,
+      814,
+      815
+    ]
+  },
+  {
+    "teal": 709,
+    "source": "contracts\\Jointly.algo.ts:131",
+    "pc": [
+      816
+    ]
+  },
+  {
+    "teal": 710,
+    "source": "contracts\\Jointly.algo.ts:131",
+    "pc": [
+      817
+    ]
+  },
+  {
+    "teal": 711,
+    "source": "contracts\\Jointly.algo.ts:131",
+    "pc": [
+      818
+    ]
+  },
+  {
+    "teal": 715,
+    "source": "contracts\\Jointly.algo.ts:140",
+    "pc": [
+      819,
+      820
+    ]
+  },
+  {
+    "teal": 716,
+    "source": "contracts\\Jointly.algo.ts:140",
+    "pc": [
+      821,
+      822
+    ]
+  },
+  {
+    "teal": 717,
+    "source": "contracts\\Jointly.algo.ts:140",
+    "pc": [
+      823
+    ]
+  },
+  {
+    "teal": 721,
+    "source": "contracts\\Jointly.algo.ts:141",
+    "pc": [
+      824
+    ]
+  },
+  {
+    "teal": 722,
+    "source": "contracts\\Jointly.algo.ts:141",
+    "pc": [
+      825
+    ]
+  },
+  {
+    "teal": 723,
+    "source": "contracts\\Jointly.algo.ts:141",
+    "pc": [
+      826
+    ]
+  },
+  {
+    "teal": 727,
+    "source": "contracts\\Jointly.algo.ts:142",
+    "pc": [
+      827
+    ]
+  },
+  {
+    "teal": 728,
+    "source": "contracts\\Jointly.algo.ts:142",
+    "pc": [
+      828
+    ]
+  },
+  {
+    "teal": 729,
+    "source": "contracts\\Jointly.algo.ts:142",
+    "pc": [
+      829
+    ]
+  },
+  {
+    "teal": 733,
+    "source": "contracts\\Jointly.algo.ts:143",
+    "pc": [
+      830,
+      831
+    ]
+  },
+  {
+    "teal": 734,
+    "source": "contracts\\Jointly.algo.ts:143",
+    "pc": [
+      832
+    ]
+  },
+  {
+    "teal": 735,
+    "source": "contracts\\Jointly.algo.ts:143",
+    "pc": [
+      833
+    ]
+  },
+  {
+    "teal": 739,
+    "source": "contracts\\Jointly.algo.ts:144",
+    "pc": [
+      834,
+      835
+    ]
+  },
+  {
+    "teal": 740,
+    "source": "contracts\\Jointly.algo.ts:144",
+    "pc": [
+      836
+    ]
+  },
+  {
+    "teal": 741,
+    "source": "contracts\\Jointly.algo.ts:144",
+    "pc": [
+      837,
+      838
+    ]
+  },
+  {
+    "teal": 742,
+    "source": "contracts\\Jointly.algo.ts:144",
+    "pc": [
+      839
+    ]
+  },
+  {
+    "teal": 743,
+    "source": "contracts\\Jointly.algo.ts:144",
+    "pc": [
+      840,
+      841
+    ]
+  },
+  {
+    "teal": 744,
+    "source": "contracts\\Jointly.algo.ts:144",
+    "pc": [
+      842
+    ]
+  },
+  {
+    "teal": 745,
+    "source": "contracts\\Jointly.algo.ts:144",
+    "pc": [
+      843
+    ]
+  },
+  {
+    "teal": 749,
+    "source": "contracts\\Jointly.algo.ts:145",
+    "pc": [
+      844
+    ]
+  },
+  {
+    "teal": 750,
+    "source": "contracts\\Jointly.algo.ts:145",
+    "pc": [
+      845
+    ]
+  },
+  {
+    "teal": 751,
+    "source": "contracts\\Jointly.algo.ts:145",
+    "pc": [
+      846
+    ]
+  },
+  {
+    "teal": 752,
+    "source": "contracts\\Jointly.algo.ts:145",
+    "pc": [
+      847
+    ]
+  },
+  {
+    "teal": 753,
+    "source": "contracts\\Jointly.algo.ts:145",
+    "pc": [
+      848
+    ]
+  },
+  {
+    "teal": 754,
+    "source": "contracts\\Jointly.algo.ts:145",
+    "pc": [
+      849
+    ]
+  },
+  {
+    "teal": 755,
+    "source": "contracts\\Jointly.algo.ts:127",
+    "pc": [
+      850,
+      851,
+      852
+    ]
+  },
+  {
+    "teal": 760,
+    "source": "contracts\\Jointly.algo.ts:146",
+    "pc": [
+      853
+    ]
+  },
+  {
+    "teal": 761,
+    "source": "contracts\\Jointly.algo.ts:146",
+    "pc": [
+      854
+    ]
+  },
+  {
+    "teal": 762,
+    "source": "contracts\\Jointly.algo.ts:146",
+    "pc": [
+      855,
+      856
+    ]
+  },
+  {
+    "teal": 763,
+    "source": "contracts\\Jointly.algo.ts:146",
+    "pc": [
+      857
+    ]
+  },
+  {
+    "teal": 764,
+    "source": "contracts\\Jointly.algo.ts:146",
+    "pc": [
+      858
+    ]
+  },
+  {
+    "teal": 765,
+    "source": "contracts\\Jointly.algo.ts:146",
+    "pc": [
+      859,
+      860,
+      861
+    ]
+  },
+  {
+    "teal": 766,
+    "source": "contracts\\Jointly.algo.ts:146",
+    "pc": [
+      862
+    ]
+  },
+  {
+    "teal": 767,
+    "source": "contracts\\Jointly.algo.ts:146",
+    "pc": [
+      863
+    ]
+  },
+  {
+    "teal": 768,
+    "source": "contracts\\Jointly.algo.ts:146",
+    "pc": [
+      864,
+      865
+    ]
+  },
+  {
+    "teal": 769,
+    "source": "contracts\\Jointly.algo.ts:146",
+    "pc": [
+      866
+    ]
+  },
+  {
+    "teal": 770,
+    "source": "contracts\\Jointly.algo.ts:146",
+    "pc": [
+      867
+    ]
+  },
+  {
+    "teal": 771,
+    "source": "contracts\\Jointly.algo.ts:146",
+    "pc": [
+      868
+    ]
+  },
+  {
+    "teal": 774,
+    "source": "contracts\\Jointly.algo.ts:146",
+    "pc": [
+      869,
+      870,
+      871
+    ]
+  },
+  {
+    "teal": 779,
+    "source": "contracts\\Jointly.algo.ts:147",
+    "pc": [
+      872
+    ]
+  },
+  {
+    "teal": 780,
+    "source": "contracts\\Jointly.algo.ts:147",
+    "pc": [
+      873
+    ]
+  },
+  {
+    "teal": 781,
+    "source": "contracts\\Jointly.algo.ts:147",
+    "pc": [
+      874
+    ]
+  },
+  {
+    "teal": 782,
+    "source": "contracts\\Jointly.algo.ts:147",
+    "pc": [
+      875
+    ]
+  },
+  {
+    "teal": 785,
+    "source": "contracts\\Jointly.algo.ts:147",
+    "errorMessage": "box value does not exist: this.proposalListings({key:this.counter.value}).value",
+    "pc": [
+      876
+    ]
+  },
+  {
+    "teal": 786,
+    "source": "contracts\\Jointly.algo.ts:147",
+    "pc": [
+      877,
+      878
+    ]
+  },
+  {
+    "teal": 787,
+    "source": "contracts\\Jointly.algo.ts:147",
+    "pc": [
+      879,
+      880
+    ]
+  },
+  {
+    "teal": 788,
+    "source": "contracts\\Jointly.algo.ts:147",
+    "pc": [
+      881,
+      882,
+      883
+    ]
+  },
+  {
+    "teal": 789,
+    "source": "contracts\\Jointly.algo.ts:147",
+    "pc": [
+      884,
+      885
+    ]
+  },
+  {
+    "teal": 793,
+    "source": "contracts\\Jointly.algo.ts:148",
+    "pc": [
+      886
+    ]
+  },
+  {
+    "teal": 794,
+    "source": "contracts\\Jointly.algo.ts:148",
+    "pc": [
+      887
+    ]
+  },
+  {
+    "teal": 795,
+    "source": "contracts\\Jointly.algo.ts:148",
+    "pc": [
+      888
+    ]
+  },
+  {
+    "teal": 796,
+    "source": "contracts\\Jointly.algo.ts:148",
+    "pc": [
+      889
+    ]
+  },
+  {
+    "teal": 799,
+    "source": "contracts\\Jointly.algo.ts:148",
+    "errorMessage": "box value does not exist: this.proposalListings({key:this.counter.value}).value",
+    "pc": [
+      890
+    ]
+  },
+  {
+    "teal": 800,
+    "source": "contracts\\Jointly.algo.ts:148",
+    "pc": [
+      891,
+      892
+    ]
+  },
+  {
+    "teal": 801,
+    "source": "contracts\\Jointly.algo.ts:148",
+    "pc": [
+      893,
+      894
+    ]
+  },
+  {
+    "teal": 802,
+    "source": "contracts\\Jointly.algo.ts:148",
+    "pc": [
+      895,
+      896
+    ]
+  },
+  {
+    "teal": 803,
+    "source": "contracts\\Jointly.algo.ts:148",
+    "pc": [
+      897,
+      898
+    ]
+  },
+  {
+    "teal": 804,
+    "source": "contracts\\Jointly.algo.ts:148",
+    "pc": [
+      899,
+      900
+    ]
+  },
+  {
+    "teal": 805,
+    "source": "contracts\\Jointly.algo.ts:148",
+    "pc": [
+      901
+    ]
+  },
+  {
+    "teal": 806,
+    "source": "contracts\\Jointly.algo.ts:148",
+    "pc": [
+      902
+    ]
+  },
+  {
+    "teal": 807,
+    "source": "contracts\\Jointly.algo.ts:148",
+    "pc": [
+      903,
+      904
+    ]
+  },
+  {
+    "teal": 808,
+    "source": "contracts\\Jointly.algo.ts:148",
+    "pc": [
+      905
+    ]
+  },
+  {
+    "teal": 809,
+    "source": "contracts\\Jointly.algo.ts:148",
+    "pc": [
+      906
+    ]
+  },
+  {
+    "teal": 810,
+    "source": "contracts\\Jointly.algo.ts:148",
+    "pc": [
+      907
+    ]
+  },
+  {
+    "teal": 811,
+    "source": "contracts\\Jointly.algo.ts:148",
+    "pc": [
+      908
+    ]
+  },
+  {
+    "teal": 812,
+    "source": "contracts\\Jointly.algo.ts:148",
+    "pc": [
+      909
+    ]
+  },
+  {
+    "teal": 813,
+    "source": "contracts\\Jointly.algo.ts:148",
+    "pc": [
+      910
+    ]
+  },
+  {
+    "teal": 814,
+    "source": "contracts\\Jointly.algo.ts:148",
+    "pc": [
+      911
+    ]
+  },
+  {
+    "teal": 815,
+    "source": "contracts\\Jointly.algo.ts:148",
+    "pc": [
+      912,
+      913,
+      914
+    ]
+  },
+  {
+    "teal": 816,
+    "source": "contracts\\Jointly.algo.ts:148",
+    "pc": [
+      915,
+      916
+    ]
+  },
+  {
+    "teal": 820,
+    "source": "contracts\\Jointly.algo.ts:149",
+    "pc": [
+      917
+    ]
+  },
+  {
+    "teal": 821,
+    "source": "contracts\\Jointly.algo.ts:149",
+    "pc": [
+      918
+    ]
+  },
+  {
+    "teal": 822,
+    "source": "contracts\\Jointly.algo.ts:149",
+    "pc": [
+      919
+    ]
+  },
+  {
+    "teal": 823,
+    "source": "contracts\\Jointly.algo.ts:149",
+    "pc": [
+      920
+    ]
+  },
+  {
+    "teal": 826,
+    "source": "contracts\\Jointly.algo.ts:149",
+    "errorMessage": "box value does not exist: this.proposalListings({key:this.counter.value}).value",
+    "pc": [
+      921
+    ]
+  },
+  {
+    "teal": 827,
+    "source": "contracts\\Jointly.algo.ts:149",
+    "pc": [
+      922,
+      923
+    ]
+  },
+  {
+    "teal": 828,
+    "source": "contracts\\Jointly.algo.ts:149",
+    "pc": [
+      924,
+      925
+    ]
+  },
+  {
+    "teal": 829,
+    "source": "contracts\\Jointly.algo.ts:149",
+    "pc": [
+      926,
+      927
+    ]
+  },
+  {
+    "teal": 830,
+    "source": "contracts\\Jointly.algo.ts:149",
+    "pc": [
+      928,
+      929
+    ]
+  },
+  {
+    "teal": 831,
+    "source": "contracts\\Jointly.algo.ts:149",
+    "pc": [
+      930,
+      931
+    ]
+  },
+  {
+    "teal": 832,
+    "source": "contracts\\Jointly.algo.ts:149",
+    "pc": [
+      932
+    ]
+  },
+  {
+    "teal": 833,
+    "source": "contracts\\Jointly.algo.ts:149",
+    "pc": [
+      933
+    ]
+  },
+  {
+    "teal": 834,
+    "source": "contracts\\Jointly.algo.ts:149",
+    "pc": [
+      934,
+      935
+    ]
+  },
+  {
+    "teal": 835,
+    "source": "contracts\\Jointly.algo.ts:149",
+    "pc": [
+      936
+    ]
+  },
+  {
+    "teal": 836,
+    "source": "contracts\\Jointly.algo.ts:149",
+    "pc": [
+      937
+    ]
+  },
+  {
+    "teal": 837,
+    "source": "contracts\\Jointly.algo.ts:149",
+    "pc": [
+      938
+    ]
+  },
+  {
+    "teal": 838,
+    "source": "contracts\\Jointly.algo.ts:149",
+    "pc": [
+      939
+    ]
+  },
+  {
+    "teal": 839,
+    "source": "contracts\\Jointly.algo.ts:149",
+    "pc": [
+      940
+    ]
+  },
+  {
+    "teal": 840,
+    "source": "contracts\\Jointly.algo.ts:149",
+    "pc": [
+      941
+    ]
+  },
+  {
+    "teal": 841,
+    "source": "contracts\\Jointly.algo.ts:149",
+    "pc": [
+      942
+    ]
+  },
+  {
+    "teal": 842,
+    "source": "contracts\\Jointly.algo.ts:149",
+    "pc": [
+      943,
+      944,
+      945
+    ]
+  },
+  {
+    "teal": 843,
+    "source": "contracts\\Jointly.algo.ts:149",
+    "pc": [
+      946,
+      947
+    ]
+  },
+  {
+    "teal": 855,
+    "source": "contracts\\Jointly.algo.ts:150",
+    "pc": [
+      948
+    ]
+  },
+  {
+    "teal": 856,
+    "source": "contracts\\Jointly.algo.ts:150",
+    "pc": [
+      949
+    ]
+  },
+  {
+    "teal": 857,
+    "source": "contracts\\Jointly.algo.ts:150",
+    "pc": [
+      950
+    ]
+  },
+  {
+    "teal": 858,
+    "source": "contracts\\Jointly.algo.ts:150",
+    "pc": [
+      951
+    ]
+  },
+  {
+    "teal": 859,
+    "source": "contracts\\Jointly.algo.ts:150",
+    "pc": [
+      952
+    ]
+  },
+  {
+    "teal": 860,
+    "source": "contracts\\Jointly.algo.ts:150",
+    "pc": [
+      953
+    ]
+  },
+  {
+    "teal": 861,
+    "source": "contracts\\Jointly.algo.ts:150",
+    "pc": [
+      954
+    ]
+  },
+  {
+    "teal": 862,
+    "source": "contracts\\Jointly.algo.ts:150",
+    "pc": [
+      955
+    ]
+  },
+  {
+    "teal": 863,
+    "source": "contracts\\Jointly.algo.ts:150",
+    "pc": [
+      956,
+      957
+    ]
+  },
+  {
+    "teal": 864,
+    "source": "contracts\\Jointly.algo.ts:151",
+    "pc": [
+      958
+    ]
+  },
+  {
+    "teal": 865,
+    "source": "contracts\\Jointly.algo.ts:151",
+    "pc": [
+      959
+    ]
+  },
+  {
+    "teal": 866,
+    "source": "contracts\\Jointly.algo.ts:151",
+    "pc": [
+      960
+    ]
+  },
+  {
+    "teal": 867,
+    "source": "contracts\\Jointly.algo.ts:151",
+    "pc": [
+      961,
+      962,
+      963
+    ]
+  },
+  {
+    "teal": 868,
+    "source": "contracts\\Jointly.algo.ts:152",
+    "pc": [
+      964
+    ]
+  },
+  {
+    "teal": 869,
+    "source": "contracts\\Jointly.algo.ts:152",
+    "pc": [
+      965
+    ]
+  },
+  {
+    "teal": 870,
+    "source": "contracts\\Jointly.algo.ts:152",
+    "pc": [
+      966
+    ]
+  },
+  {
+    "teal": 871,
+    "source": "contracts\\Jointly.algo.ts:152",
+    "pc": [
+      967,
+      968,
+      969
+    ]
+  },
+  {
+    "teal": 872,
+    "source": "contracts\\Jointly.algo.ts:153",
+    "pc": [
+      970,
+      971
+    ]
+  },
+  {
+    "teal": 873,
+    "source": "contracts\\Jointly.algo.ts:153",
+    "pc": [
+      972
+    ]
+  },
+  {
+    "teal": 874,
+    "source": "contracts\\Jointly.algo.ts:153",
+    "pc": [
+      973
+    ]
+  },
+  {
+    "teal": 875,
+    "source": "contracts\\Jointly.algo.ts:153",
+    "pc": [
+      974,
+      975,
+      976
+    ]
+  },
+  {
+    "teal": 876,
+    "source": "contracts\\Jointly.algo.ts:154",
+    "pc": [
+      977,
+      978
+    ]
+  },
+  {
+    "teal": 877,
+    "source": "contracts\\Jointly.algo.ts:154",
+    "pc": [
+      979,
+      980,
+      981
+    ]
+  },
+  {
+    "teal": 878,
+    "source": "contracts\\Jointly.algo.ts:155",
+    "pc": [
+      982,
+      983
+    ]
+  },
+  {
+    "teal": 879,
+    "source": "contracts\\Jointly.algo.ts:155",
+    "pc": [
+      984,
+      985,
+      986
+    ]
+  },
+  {
+    "teal": 880,
+    "source": "contracts\\Jointly.algo.ts:156",
+    "pc": [
+      987,
+      988
+    ]
+  },
+  {
+    "teal": 881,
+    "source": "contracts\\Jointly.algo.ts:156",
+    "pc": [
+      989
+    ]
+  },
+  {
+    "teal": 882,
+    "source": "contracts\\Jointly.algo.ts:156",
+    "pc": [
+      990
+    ]
+  },
+  {
+    "teal": 883,
+    "source": "contracts\\Jointly.algo.ts:156",
+    "pc": [
+      991
+    ]
+  },
+  {
+    "teal": 884,
+    "source": "contracts\\Jointly.algo.ts:156",
+    "pc": [
+      992,
+      993,
+      994
+    ]
+  },
+  {
+    "teal": 885,
+    "source": "contracts\\Jointly.algo.ts:156",
+    "pc": [
+      995
+    ]
+  },
+  {
+    "teal": 886,
+    "source": "contracts\\Jointly.algo.ts:156",
+    "pc": [
+      996
+    ]
+  },
+  {
+    "teal": 887,
+    "source": "contracts\\Jointly.algo.ts:156",
+    "pc": [
+      997,
+      998,
+      999
+    ]
+  },
+  {
+    "teal": 888,
+    "source": "contracts\\Jointly.algo.ts:157",
+    "pc": [
+      1000,
+      1001
+    ]
+  },
+  {
+    "teal": 889,
+    "source": "contracts\\Jointly.algo.ts:157",
+    "pc": [
+      1002
+    ]
+  },
+  {
+    "teal": 890,
+    "source": "contracts\\Jointly.algo.ts:157",
+    "pc": [
+      1003
+    ]
+  },
+  {
+    "teal": 891,
+    "source": "contracts\\Jointly.algo.ts:157",
+    "pc": [
+      1004
+    ]
+  },
+  {
+    "teal": 892,
+    "source": "contracts\\Jointly.algo.ts:157",
+    "pc": [
+      1005,
+      1006,
+      1007
+    ]
+  },
+  {
+    "teal": 893,
+    "source": "contracts\\Jointly.algo.ts:157",
+    "pc": [
+      1008
+    ]
+  },
+  {
+    "teal": 894,
+    "source": "contracts\\Jointly.algo.ts:157",
+    "pc": [
+      1009
+    ]
+  },
+  {
+    "teal": 895,
+    "source": "contracts\\Jointly.algo.ts:157",
+    "pc": [
+      1010,
+      1011,
+      1012
+    ]
+  },
+  {
+    "teal": 896,
+    "source": "contracts\\Jointly.algo.ts:150",
+    "pc": [
+      1013
+    ]
+  },
+  {
+    "teal": 897,
+    "source": "contracts\\Jointly.algo.ts:150",
+    "pc": [
+      1014
+    ]
+  },
+  {
+    "teal": 898,
+    "source": "contracts\\Jointly.algo.ts:150",
+    "pc": [
+      1015
+    ]
+  },
+  {
+    "teal": 902,
+    "source": "contracts\\Jointly.algo.ts:159",
+    "pc": [
+      1016,
+      1017
+    ]
+  },
+  {
+    "teal": 903,
+    "source": "contracts\\Jointly.algo.ts:159",
+    "pc": [
+      1018,
+      1019
+    ]
+  },
+  {
+    "teal": 904,
+    "source": "contracts\\Jointly.algo.ts:159",
+    "pc": [
+      1020
+    ]
+  },
+  {
+    "teal": 908,
+    "source": "contracts\\Jointly.algo.ts:160",
+    "pc": [
+      1021
+    ]
+  },
+  {
+    "teal": 909,
+    "source": "contracts\\Jointly.algo.ts:160",
+    "pc": [
+      1022
+    ]
+  },
+  {
+    "teal": 910,
+    "source": "contracts\\Jointly.algo.ts:160",
+    "pc": [
+      1023
+    ]
+  },
+  {
+    "teal": 914,
+    "source": "contracts\\Jointly.algo.ts:161",
+    "pc": [
+      1024
+    ]
+  },
+  {
+    "teal": 915,
+    "source": "contracts\\Jointly.algo.ts:161",
+    "pc": [
+      1025
+    ]
+  },
+  {
+    "teal": 916,
+    "source": "contracts\\Jointly.algo.ts:161",
+    "pc": [
+      1026
+    ]
+  },
+  {
+    "teal": 920,
+    "source": "contracts\\Jointly.algo.ts:162",
+    "pc": [
+      1027,
+      1028
+    ]
+  },
+  {
+    "teal": 921,
+    "source": "contracts\\Jointly.algo.ts:162",
+    "pc": [
+      1029
+    ]
+  },
+  {
+    "teal": 922,
+    "source": "contracts\\Jointly.algo.ts:162",
+    "pc": [
+      1030
+    ]
+  },
+  {
+    "teal": 926,
+    "source": "contracts\\Jointly.algo.ts:163",
+    "pc": [
+      1031,
+      1032
+    ]
+  },
+  {
+    "teal": 927,
+    "source": "contracts\\Jointly.algo.ts:163",
+    "pc": [
+      1033
+    ]
+  },
+  {
+    "teal": 928,
+    "source": "contracts\\Jointly.algo.ts:163",
+    "pc": [
+      1034,
+      1035
+    ]
+  },
+  {
+    "teal": 929,
+    "source": "contracts\\Jointly.algo.ts:163",
+    "pc": [
+      1036
+    ]
+  },
+  {
+    "teal": 930,
+    "source": "contracts\\Jointly.algo.ts:163",
+    "pc": [
+      1037,
+      1038
+    ]
+  },
+  {
+    "teal": 931,
+    "source": "contracts\\Jointly.algo.ts:163",
+    "pc": [
+      1039
+    ]
+  },
+  {
+    "teal": 932,
+    "source": "contracts\\Jointly.algo.ts:163",
+    "pc": [
+      1040
+    ]
+  },
+  {
+    "teal": 936,
+    "source": "contracts\\Jointly.algo.ts:164",
+    "pc": [
+      1041
+    ]
+  },
+  {
+    "teal": 937,
+    "source": "contracts\\Jointly.algo.ts:164",
+    "pc": [
+      1042
+    ]
+  },
+  {
+    "teal": 938,
+    "source": "contracts\\Jointly.algo.ts:164",
+    "pc": [
+      1043
+    ]
+  },
+  {
+    "teal": 939,
+    "source": "contracts\\Jointly.algo.ts:164",
+    "pc": [
+      1044
+    ]
+  },
+  {
+    "teal": 940,
+    "source": "contracts\\Jointly.algo.ts:164",
+    "pc": [
+      1045
+    ]
+  },
+  {
+    "teal": 941,
+    "source": "contracts\\Jointly.algo.ts:164",
+    "pc": [
+      1046
+    ]
+  },
+  {
+    "teal": 942,
+    "source": "contracts\\Jointly.algo.ts:146",
+    "pc": [
+      1047,
+      1048,
+      1049
+    ]
+  },
+  {
+    "teal": 947,
+    "source": "contracts\\Jointly.algo.ts:121",
+    "pc": [
+      1050
+    ]
+  },
+  {
+    "teal": 950,
+    "source": "contracts\\Jointly.algo.ts:32",
+    "pc": [
+      1051,
+      1052,
+      1053,
+      1054,
+      1055,
+      1056
+    ]
+  },
+  {
+    "teal": 951,
+    "source": "contracts\\Jointly.algo.ts:32",
+    "pc": [
+      1057,
+      1058,
+      1059
+    ]
+  },
+  {
+    "teal": 952,
+    "source": "contracts\\Jointly.algo.ts:32",
+    "pc": [
+      1060,
+      1061,
+      1062,
+      1063
+    ]
+  },
+  {
+    "teal": 955,
+    "source": "contracts\\Jointly.algo.ts:32",
+    "errorMessage": "this contract does not implement the given ABI method for create NoOp",
+    "pc": [
+      1064
+    ]
+  },
+  {
+    "teal": 958,
+    "source": "contracts\\Jointly.algo.ts:32",
+    "pc": [
+      1065,
+      1066,
+      1067,
+      1068,
+      1069,
+      1070
+    ]
+  },
+  {
+    "teal": 959,
+    "source": "contracts\\Jointly.algo.ts:32",
+    "pc": [
+      1071,
+      1072,
+      1073,
+      1074,
+      1075,
+      1076
+    ]
+  },
+  {
+    "teal": 960,
+    "source": "contracts\\Jointly.algo.ts:32",
+    "pc": [
+      1077,
+      1078,
+      1079,
+      1080,
+      1081,
+      1082
+    ]
+  },
+  {
+    "teal": 961,
+    "source": "contracts\\Jointly.algo.ts:32",
+    "pc": [
+      1083,
+      1084,
+      1085,
+      1086,
+      1087,
+      1088
+    ]
+  },
+  {
+    "teal": 962,
+    "source": "contracts\\Jointly.algo.ts:32",
+    "pc": [
+      1089,
+      1090,
+      1091,
+      1092,
+      1093,
+      1094
+    ]
+  },
+  {
+    "teal": 963,
+    "source": "contracts\\Jointly.algo.ts:32",
+    "pc": [
+      1095,
+      1096,
+      1097
+    ]
+  },
+  {
+    "teal": 964,
+    "source": "contracts\\Jointly.algo.ts:32",
+    "pc": [
+      1098,
+      1099,
+      1100,
+      1101,
+      1102,
+      1103,
+      1104,
+      1105,
+      1106,
+      1107,
+      1108,
+      1109
+    ]
+  },
+  {
+    "teal": 967,
+    "source": "contracts\\Jointly.algo.ts:32",
+    "errorMessage": "this contract does not implement the given ABI method for call NoOp",
+    "pc": [
+      1110
+    ]
+  },
+  {
+    "teal": 970,
+    "source": "contracts\\Jointly.algo.ts:32",
+    "pc": [
+      1111,
+      1112,
+      1113
+    ]
+  },
+  {
+    "teal": 971,
+    "source": "contracts\\Jointly.algo.ts:32",
+    "pc": [
+      1114,
+      1115
+    ]
+  },
+  {
+    "teal": 972,
+    "source": "contracts\\Jointly.algo.ts:32",
+    "pc": [
+      1116,
+      1117
+    ]
+  },
+  {
+    "teal": 973,
+    "source": "contracts\\Jointly.algo.ts:32",
+    "pc": [
+      1118
+    ]
+  },
+  {
+    "teal": 974,
+    "source": "contracts\\Jointly.algo.ts:32",
+    "pc": [
+      1119,
+      1120
+    ]
+  },
+  {
+    "teal": 975,
+    "source": "contracts\\Jointly.algo.ts:32",
+    "pc": [
+      1121,
+      1122
+    ]
+  },
+  {
+    "teal": 976,
+    "source": "contracts\\Jointly.algo.ts:32",
+    "pc": [
+      1123
+    ]
+  },
+  {
+    "teal": 979,
+    "source": "contracts\\Jointly.algo.ts:32",
+    "pc": [
+      1124,
+      1125,
+      1126
+    ]
+  },
+  {
+    "teal": 980,
+    "source": "contracts\\Jointly.algo.ts:32",
+    "pc": [
+      1127,
+      1128
+    ]
+  },
+  {
+    "teal": 981,
+    "source": "contracts\\Jointly.algo.ts:32",
+    "pc": [
+      1129,
+      1130
+    ]
+  },
+  {
+    "teal": 982,
+    "source": "contracts\\Jointly.algo.ts:32",
+    "pc": [
+      1131
+    ]
+  },
+  {
+    "teal": 983,
+    "source": "contracts\\Jointly.algo.ts:32",
+    "pc": [
+      1132,
+      1133
+    ]
+  },
+  {
+    "teal": 984,
+    "source": "contracts\\Jointly.algo.ts:32",
+    "pc": [
+      1134,
+      1135
+    ]
+  },
+  {
+    "teal": 985,
+    "source": "contracts\\Jointly.algo.ts:32",
+    "pc": [
+      1136
+    ]
+  },
+  {
+    "teal": 986,
+    "source": "contracts\\Jointly.algo.ts:32",
+    "pc": [
+      1137
+    ]
+  },
+  {
+    "teal": 987,
+    "source": "contracts\\Jointly.algo.ts:32",
+    "pc": [
+      1138,
+      1139
+    ]
+  },
+  {
+    "teal": 988,
+    "source": "contracts\\Jointly.algo.ts:32",
+    "pc": [
+      1140
+    ]
+  },
+  {
+    "teal": 989,
+    "source": "contracts\\Jointly.algo.ts:32",
+    "pc": [
+      1141
+    ]
+  },
+  {
+    "teal": 990,
+    "source": "contracts\\Jointly.algo.ts:32",
+    "pc": [
+      1142
+    ]
+  },
+  {
+    "teal": 991,
+    "source": "contracts\\Jointly.algo.ts:32",
+    "pc": [
+      1143,
+      1144,
+      1145
+    ]
+  },
+  {
+    "teal": 992,
+    "source": "contracts\\Jointly.algo.ts:32",
+    "pc": [
+      1146,
+      1147
+    ]
+  },
+  {
+    "teal": 993,
+    "source": "contracts\\Jointly.algo.ts:32",
+    "pc": [
+      1148,
+      1149
+    ]
+  },
+  {
+    "teal": 994,
+    "source": "contracts\\Jointly.algo.ts:32",
+    "pc": [
+      1150
+    ]
+  },
+  {
+    "teal": 995,
+    "source": "contracts\\Jointly.algo.ts:32",
+    "pc": [
+      1151
+    ]
+  },
+  {
+    "teal": 996,
+    "source": "contracts\\Jointly.algo.ts:32",
+    "pc": [
+      1152,
+      1153
+    ]
+  },
+  {
+    "teal": 997,
+    "source": "contracts\\Jointly.algo.ts:32",
+    "pc": [
+      1154,
+      1155
+    ]
+  },
+  {
+    "teal": 998,
+    "source": "contracts\\Jointly.algo.ts:32",
+    "pc": [
+      1156,
+      1157
+    ]
+  },
+  {
+    "teal": 999,
+    "source": "contracts\\Jointly.algo.ts:32",
+    "pc": [
+      1158,
+      1159
+    ]
+  },
+  {
+    "teal": 1000,
+    "source": "contracts\\Jointly.algo.ts:32",
+    "pc": [
+      1160
+    ]
+  }
+]

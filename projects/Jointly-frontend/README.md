@@ -1,6 +1,6 @@
 # Jointly-frontend
 
-This starter React project has been generated using AlgoKit. See below for default getting started instructions.
+This the Jointlty smart contract-based joint account frontend. See below for default getting started instructions.
 
 # Setup
 

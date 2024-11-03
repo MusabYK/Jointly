@@ -2,13 +2,9 @@
 
 ## Documentation
 
-For TEALScript documentation, go to https://tealscript.algo.xyz
+No documentation yet
 
 ## Usage
-
-### Algokit
-
-This template assumes you have a local network running on your machine. The easiet way to setup a local network is with [algokit](https://github.com/algorandfoundation/algokit-cli). If you don't have Algokit or its dependencies installed locally you can open this repository in a GitHub codespace via https://codespaces.new and choosing this repo.
 
 ### Build Contract
 
@@ -18,7 +14,7 @@ This template assumes you have a local network running on your machine. The easi
 
 ### Run Tests
 
-`npm run test` will execute the tests defined in [./\_\_test\_\_](./__test__) 
+`npm run test` will execute the tests defined in [./\_\_test\_\_](./__test__)
 
 ### Lint
 

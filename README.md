@@ -1,6 +1,6 @@
 # Jointly
 
-This starter full stack project has been generated using AlgoKit. See below for default getting started instructions.
+A platform that offers a smart contract-based joint account on the algorand blockchain. See below for default getting started instructions.
 
 ## Setup
 
@@ -22,9 +22,6 @@ This starter full stack project has been generated using AlgoKit. See below for 
 2. Follow step 3 above.
 
 ### Continuous Integration / Continuous Deployment (CI/CD)
-
-This project uses [GitHub Actions](https://docs.github.com/en/actions/learn-github-actions/understanding-github-actions) to define CI/CD workflows, which are located in the [`.github/workflows`](./.github/workflows) folder. You can configure these actions to suit your project's needs, including CI checks, audits, linting, type checking, testing, and deployments to TestNet.
-
 For pushes to `main` branch, after the above checks pass, the following deployment actions are performed:
   - The smart contract(s) are deployed to TestNet using [AlgoNode](https://algonode.io).
   - The frontend application is deployed to a provider of your choice (Netlify, Vercel, etc.). See [frontend README](frontend/README.md) for more information.
@@ -33,7 +30,7 @@ For pushes to `main` branch, after the above checks pass, the following deployme
 
 ## Tools
 
-This project makes use of Python and React to build Algorand smart contracts and to provide a base project configuration to develop frontends for your Algorand dApps and interactions with smart contracts. The following tools are in use:
+This project makes use of Typescript and React to build Algorand smart contracts and to provide a base project configuration to develop frontends for your Algorand dApps and interactions with smart contracts. The following tools are in use:
 
 - Algorand, AlgoKit, and AlgoKit Utils
 - Python dependencies including Poetry, Black, Ruff or Flake8, mypy, pytest, and pip-audit

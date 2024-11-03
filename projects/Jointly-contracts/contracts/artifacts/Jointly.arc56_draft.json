@@ -1,0 +1,5299 @@
+{
+  "name": "Jointly",
+  "desc": "",
+  "methods": [
+    {
+      "name": "createApplication",
+      "args": [],
+      "returns": {
+        "type": "void"
+      },
+      "actions": {
+        "create": [
+          "NoOp"
+        ],
+        "call": []
+      }
+    },
+    {
+      "name": "authorizeOnlyCreator",
+      "args": [],
+      "returns": {
+        "type": "void"
+      },
+      "actions": {
+        "create": [],
+        "call": [
+          "NoOp"
+        ]
+      }
+    },
+    {
+      "name": "addMember",
+      "args": [
+        {
+          "name": "mbrPay",
+          "type": "pay"
+        },
+        {
+          "name": "memberAddress",
+          "type": "address"
+        },
+        {
+          "name": "memberName",
+          "type": "string"
+        }
+      ],
+      "returns": {
+        "type": "void"
+      },
+      "actions": {
+        "create": [],
+        "call": [
+          "NoOp"
+        ]
+      }
+    },
+    {
+      "name": "getAsset",
+      "args": [],
+      "returns": {
+        "type": "uint64"
+      },
+      "actions": {
+        "create": [],
+        "call": [
+          "NoOp"
+        ]
+      }
+    },
+    {
+      "name": "setProposal",
+      "args": [
+        {
+          "name": "mbrPay",
+          "type": "pay"
+        },
+        {
+          "name": "proposerAddress",
+          "type": "address"
+        },
+        {
+          "name": "proposerName",
+          "type": "string"
+        },
+        {
+          "name": "proposal",
+          "type": "string"
+        }
+      ],
+      "returns": {
+        "type": "void"
+      },
+      "actions": {
+        "create": [],
+        "call": [
+          "NoOp"
+        ]
+      }
+    },
+    {
+      "name": "vote",
+      "args": [
+        {
+          "name": "inFavor",
+          "type": "bool"
+        },
+        {
+          "name": "memberAddress",
+          "type": "address"
+        }
+      ],
+      "returns": {
+        "type": "void"
+      },
+      "actions": {
+        "create": [],
+        "call": [
+          "NoOp"
+        ]
+      }
+    }
+  ],
+  "arcs": [
+    4,
+    56
+  ],
+  "structs": {
+    "memberInfo": [
+      {
+        "name": "memberAddress",
+        "type": "address"
+      },
+      {
+        "name": "memberName",
+        "type": "string"
+      }
+    ],
+    "member": [
+      {
+        "name": "memberAddress",
+        "type": "address"
+      }
+    ],
+    "proposalInfo": [
+      {
+        "name": "totalVote",
+        "type": "uint64"
+      },
+      {
+        "name": "votesInFavor",
+        "type": "uint64"
+      },
+      {
+        "name": "votesAgainst",
+        "type": "uint64"
+      },
+      {
+        "name": "executed",
+        "type": "uint64"
+      },
+      {
+        "name": "proposerAddress",
+        "type": "address"
+      },
+      {
+        "name": "proposerName",
+        "type": "string"
+      },
+      {
+        "name": "proposal",
+        "type": "string"
+      }
+    ],
+    "proposalKey": [
+      {
+        "name": "key",
+        "type": "uint64"
+      }
+    ]
+  },
+  "state": {
+    "schema": {
+      "global": {
+        "bytes": 4,
+        "ints": 6
+      },
+      "local": {
+        "bytes": 0,
+        "ints": 0
+      }
+    },
+    "keys": {
+      "global": {
+        "counter": {
+          "key": "Y291bnRlcg==",
+          "keyType": "AVMBytes",
+          "valueType": "uint64"
+        },
+        "registeredAssetCreated": {
+          "key": "cmVnaXN0ZXJlZEFzc2V0Q3JlYXRlZA==",
+          "keyType": "AVMBytes",
+          "valueType": "uint64"
+        },
+        "proposerAddress": {
+          "key": "cHJvcG9zZXJBZGRyZXNz",
+          "keyType": "AVMBytes",
+          "valueType": "address"
+        },
+        "proposerName": {
+          "key": "cHJvcG9zZXJOYW1l",
+          "keyType": "AVMBytes",
+          "valueType": "string"
+        },
+        "proposal": {
+          "key": "cHJvcG9zYWw=",
+          "keyType": "AVMBytes",
+          "valueType": "string"
+        },
+        "totalVote": {
+          "key": "dG90YWxWb3Rl",
+          "keyType": "AVMBytes",
+          "valueType": "uint64"
+        },
+        "votesInFavor": {
+          "key": "dm90ZXNJbkZhdm9y",
+          "keyType": "AVMBytes",
+          "valueType": "uint64"
+        },
+        "votesAgainst": {
+          "key": "dm90ZXNBZ2FpbnN0",
+          "keyType": "AVMBytes",
+          "valueType": "uint64"
+        },
+        "totalMembers": {
+          "key": "dG90YWxNZW1iZXJz",
+          "keyType": "AVMBytes",
+          "valueType": "uint64"
+        },
+        "executed": {
+          "key": "ZXhlY3V0ZWQ=",
+          "keyType": "AVMBytes",
+          "valueType": "bool"
+        }
+      },
+      "local": {},
+      "box": {}
+    },
+    "maps": {
+      "global": {},
+      "local": {},
+      "box": {
+        "membersListings": {
+          "keyType": "member",
+          "valueType": "memberInfo"
+        },
+        "proposalListings": {
+          "keyType": "proposalKey",
+          "valueType": "proposalInfo"
+        }
+      }
+    }
+  },
+  "bareActions": {
+    "create": [],
+    "call": []
+  },
+  "sourceInfo": {
+    "approval": {
+      "sourceInfo": [
+        {
+          "teal": 1,
+          "source": "contracts\\Jointly.algo.ts:32",
+          "pc": [
+            0
+          ]
+        },
+        {
+          "teal": 2,
+          "source": "contracts\\Jointly.algo.ts:32",
+          "pc": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8
+          ]
+        },
+        {
+          "teal": 3,
+          "source": "contracts\\Jointly.algo.ts:32",
+          "pc": [
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16,
+            17,
+            18,
+            19,
+            20,
+            21,
+            22,
+            23,
+            24,
+            25,
+            26,
+            27,
+            28,
+            29,
+            30,
+            31,
+            32,
+            33,
+            34,
+            35,
+            36,
+            37,
+            38,
+            39,
+            40,
+            41,
+            42,
+            43,
+            44,
+            45,
+            46,
+            47,
+            48,
+            49,
+            50,
+            51,
+            52,
+            53,
+            54,
+            55,
+            56,
+            57,
+            58,
+            59,
+            60,
+            61,
+            62,
+            63,
+            64,
+            65,
+            66,
+            67,
+            68,
+            69,
+            70,
+            71,
+            72,
+            73,
+            74,
+            75,
+            76,
+            77,
+            78,
+            79,
+            80,
+            81,
+            82,
+            83,
+            84,
+            85,
+            86,
+            87,
+            88,
+            89,
+            90,
+            91,
+            92,
+            93,
+            94,
+            95,
+            96,
+            97,
+            98,
+            99,
+            100,
+            101,
+            102,
+            103
+          ]
+        },
+        {
+          "teal": 15,
+          "source": "contracts\\Jointly.algo.ts:32",
+          "pc": [
+            104,
+            105
+          ]
+        },
+        {
+          "teal": 16,
+          "source": "contracts\\Jointly.algo.ts:32",
+          "pc": [
+            106
+          ]
+        },
+        {
+          "teal": 17,
+          "source": "contracts\\Jointly.algo.ts:32",
+          "pc": [
+            107,
+            108
+          ]
+        },
+        {
+          "teal": 18,
+          "source": "contracts\\Jointly.algo.ts:32",
+          "pc": [
+            109
+          ]
+        },
+        {
+          "teal": 19,
+          "source": "contracts\\Jointly.algo.ts:32",
+          "pc": [
+            110,
+            111
+          ]
+        },
+        {
+          "teal": 20,
+          "source": "contracts\\Jointly.algo.ts:32",
+          "pc": [
+            112
+          ]
+        },
+        {
+          "teal": 21,
+          "source": "contracts\\Jointly.algo.ts:32",
+          "pc": [
+            113,
+            114,
+            115,
+            116,
+            117,
+            118,
+            119,
+            120,
+            121,
+            122,
+            123,
+            124,
+            125,
+            126,
+            127,
+            128,
+            129,
+            130,
+            131,
+            132,
+            133,
+            134,
+            135,
+            136,
+            137,
+            138
+          ]
+        },
+        {
+          "teal": 25,
+          "source": "contracts\\Jointly.algo.ts:32",
+          "errorMessage": "The requested action is not implemented in this contract. Are you using the correct OnComplete? Did you set your app ID?",
+          "pc": [
+            139
+          ]
+        },
+        {
+          "teal": 30,
+          "source": "contracts\\Jointly.algo.ts:50",
+          "pc": [
+            140,
+            141,
+            142
+          ]
+        },
+        {
+          "teal": 31,
+          "source": "contracts\\Jointly.algo.ts:50",
+          "pc": [
+            143
+          ]
+        },
+        {
+          "teal": 32,
+          "source": "contracts\\Jointly.algo.ts:50",
+          "pc": [
+            144
+          ]
+        },
+        {
+          "teal": 36,
+          "source": "contracts\\Jointly.algo.ts:50",
+          "pc": [
+            145,
+            146,
+            147
+          ]
+        },
+        {
+          "teal": 40,
+          "source": "contracts\\Jointly.algo.ts:51",
+          "pc": [
+            148,
+            149
+          ]
+        },
+        {
+          "teal": 41,
+          "source": "contracts\\Jointly.algo.ts:51",
+          "pc": [
+            150
+          ]
+        },
+        {
+          "teal": 42,
+          "source": "contracts\\Jointly.algo.ts:51",
+          "pc": [
+            151
+          ]
+        },
+        {
+          "teal": 46,
+          "source": "contracts\\Jointly.algo.ts:52",
+          "pc": [
+            152,
+            153
+          ]
+        },
+        {
+          "teal": 47,
+          "source": "contracts\\Jointly.algo.ts:52",
+          "pc": [
+            154
+          ]
+        },
+        {
+          "teal": 48,
+          "source": "contracts\\Jointly.algo.ts:52",
+          "pc": [
+            155,
+            156
+          ]
+        },
+        {
+          "teal": 49,
+          "source": "contracts\\Jointly.algo.ts:52",
+          "pc": [
+            157
+          ]
+        },
+        {
+          "teal": 50,
+          "source": "contracts\\Jointly.algo.ts:52",
+          "pc": [
+            158,
+            159
+          ]
+        },
+        {
+          "teal": 51,
+          "source": "contracts\\Jointly.algo.ts:52",
+          "pc": [
+            160
+          ]
+        },
+        {
+          "teal": 52,
+          "source": "contracts\\Jointly.algo.ts:52",
+          "pc": [
+            161
+          ]
+        },
+        {
+          "teal": 56,
+          "source": "contracts\\Jointly.algo.ts:53",
+          "pc": [
+            162
+          ]
+        },
+        {
+          "teal": 57,
+          "source": "contracts\\Jointly.algo.ts:53",
+          "pc": [
+            163
+          ]
+        },
+        {
+          "teal": 58,
+          "source": "contracts\\Jointly.algo.ts:53",
+          "pc": [
+            164
+          ]
+        },
+        {
+          "teal": 59,
+          "source": "contracts\\Jointly.algo.ts:50",
+          "pc": [
+            165
+          ]
+        },
+        {
+          "teal": 64,
+          "source": "contracts\\Jointly.algo.ts:56",
+          "pc": [
+            166,
+            167,
+            168
+          ]
+        },
+        {
+          "teal": 65,
+          "source": "contracts\\Jointly.algo.ts:56",
+          "pc": [
+            169
+          ]
+        },
+        {
+          "teal": 66,
+          "source": "contracts\\Jointly.algo.ts:56",
+          "pc": [
+            170
+          ]
+        },
+        {
+          "teal": 70,
+          "source": "contracts\\Jointly.algo.ts:56",
+          "pc": [
+            171,
+            172,
+            173
+          ]
+        },
+        {
+          "teal": 74,
+          "source": "contracts\\Jointly.algo.ts:57",
+          "pc": [
+            174,
+            175
+          ]
+        },
+        {
+          "teal": 75,
+          "source": "contracts\\Jointly.algo.ts:57",
+          "pc": [
+            176,
+            177,
+            178
+          ]
+        },
+        {
+          "teal": 76,
+          "source": "contracts\\Jointly.algo.ts:57",
+          "pc": [
+            179,
+            180
+          ]
+        },
+        {
+          "teal": 77,
+          "source": "contracts\\Jointly.algo.ts:57",
+          "pc": [
+            181
+          ]
+        },
+        {
+          "teal": 78,
+          "source": "contracts\\Jointly.algo.ts:57",
+          "pc": [
+            182
+          ]
+        },
+        {
+          "teal": 81,
+          "source": "contracts\\Jointly.algo.ts:57",
+          "errorMessage": "you are not authorize(app creator)",
+          "pc": [
+            183
+          ]
+        },
+        {
+          "teal": 82,
+          "source": "contracts\\Jointly.algo.ts:56",
+          "pc": [
+            184
+          ]
+        },
+        {
+          "teal": 87,
+          "source": "contracts\\Jointly.algo.ts:60",
+          "pc": [
+            185,
+            186,
+            187
+          ]
+        },
+        {
+          "teal": 88,
+          "source": "contracts\\Jointly.algo.ts:60",
+          "pc": [
+            188,
+            189,
+            190
+          ]
+        },
+        {
+          "teal": 91,
+          "source": "contracts\\Jointly.algo.ts:60",
+          "pc": [
+            191,
+            192,
+            193
+          ]
+        },
+        {
+          "teal": 92,
+          "source": "contracts\\Jointly.algo.ts:60",
+          "pc": [
+            194
+          ]
+        },
+        {
+          "teal": 93,
+          "source": "contracts\\Jointly.algo.ts:60",
+          "pc": [
+            195
+          ]
+        },
+        {
+          "teal": 94,
+          "source": "contracts\\Jointly.algo.ts:60",
+          "pc": [
+            196
+          ]
+        },
+        {
+          "teal": 95,
+          "source": "contracts\\Jointly.algo.ts:60",
+          "pc": [
+            197
+          ]
+        },
+        {
+          "teal": 98,
+          "source": "contracts\\Jointly.algo.ts:60",
+          "errorMessage": "argument 1 (memberAddress) for addMember must be a address",
+          "pc": [
+            198
+          ]
+        },
+        {
+          "teal": 101,
+          "source": "contracts\\Jointly.algo.ts:60",
+          "pc": [
+            199,
+            200
+          ]
+        },
+        {
+          "teal": 102,
+          "source": "contracts\\Jointly.algo.ts:60",
+          "pc": [
+            201
+          ]
+        },
+        {
+          "teal": 103,
+          "source": "contracts\\Jointly.algo.ts:60",
+          "pc": [
+            202
+          ]
+        },
+        {
+          "teal": 104,
+          "source": "contracts\\Jointly.algo.ts:60",
+          "pc": [
+            203
+          ]
+        },
+        {
+          "teal": 105,
+          "source": "contracts\\Jointly.algo.ts:60",
+          "pc": [
+            204,
+            205
+          ]
+        },
+        {
+          "teal": 106,
+          "source": "contracts\\Jointly.algo.ts:60",
+          "pc": [
+            206
+          ]
+        },
+        {
+          "teal": 107,
+          "source": "contracts\\Jointly.algo.ts:60",
+          "pc": [
+            207
+          ]
+        },
+        {
+          "teal": 110,
+          "source": "contracts\\Jointly.algo.ts:60",
+          "errorMessage": "argument 2 (mbrPay) for addMember must be a pay transaction",
+          "pc": [
+            208
+          ]
+        },
+        {
+          "teal": 113,
+          "source": "contracts\\Jointly.algo.ts:60",
+          "pc": [
+            209,
+            210,
+            211
+          ]
+        },
+        {
+          "teal": 114,
+          "source": "contracts\\Jointly.algo.ts:60",
+          "pc": [
+            212
+          ]
+        },
+        {
+          "teal": 115,
+          "source": "contracts\\Jointly.algo.ts:60",
+          "pc": [
+            213
+          ]
+        },
+        {
+          "teal": 119,
+          "source": "contracts\\Jointly.algo.ts:60",
+          "pc": [
+            214,
+            215,
+            216
+          ]
+        },
+        {
+          "teal": 123,
+          "source": "contracts\\Jointly.algo.ts:61",
+          "pc": [
+            217,
+            218,
+            219
+          ]
+        },
+        {
+          "teal": 127,
+          "source": "contracts\\Jointly.algo.ts:62",
+          "pc": [
+            220,
+            221
+          ]
+        },
+        {
+          "teal": 128,
+          "source": "contracts\\Jointly.algo.ts:62",
+          "pc": [
+            222
+          ]
+        },
+        {
+          "teal": 129,
+          "source": "contracts\\Jointly.algo.ts:62",
+          "pc": [
+            223
+          ]
+        },
+        {
+          "teal": 130,
+          "source": "contracts\\Jointly.algo.ts:62",
+          "pc": [
+            224
+          ]
+        },
+        {
+          "teal": 131,
+          "source": "contracts\\Jointly.algo.ts:62",
+          "pc": [
+            225
+          ]
+        },
+        {
+          "teal": 134,
+          "source": "contracts\\Jointly.algo.ts:62",
+          "errorMessage": "Member already exist",
+          "pc": [
+            226
+          ]
+        },
+        {
+          "teal": 143,
+          "source": "contracts\\Jointly.algo.ts:63",
+          "pc": [
+            227,
+            228
+          ]
+        },
+        {
+          "teal": 144,
+          "source": "contracts\\Jointly.algo.ts:64",
+          "pc": [
+            229,
+            230
+          ]
+        },
+        {
+          "teal": 145,
+          "source": "contracts\\Jointly.algo.ts:64",
+          "pc": [
+            231,
+            232,
+            233
+          ]
+        },
+        {
+          "teal": 146,
+          "source": "contracts\\Jointly.algo.ts:64",
+          "pc": [
+            234,
+            235
+          ]
+        },
+        {
+          "teal": 147,
+          "source": "contracts\\Jointly.algo.ts:64",
+          "pc": [
+            236
+          ]
+        },
+        {
+          "teal": 148,
+          "source": "contracts\\Jointly.algo.ts:64",
+          "pc": [
+            237
+          ]
+        },
+        {
+          "teal": 151,
+          "source": "contracts\\Jointly.algo.ts:64",
+          "errorMessage": "transaction verification failed: {\"txn\":\"mbrPay\",\"field\":\"sender\",\"expected\":\"this.app.creator\"}",
+          "pc": [
+            238
+          ]
+        },
+        {
+          "teal": 154,
+          "source": "contracts\\Jointly.algo.ts:63",
+          "pc": [
+            239,
+            240
+          ]
+        },
+        {
+          "teal": 155,
+          "source": "contracts\\Jointly.algo.ts:65",
+          "pc": [
+            241,
+            242
+          ]
+        },
+        {
+          "teal": 156,
+          "source": "contracts\\Jointly.algo.ts:65",
+          "pc": [
+            243,
+            244
+          ]
+        },
+        {
+          "teal": 157,
+          "source": "contracts\\Jointly.algo.ts:65",
+          "pc": [
+            245
+          ]
+        },
+        {
+          "teal": 160,
+          "source": "contracts\\Jointly.algo.ts:65",
+          "errorMessage": "transaction verification failed: {\"txn\":\"mbrPay\",\"field\":\"receiver\",\"expected\":\"this.app.address\"}",
+          "pc": [
+            246
+          ]
+        },
+        {
+          "teal": 163,
+          "source": "contracts\\Jointly.algo.ts:63",
+          "pc": [
+            247,
+            248
+          ]
+        },
+        {
+          "teal": 164,
+          "source": "contracts\\Jointly.algo.ts:66",
+          "pc": [
+            249,
+            250
+          ]
+        },
+        {
+          "teal": 165,
+          "source": "contracts\\Jointly.algo.ts:14",
+          "pc": [
+            251,
+            252,
+            253,
+            254
+          ]
+        },
+        {
+          "teal": 166,
+          "source": "contracts\\Jointly.algo.ts:66",
+          "pc": [
+            255
+          ]
+        },
+        {
+          "teal": 169,
+          "source": "contracts\\Jointly.algo.ts:66",
+          "errorMessage": "transaction verification failed: {\"txn\":\"mbrPay\",\"field\":\"amount\",\"expected\":\"membersMbr\"}",
+          "pc": [
+            256
+          ]
+        },
+        {
+          "teal": 176,
+          "source": "contracts\\Jointly.algo.ts:69",
+          "pc": [
+            257,
+            258
+          ]
+        },
+        {
+          "teal": 177,
+          "source": "contracts\\Jointly.algo.ts:69",
+          "pc": [
+            259
+          ]
+        },
+        {
+          "teal": 178,
+          "source": "contracts\\Jointly.algo.ts:69",
+          "pc": [
+            260
+          ]
+        },
+        {
+          "teal": 179,
+          "source": "contracts\\Jointly.algo.ts:69",
+          "pc": [
+            261
+          ]
+        },
+        {
+          "teal": 180,
+          "source": "contracts\\Jointly.algo.ts:69",
+          "pc": [
+            262
+          ]
+        },
+        {
+          "teal": 181,
+          "source": "contracts\\Jointly.algo.ts:69",
+          "pc": [
+            263
+          ]
+        },
+        {
+          "teal": 182,
+          "source": "contracts\\Jointly.algo.ts:69",
+          "pc": [
+            264,
+            265,
+            266,
+            267
+          ]
+        },
+        {
+          "teal": 183,
+          "source": "contracts\\Jointly.algo.ts:70",
+          "pc": [
+            268,
+            269
+          ]
+        },
+        {
+          "teal": 184,
+          "source": "contracts\\Jointly.algo.ts:70",
+          "pc": [
+            270,
+            271,
+            272
+          ]
+        },
+        {
+          "teal": 185,
+          "source": "contracts\\Jointly.algo.ts:71",
+          "pc": [
+            273,
+            274
+          ]
+        },
+        {
+          "teal": 186,
+          "source": "contracts\\Jointly.algo.ts:71",
+          "pc": [
+            275
+          ]
+        },
+        {
+          "teal": 187,
+          "source": "contracts\\Jointly.algo.ts:71",
+          "pc": [
+            276
+          ]
+        },
+        {
+          "teal": 188,
+          "source": "contracts\\Jointly.algo.ts:71",
+          "pc": [
+            277
+          ]
+        },
+        {
+          "teal": 189,
+          "source": "contracts\\Jointly.algo.ts:71",
+          "pc": [
+            278,
+            279,
+            280
+          ]
+        },
+        {
+          "teal": 190,
+          "source": "contracts\\Jointly.algo.ts:71",
+          "pc": [
+            281
+          ]
+        },
+        {
+          "teal": 191,
+          "source": "contracts\\Jointly.algo.ts:71",
+          "pc": [
+            282
+          ]
+        },
+        {
+          "teal": 192,
+          "source": "contracts\\Jointly.algo.ts:71",
+          "pc": [
+            283,
+            284,
+            285
+          ]
+        },
+        {
+          "teal": 193,
+          "source": "contracts\\Jointly.algo.ts:69",
+          "pc": [
+            286
+          ]
+        },
+        {
+          "teal": 194,
+          "source": "contracts\\Jointly.algo.ts:69",
+          "pc": [
+            287
+          ]
+        },
+        {
+          "teal": 195,
+          "source": "contracts\\Jointly.algo.ts:69",
+          "pc": [
+            288
+          ]
+        },
+        {
+          "teal": 199,
+          "source": "contracts\\Jointly.algo.ts:73",
+          "pc": [
+            289,
+            290
+          ]
+        },
+        {
+          "teal": 200,
+          "source": "contracts\\Jointly.algo.ts:73",
+          "pc": [
+            291
+          ]
+        },
+        {
+          "teal": 201,
+          "source": "contracts\\Jointly.algo.ts:73",
+          "pc": [
+            292
+          ]
+        },
+        {
+          "teal": 202,
+          "source": "contracts\\Jointly.algo.ts:73",
+          "pc": [
+            293
+          ]
+        },
+        {
+          "teal": 203,
+          "source": "contracts\\Jointly.algo.ts:73",
+          "pc": [
+            294
+          ]
+        },
+        {
+          "teal": 204,
+          "source": "contracts\\Jointly.algo.ts:73",
+          "pc": [
+            295
+          ]
+        },
+        {
+          "teal": 205,
+          "source": "contracts\\Jointly.algo.ts:60",
+          "pc": [
+            296
+          ]
+        },
+        {
+          "teal": 210,
+          "source": "contracts\\Jointly.algo.ts:76",
+          "pc": [
+            297,
+            298,
+            299,
+            300,
+            301,
+            302
+          ]
+        },
+        {
+          "teal": 213,
+          "source": "contracts\\Jointly.algo.ts:76",
+          "pc": [
+            303,
+            304,
+            305
+          ]
+        },
+        {
+          "teal": 214,
+          "source": "contracts\\Jointly.algo.ts:76",
+          "pc": [
+            306
+          ]
+        },
+        {
+          "teal": 215,
+          "source": "contracts\\Jointly.algo.ts:76",
+          "pc": [
+            307
+          ]
+        },
+        {
+          "teal": 216,
+          "source": "contracts\\Jointly.algo.ts:76",
+          "pc": [
+            308
+          ]
+        },
+        {
+          "teal": 217,
+          "source": "contracts\\Jointly.algo.ts:76",
+          "pc": [
+            309
+          ]
+        },
+        {
+          "teal": 218,
+          "source": "contracts\\Jointly.algo.ts:76",
+          "pc": [
+            310
+          ]
+        },
+        {
+          "teal": 222,
+          "source": "contracts\\Jointly.algo.ts:76",
+          "pc": [
+            311,
+            312,
+            313
+          ]
+        },
+        {
+          "teal": 226,
+          "source": "contracts\\Jointly.algo.ts:77",
+          "pc": [
+            314,
+            315,
+            316,
+            317,
+            318,
+            319,
+            320,
+            321,
+            322,
+            323,
+            324,
+            325,
+            326,
+            327,
+            328,
+            329,
+            330,
+            331,
+            332,
+            333,
+            334,
+            335,
+            336,
+            337
+          ]
+        },
+        {
+          "teal": 227,
+          "source": "contracts\\Jointly.algo.ts:77",
+          "pc": [
+            338
+          ]
+        },
+        {
+          "teal": 228,
+          "source": "contracts\\Jointly.algo.ts:76",
+          "pc": [
+            339
+          ]
+        },
+        {
+          "teal": 233,
+          "source": "contracts\\Jointly.algo.ts:80",
+          "pc": [
+            340,
+            341,
+            342
+          ]
+        },
+        {
+          "teal": 234,
+          "source": "contracts\\Jointly.algo.ts:80",
+          "pc": [
+            343,
+            344,
+            345
+          ]
+        },
+        {
+          "teal": 237,
+          "source": "contracts\\Jointly.algo.ts:80",
+          "pc": [
+            346,
+            347,
+            348
+          ]
+        },
+        {
+          "teal": 238,
+          "source": "contracts\\Jointly.algo.ts:80",
+          "pc": [
+            349,
+            350,
+            351
+          ]
+        },
+        {
+          "teal": 241,
+          "source": "contracts\\Jointly.algo.ts:80",
+          "pc": [
+            352,
+            353,
+            354
+          ]
+        },
+        {
+          "teal": 242,
+          "source": "contracts\\Jointly.algo.ts:80",
+          "pc": [
+            355
+          ]
+        },
+        {
+          "teal": 243,
+          "source": "contracts\\Jointly.algo.ts:80",
+          "pc": [
+            356
+          ]
+        },
+        {
+          "teal": 244,
+          "source": "contracts\\Jointly.algo.ts:80",
+          "pc": [
+            357
+          ]
+        },
+        {
+          "teal": 245,
+          "source": "contracts\\Jointly.algo.ts:80",
+          "pc": [
+            358
+          ]
+        },
+        {
+          "teal": 248,
+          "source": "contracts\\Jointly.algo.ts:80",
+          "errorMessage": "argument 2 (proposerAddress) for setProposal must be a address",
+          "pc": [
+            359
+          ]
+        },
+        {
+          "teal": 251,
+          "source": "contracts\\Jointly.algo.ts:80",
+          "pc": [
+            360,
+            361
+          ]
+        },
+        {
+          "teal": 252,
+          "source": "contracts\\Jointly.algo.ts:80",
+          "pc": [
+            362
+          ]
+        },
+        {
+          "teal": 253,
+          "source": "contracts\\Jointly.algo.ts:80",
+          "pc": [
+            363
+          ]
+        },
+        {
+          "teal": 254,
+          "source": "contracts\\Jointly.algo.ts:80",
+          "pc": [
+            364
+          ]
+        },
+        {
+          "teal": 255,
+          "source": "contracts\\Jointly.algo.ts:80",
+          "pc": [
+            365,
+            366
+          ]
+        },
+        {
+          "teal": 256,
+          "source": "contracts\\Jointly.algo.ts:80",
+          "pc": [
+            367
+          ]
+        },
+        {
+          "teal": 257,
+          "source": "contracts\\Jointly.algo.ts:80",
+          "pc": [
+            368
+          ]
+        },
+        {
+          "teal": 260,
+          "source": "contracts\\Jointly.algo.ts:80",
+          "errorMessage": "argument 3 (mbrPay) for setProposal must be a pay transaction",
+          "pc": [
+            369
+          ]
+        },
+        {
+          "teal": 263,
+          "source": "contracts\\Jointly.algo.ts:80",
+          "pc": [
+            370,
+            371,
+            372
+          ]
+        },
+        {
+          "teal": 264,
+          "source": "contracts\\Jointly.algo.ts:80",
+          "pc": [
+            373
+          ]
+        },
+        {
+          "teal": 265,
+          "source": "contracts\\Jointly.algo.ts:80",
+          "pc": [
+            374
+          ]
+        },
+        {
+          "teal": 269,
+          "source": "contracts\\Jointly.algo.ts:80",
+          "pc": [
+            375,
+            376,
+            377
+          ]
+        },
+        {
+          "teal": 273,
+          "source": "contracts\\Jointly.algo.ts:81",
+          "pc": [
+            378,
+            379
+          ]
+        },
+        {
+          "teal": 274,
+          "source": "contracts\\Jointly.algo.ts:81",
+          "pc": [
+            380
+          ]
+        },
+        {
+          "teal": 275,
+          "source": "contracts\\Jointly.algo.ts:81",
+          "pc": [
+            381
+          ]
+        },
+        {
+          "teal": 276,
+          "source": "contracts\\Jointly.algo.ts:81",
+          "pc": [
+            382
+          ]
+        },
+        {
+          "teal": 277,
+          "source": "contracts\\Jointly.algo.ts:81",
+          "pc": [
+            383
+          ]
+        },
+        {
+          "teal": 278,
+          "source": "contracts\\Jointly.algo.ts:81",
+          "pc": [
+            384
+          ]
+        },
+        {
+          "teal": 281,
+          "source": "contracts\\Jointly.algo.ts:81",
+          "errorMessage": "There is an ongoing proposal",
+          "pc": [
+            385
+          ]
+        },
+        {
+          "teal": 285,
+          "source": "contracts\\Jointly.algo.ts:82",
+          "pc": [
+            386,
+            387
+          ]
+        },
+        {
+          "teal": 286,
+          "source": "contracts\\Jointly.algo.ts:82",
+          "pc": [
+            388
+          ]
+        },
+        {
+          "teal": 287,
+          "source": "contracts\\Jointly.algo.ts:82",
+          "pc": [
+            389
+          ]
+        },
+        {
+          "teal": 288,
+          "source": "contracts\\Jointly.algo.ts:82",
+          "pc": [
+            390
+          ]
+        },
+        {
+          "teal": 291,
+          "source": "contracts\\Jointly.algo.ts:82",
+          "errorMessage": "Member does not exist",
+          "pc": [
+            391
+          ]
+        },
+        {
+          "teal": 295,
+          "source": "contracts\\Jointly.algo.ts:83",
+          "pc": [
+            392
+          ]
+        },
+        {
+          "teal": 296,
+          "source": "contracts\\Jointly.algo.ts:83",
+          "pc": [
+            393
+          ]
+        },
+        {
+          "teal": 297,
+          "source": "contracts\\Jointly.algo.ts:83",
+          "pc": [
+            394
+          ]
+        },
+        {
+          "teal": 298,
+          "source": "contracts\\Jointly.algo.ts:83",
+          "pc": [
+            395
+          ]
+        },
+        {
+          "teal": 299,
+          "source": "contracts\\Jointly.algo.ts:83",
+          "pc": [
+            396
+          ]
+        },
+        {
+          "teal": 300,
+          "source": "contracts\\Jointly.algo.ts:83",
+          "pc": [
+            397
+          ]
+        },
+        {
+          "teal": 301,
+          "source": "contracts\\Jointly.algo.ts:83",
+          "pc": [
+            398
+          ]
+        },
+        {
+          "teal": 304,
+          "source": "contracts\\Jointly.algo.ts:83",
+          "errorMessage": "Proposal already exist",
+          "pc": [
+            399
+          ]
+        },
+        {
+          "teal": 308,
+          "source": "contracts\\Jointly.algo.ts:84",
+          "pc": [
+            400,
+            401,
+            402,
+            403,
+            404,
+            405,
+            406,
+            407,
+            408,
+            409,
+            410,
+            411,
+            412,
+            413
+          ]
+        },
+        {
+          "teal": 309,
+          "source": "contracts\\Jointly.algo.ts:84",
+          "pc": [
+            414,
+            415
+          ]
+        },
+        {
+          "teal": 310,
+          "source": "contracts\\Jointly.algo.ts:84",
+          "pc": [
+            416
+          ]
+        },
+        {
+          "teal": 311,
+          "source": "contracts\\Jointly.algo.ts:84",
+          "pc": [
+            417
+          ]
+        },
+        {
+          "teal": 312,
+          "source": "contracts\\Jointly.algo.ts:84",
+          "pc": [
+            418
+          ]
+        },
+        {
+          "teal": 313,
+          "source": "contracts\\Jointly.algo.ts:84",
+          "pc": [
+            419,
+            420,
+            421
+          ]
+        },
+        {
+          "teal": 314,
+          "source": "contracts\\Jointly.algo.ts:84",
+          "pc": [
+            422
+          ]
+        },
+        {
+          "teal": 315,
+          "source": "contracts\\Jointly.algo.ts:84",
+          "pc": [
+            423
+          ]
+        },
+        {
+          "teal": 316,
+          "source": "contracts\\Jointly.algo.ts:84",
+          "pc": [
+            424
+          ]
+        },
+        {
+          "teal": 320,
+          "source": "contracts\\Jointly.algo.ts:85",
+          "pc": [
+            425,
+            426
+          ]
+        },
+        {
+          "teal": 321,
+          "source": "contracts\\Jointly.algo.ts:85",
+          "pc": [
+            427,
+            428
+          ]
+        },
+        {
+          "teal": 322,
+          "source": "contracts\\Jointly.algo.ts:85",
+          "pc": [
+            429
+          ]
+        },
+        {
+          "teal": 323,
+          "source": "contracts\\Jointly.algo.ts:85",
+          "pc": [
+            430
+          ]
+        },
+        {
+          "teal": 324,
+          "source": "contracts\\Jointly.algo.ts:85",
+          "pc": [
+            431
+          ]
+        },
+        {
+          "teal": 325,
+          "source": "contracts\\Jointly.algo.ts:85",
+          "pc": [
+            432,
+            433,
+            434
+          ]
+        },
+        {
+          "teal": 326,
+          "source": "contracts\\Jointly.algo.ts:85",
+          "pc": [
+            435
+          ]
+        },
+        {
+          "teal": 327,
+          "source": "contracts\\Jointly.algo.ts:85",
+          "pc": [
+            436
+          ]
+        },
+        {
+          "teal": 328,
+          "source": "contracts\\Jointly.algo.ts:85",
+          "pc": [
+            437
+          ]
+        },
+        {
+          "teal": 332,
+          "source": "contracts\\Jointly.algo.ts:86",
+          "pc": [
+            438
+          ]
+        },
+        {
+          "teal": 333,
+          "source": "contracts\\Jointly.algo.ts:86",
+          "pc": [
+            439
+          ]
+        },
+        {
+          "teal": 334,
+          "source": "contracts\\Jointly.algo.ts:86",
+          "pc": [
+            440
+          ]
+        },
+        {
+          "teal": 338,
+          "source": "contracts\\Jointly.algo.ts:87",
+          "pc": [
+            441
+          ]
+        },
+        {
+          "teal": 339,
+          "source": "contracts\\Jointly.algo.ts:87",
+          "pc": [
+            442
+          ]
+        },
+        {
+          "teal": 340,
+          "source": "contracts\\Jointly.algo.ts:87",
+          "pc": [
+            443
+          ]
+        },
+        {
+          "teal": 344,
+          "source": "contracts\\Jointly.algo.ts:88",
+          "pc": [
+            444,
+            445
+          ]
+        },
+        {
+          "teal": 345,
+          "source": "contracts\\Jointly.algo.ts:88",
+          "pc": [
+            446
+          ]
+        },
+        {
+          "teal": 346,
+          "source": "contracts\\Jointly.algo.ts:88",
+          "pc": [
+            447
+          ]
+        },
+        {
+          "teal": 355,
+          "source": "contracts\\Jointly.algo.ts:90",
+          "pc": [
+            448,
+            449
+          ]
+        },
+        {
+          "teal": 356,
+          "source": "contracts\\Jointly.algo.ts:91",
+          "pc": [
+            450,
+            451
+          ]
+        },
+        {
+          "teal": 357,
+          "source": "contracts\\Jointly.algo.ts:91",
+          "pc": [
+            452,
+            453,
+            454
+          ]
+        },
+        {
+          "teal": 358,
+          "source": "contracts\\Jointly.algo.ts:91",
+          "pc": [
+            455,
+            456
+          ]
+        },
+        {
+          "teal": 359,
+          "source": "contracts\\Jointly.algo.ts:91",
+          "pc": [
+            457
+          ]
+        },
+        {
+          "teal": 360,
+          "source": "contracts\\Jointly.algo.ts:91",
+          "pc": [
+            458
+          ]
+        },
+        {
+          "teal": 363,
+          "source": "contracts\\Jointly.algo.ts:91",
+          "errorMessage": "transaction verification failed: {\"txn\":\"mbrPay\",\"field\":\"sender\",\"expected\":\"this.app.creator\"}",
+          "pc": [
+            459
+          ]
+        },
+        {
+          "teal": 366,
+          "source": "contracts\\Jointly.algo.ts:90",
+          "pc": [
+            460,
+            461
+          ]
+        },
+        {
+          "teal": 367,
+          "source": "contracts\\Jointly.algo.ts:92",
+          "pc": [
+            462,
+            463
+          ]
+        },
+        {
+          "teal": 368,
+          "source": "contracts\\Jointly.algo.ts:92",
+          "pc": [
+            464,
+            465
+          ]
+        },
+        {
+          "teal": 369,
+          "source": "contracts\\Jointly.algo.ts:92",
+          "pc": [
+            466
+          ]
+        },
+        {
+          "teal": 372,
+          "source": "contracts\\Jointly.algo.ts:92",
+          "errorMessage": "transaction verification failed: {\"txn\":\"mbrPay\",\"field\":\"receiver\",\"expected\":\"this.app.address\"}",
+          "pc": [
+            467
+          ]
+        },
+        {
+          "teal": 375,
+          "source": "contracts\\Jointly.algo.ts:90",
+          "pc": [
+            468,
+            469
+          ]
+        },
+        {
+          "teal": 376,
+          "source": "contracts\\Jointly.algo.ts:93",
+          "pc": [
+            470,
+            471
+          ]
+        },
+        {
+          "teal": 377,
+          "source": "contracts\\Jointly.algo.ts:30",
+          "pc": [
+            472,
+            473,
+            474,
+            475
+          ]
+        },
+        {
+          "teal": 378,
+          "source": "contracts\\Jointly.algo.ts:93",
+          "pc": [
+            476
+          ]
+        },
+        {
+          "teal": 381,
+          "source": "contracts\\Jointly.algo.ts:93",
+          "errorMessage": "transaction verification failed: {\"txn\":\"mbrPay\",\"field\":\"amount\",\"expected\":\"proposalMbr\"}",
+          "pc": [
+            477
+          ]
+        },
+        {
+          "teal": 393,
+          "source": "contracts\\Jointly.algo.ts:96",
+          "pc": [
+            478
+          ]
+        },
+        {
+          "teal": 394,
+          "source": "contracts\\Jointly.algo.ts:96",
+          "pc": [
+            479
+          ]
+        },
+        {
+          "teal": 395,
+          "source": "contracts\\Jointly.algo.ts:96",
+          "pc": [
+            480
+          ]
+        },
+        {
+          "teal": 396,
+          "source": "contracts\\Jointly.algo.ts:96",
+          "pc": [
+            481
+          ]
+        },
+        {
+          "teal": 397,
+          "source": "contracts\\Jointly.algo.ts:96",
+          "pc": [
+            482
+          ]
+        },
+        {
+          "teal": 398,
+          "source": "contracts\\Jointly.algo.ts:96",
+          "pc": [
+            483
+          ]
+        },
+        {
+          "teal": 399,
+          "source": "contracts\\Jointly.algo.ts:96",
+          "pc": [
+            484
+          ]
+        },
+        {
+          "teal": 400,
+          "source": "contracts\\Jointly.algo.ts:96",
+          "pc": [
+            485
+          ]
+        },
+        {
+          "teal": 401,
+          "source": "contracts\\Jointly.algo.ts:96",
+          "pc": [
+            486,
+            487
+          ]
+        },
+        {
+          "teal": 402,
+          "source": "contracts\\Jointly.algo.ts:97",
+          "pc": [
+            488,
+            489
+          ]
+        },
+        {
+          "teal": 403,
+          "source": "contracts\\Jointly.algo.ts:97",
+          "pc": [
+            490,
+            491,
+            492
+          ]
+        },
+        {
+          "teal": 404,
+          "source": "contracts\\Jointly.algo.ts:98",
+          "pc": [
+            493,
+            494
+          ]
+        },
+        {
+          "teal": 405,
+          "source": "contracts\\Jointly.algo.ts:98",
+          "pc": [
+            495,
+            496,
+            497
+          ]
+        },
+        {
+          "teal": 406,
+          "source": "contracts\\Jointly.algo.ts:99",
+          "pc": [
+            498,
+            499
+          ]
+        },
+        {
+          "teal": 407,
+          "source": "contracts\\Jointly.algo.ts:99",
+          "pc": [
+            500,
+            501,
+            502
+          ]
+        },
+        {
+          "teal": 408,
+          "source": "contracts\\Jointly.algo.ts:100",
+          "pc": [
+            503,
+            504
+          ]
+        },
+        {
+          "teal": 409,
+          "source": "contracts\\Jointly.algo.ts:100",
+          "pc": [
+            505,
+            506,
+            507
+          ]
+        },
+        {
+          "teal": 410,
+          "source": "contracts\\Jointly.algo.ts:101",
+          "pc": [
+            508,
+            509
+          ]
+        },
+        {
+          "teal": 411,
+          "source": "contracts\\Jointly.algo.ts:101",
+          "pc": [
+            510,
+            511,
+            512
+          ]
+        },
+        {
+          "teal": 412,
+          "source": "contracts\\Jointly.algo.ts:102",
+          "pc": [
+            513,
+            514
+          ]
+        },
+        {
+          "teal": 413,
+          "source": "contracts\\Jointly.algo.ts:102",
+          "pc": [
+            515
+          ]
+        },
+        {
+          "teal": 414,
+          "source": "contracts\\Jointly.algo.ts:102",
+          "pc": [
+            516
+          ]
+        },
+        {
+          "teal": 415,
+          "source": "contracts\\Jointly.algo.ts:102",
+          "pc": [
+            517
+          ]
+        },
+        {
+          "teal": 416,
+          "source": "contracts\\Jointly.algo.ts:102",
+          "pc": [
+            518,
+            519,
+            520
+          ]
+        },
+        {
+          "teal": 417,
+          "source": "contracts\\Jointly.algo.ts:102",
+          "pc": [
+            521
+          ]
+        },
+        {
+          "teal": 418,
+          "source": "contracts\\Jointly.algo.ts:102",
+          "pc": [
+            522
+          ]
+        },
+        {
+          "teal": 419,
+          "source": "contracts\\Jointly.algo.ts:102",
+          "pc": [
+            523,
+            524,
+            525
+          ]
+        },
+        {
+          "teal": 420,
+          "source": "contracts\\Jointly.algo.ts:103",
+          "pc": [
+            526,
+            527
+          ]
+        },
+        {
+          "teal": 421,
+          "source": "contracts\\Jointly.algo.ts:103",
+          "pc": [
+            528
+          ]
+        },
+        {
+          "teal": 422,
+          "source": "contracts\\Jointly.algo.ts:103",
+          "pc": [
+            529
+          ]
+        },
+        {
+          "teal": 423,
+          "source": "contracts\\Jointly.algo.ts:103",
+          "pc": [
+            530
+          ]
+        },
+        {
+          "teal": 424,
+          "source": "contracts\\Jointly.algo.ts:103",
+          "pc": [
+            531,
+            532,
+            533
+          ]
+        },
+        {
+          "teal": 425,
+          "source": "contracts\\Jointly.algo.ts:103",
+          "pc": [
+            534
+          ]
+        },
+        {
+          "teal": 426,
+          "source": "contracts\\Jointly.algo.ts:103",
+          "pc": [
+            535
+          ]
+        },
+        {
+          "teal": 427,
+          "source": "contracts\\Jointly.algo.ts:103",
+          "pc": [
+            536,
+            537,
+            538
+          ]
+        },
+        {
+          "teal": 428,
+          "source": "contracts\\Jointly.algo.ts:96",
+          "pc": [
+            539
+          ]
+        },
+        {
+          "teal": 429,
+          "source": "contracts\\Jointly.algo.ts:96",
+          "pc": [
+            540
+          ]
+        },
+        {
+          "teal": 430,
+          "source": "contracts\\Jointly.algo.ts:96",
+          "pc": [
+            541
+          ]
+        },
+        {
+          "teal": 434,
+          "source": "contracts\\Jointly.algo.ts:105",
+          "pc": [
+            542,
+            543
+          ]
+        },
+        {
+          "teal": 435,
+          "source": "contracts\\Jointly.algo.ts:105",
+          "pc": [
+            544
+          ]
+        },
+        {
+          "teal": 436,
+          "source": "contracts\\Jointly.algo.ts:105",
+          "pc": [
+            545,
+            546
+          ]
+        },
+        {
+          "teal": 437,
+          "source": "contracts\\Jointly.algo.ts:105",
+          "pc": [
+            547
+          ]
+        },
+        {
+          "teal": 438,
+          "source": "contracts\\Jointly.algo.ts:105",
+          "pc": [
+            548,
+            549
+          ]
+        },
+        {
+          "teal": 439,
+          "source": "contracts\\Jointly.algo.ts:105",
+          "pc": [
+            550
+          ]
+        },
+        {
+          "teal": 440,
+          "source": "contracts\\Jointly.algo.ts:105",
+          "pc": [
+            551
+          ]
+        },
+        {
+          "teal": 441,
+          "source": "contracts\\Jointly.algo.ts:80",
+          "pc": [
+            552
+          ]
+        },
+        {
+          "teal": 446,
+          "source": "contracts\\Jointly.algo.ts:108",
+          "pc": [
+            553,
+            554,
+            555
+          ]
+        },
+        {
+          "teal": 447,
+          "source": "contracts\\Jointly.algo.ts:108",
+          "pc": [
+            556
+          ]
+        },
+        {
+          "teal": 448,
+          "source": "contracts\\Jointly.algo.ts:108",
+          "pc": [
+            557
+          ]
+        },
+        {
+          "teal": 449,
+          "source": "contracts\\Jointly.algo.ts:108",
+          "pc": [
+            558
+          ]
+        },
+        {
+          "teal": 450,
+          "source": "contracts\\Jointly.algo.ts:108",
+          "pc": [
+            559
+          ]
+        },
+        {
+          "teal": 453,
+          "source": "contracts\\Jointly.algo.ts:108",
+          "errorMessage": "argument 0 (memberAddress) for vote must be a address",
+          "pc": [
+            560
+          ]
+        },
+        {
+          "teal": 456,
+          "source": "contracts\\Jointly.algo.ts:108",
+          "pc": [
+            561,
+            562,
+            563
+          ]
+        },
+        {
+          "teal": 457,
+          "source": "contracts\\Jointly.algo.ts:108",
+          "pc": [
+            564
+          ]
+        },
+        {
+          "teal": 458,
+          "source": "contracts\\Jointly.algo.ts:108",
+          "pc": [
+            565
+          ]
+        },
+        {
+          "teal": 459,
+          "source": "contracts\\Jointly.algo.ts:108",
+          "pc": [
+            566
+          ]
+        },
+        {
+          "teal": 460,
+          "source": "contracts\\Jointly.algo.ts:108",
+          "pc": [
+            567
+          ]
+        },
+        {
+          "teal": 463,
+          "source": "contracts\\Jointly.algo.ts:108",
+          "errorMessage": "argument 1 (inFavor) for vote must be a bool",
+          "pc": [
+            568
+          ]
+        },
+        {
+          "teal": 464,
+          "source": "contracts\\Jointly.algo.ts:108",
+          "pc": [
+            569
+          ]
+        },
+        {
+          "teal": 465,
+          "source": "contracts\\Jointly.algo.ts:108",
+          "pc": [
+            570
+          ]
+        },
+        {
+          "teal": 468,
+          "source": "contracts\\Jointly.algo.ts:108",
+          "pc": [
+            571,
+            572,
+            573
+          ]
+        },
+        {
+          "teal": 469,
+          "source": "contracts\\Jointly.algo.ts:108",
+          "pc": [
+            574
+          ]
+        },
+        {
+          "teal": 470,
+          "source": "contracts\\Jointly.algo.ts:108",
+          "pc": [
+            575
+          ]
+        },
+        {
+          "teal": 474,
+          "source": "contracts\\Jointly.algo.ts:108",
+          "pc": [
+            576,
+            577,
+            578
+          ]
+        },
+        {
+          "teal": 478,
+          "source": "contracts\\Jointly.algo.ts:109",
+          "pc": [
+            579,
+            580
+          ]
+        },
+        {
+          "teal": 479,
+          "source": "contracts\\Jointly.algo.ts:109",
+          "pc": [
+            581
+          ]
+        },
+        {
+          "teal": 480,
+          "source": "contracts\\Jointly.algo.ts:109",
+          "pc": [
+            582
+          ]
+        },
+        {
+          "teal": 481,
+          "source": "contracts\\Jointly.algo.ts:109",
+          "pc": [
+            583
+          ]
+        },
+        {
+          "teal": 482,
+          "source": "contracts\\Jointly.algo.ts:109",
+          "pc": [
+            584
+          ]
+        },
+        {
+          "teal": 486,
+          "source": "contracts\\Jointly.algo.ts:110",
+          "pc": [
+            585,
+            586
+          ]
+        },
+        {
+          "teal": 487,
+          "source": "contracts\\Jointly.algo.ts:110",
+          "pc": [
+            587
+          ]
+        },
+        {
+          "teal": 488,
+          "source": "contracts\\Jointly.algo.ts:110",
+          "pc": [
+            588
+          ]
+        },
+        {
+          "teal": 489,
+          "source": "contracts\\Jointly.algo.ts:110",
+          "pc": [
+            589
+          ]
+        },
+        {
+          "teal": 490,
+          "source": "contracts\\Jointly.algo.ts:110",
+          "pc": [
+            590
+          ]
+        },
+        {
+          "teal": 491,
+          "source": "contracts\\Jointly.algo.ts:110",
+          "pc": [
+            591
+          ]
+        },
+        {
+          "teal": 494,
+          "source": "contracts\\Jointly.algo.ts:110",
+          "errorMessage": "There is no ongoing proposal",
+          "pc": [
+            592
+          ]
+        },
+        {
+          "teal": 498,
+          "source": "contracts\\Jointly.algo.ts:112",
+          "pc": [
+            593
+          ]
+        },
+        {
+          "teal": 499,
+          "source": "contracts\\Jointly.algo.ts:112",
+          "pc": [
+            594
+          ]
+        },
+        {
+          "teal": 500,
+          "source": "contracts\\Jointly.algo.ts:112",
+          "pc": [
+            595
+          ]
+        },
+        {
+          "teal": 501,
+          "source": "contracts\\Jointly.algo.ts:112",
+          "pc": [
+            596
+          ]
+        },
+        {
+          "teal": 502,
+          "source": "contracts\\Jointly.algo.ts:112",
+          "pc": [
+            597
+          ]
+        },
+        {
+          "teal": 503,
+          "source": "contracts\\Jointly.algo.ts:112",
+          "pc": [
+            598
+          ]
+        },
+        {
+          "teal": 508,
+          "source": "contracts\\Jointly.algo.ts:113",
+          "pc": [
+            599,
+            600
+          ]
+        },
+        {
+          "teal": 509,
+          "source": "contracts\\Jointly.algo.ts:113",
+          "pc": [
+            601,
+            602,
+            603
+          ]
+        },
+        {
+          "teal": 514,
+          "source": "contracts\\Jointly.algo.ts:114",
+          "pc": [
+            604
+          ]
+        },
+        {
+          "teal": 515,
+          "source": "contracts\\Jointly.algo.ts:114",
+          "pc": [
+            605
+          ]
+        },
+        {
+          "teal": 516,
+          "source": "contracts\\Jointly.algo.ts:114",
+          "pc": [
+            606
+          ]
+        },
+        {
+          "teal": 517,
+          "source": "contracts\\Jointly.algo.ts:114",
+          "pc": [
+            607
+          ]
+        },
+        {
+          "teal": 518,
+          "source": "contracts\\Jointly.algo.ts:114",
+          "pc": [
+            608
+          ]
+        },
+        {
+          "teal": 519,
+          "source": "contracts\\Jointly.algo.ts:114",
+          "pc": [
+            609
+          ]
+        },
+        {
+          "teal": 520,
+          "source": "contracts\\Jointly.algo.ts:113",
+          "pc": [
+            610,
+            611,
+            612
+          ]
+        },
+        {
+          "teal": 525,
+          "source": "contracts\\Jointly.algo.ts:116",
+          "pc": [
+            613,
+            614
+          ]
+        },
+        {
+          "teal": 526,
+          "source": "contracts\\Jointly.algo.ts:116",
+          "pc": [
+            615
+          ]
+        },
+        {
+          "teal": 527,
+          "source": "contracts\\Jointly.algo.ts:116",
+          "pc": [
+            616
+          ]
+        },
+        {
+          "teal": 528,
+          "source": "contracts\\Jointly.algo.ts:116",
+          "pc": [
+            617
+          ]
+        },
+        {
+          "teal": 529,
+          "source": "contracts\\Jointly.algo.ts:116",
+          "pc": [
+            618
+          ]
+        },
+        {
+          "teal": 530,
+          "source": "contracts\\Jointly.algo.ts:116",
+          "pc": [
+            619
+          ]
+        },
+        {
+          "teal": 535,
+          "source": "contracts\\Jointly.algo.ts:118",
+          "pc": [
+            620,
+            621,
+            622
+          ]
+        },
+        {
+          "teal": 536,
+          "source": "contracts\\Jointly.algo.ts:108",
+          "pc": [
+            623
+          ]
+        },
+        {
+          "teal": 540,
+          "source": "contracts\\Jointly.algo.ts:121",
+          "pc": [
+            624,
+            625,
+            626
+          ]
+        },
+        {
+          "teal": 543,
+          "source": "contracts\\Jointly.algo.ts:121",
+          "pc": [
+            627
+          ]
+        },
+        {
+          "teal": 544,
+          "source": "contracts\\Jointly.algo.ts:121",
+          "pc": [
+            628,
+            629
+          ]
+        },
+        {
+          "teal": 548,
+          "source": "contracts\\Jointly.algo.ts:122",
+          "pc": [
+            630
+          ]
+        },
+        {
+          "teal": 549,
+          "source": "contracts\\Jointly.algo.ts:122",
+          "pc": [
+            631,
+            632
+          ]
+        },
+        {
+          "teal": 554,
+          "source": "contracts\\Jointly.algo.ts:123",
+          "pc": [
+            633,
+            634
+          ]
+        },
+        {
+          "teal": 555,
+          "source": "contracts\\Jointly.algo.ts:123",
+          "pc": [
+            635
+          ]
+        },
+        {
+          "teal": 556,
+          "source": "contracts\\Jointly.algo.ts:123",
+          "pc": [
+            636
+          ]
+        },
+        {
+          "teal": 557,
+          "source": "contracts\\Jointly.algo.ts:123",
+          "pc": [
+            637
+          ]
+        },
+        {
+          "teal": 558,
+          "source": "contracts\\Jointly.algo.ts:123",
+          "pc": [
+            638,
+            639,
+            640
+          ]
+        },
+        {
+          "teal": 563,
+          "source": "contracts\\Jointly.algo.ts:124",
+          "pc": [
+            641,
+            642
+          ]
+        },
+        {
+          "teal": 564,
+          "source": "contracts\\Jointly.algo.ts:124",
+          "pc": [
+            643
+          ]
+        },
+        {
+          "teal": 565,
+          "source": "contracts\\Jointly.algo.ts:124",
+          "pc": [
+            644
+          ]
+        },
+        {
+          "teal": 566,
+          "source": "contracts\\Jointly.algo.ts:124",
+          "pc": [
+            645
+          ]
+        },
+        {
+          "teal": 567,
+          "source": "contracts\\Jointly.algo.ts:124",
+          "pc": [
+            646,
+            647
+          ]
+        },
+        {
+          "teal": 573,
+          "source": "contracts\\Jointly.algo.ts:127",
+          "pc": [
+            648
+          ]
+        },
+        {
+          "teal": 574,
+          "source": "contracts\\Jointly.algo.ts:127",
+          "pc": [
+            649
+          ]
+        },
+        {
+          "teal": 575,
+          "source": "contracts\\Jointly.algo.ts:127",
+          "pc": [
+            650,
+            651
+          ]
+        },
+        {
+          "teal": 576,
+          "source": "contracts\\Jointly.algo.ts:127",
+          "pc": [
+            652
+          ]
+        },
+        {
+          "teal": 577,
+          "source": "contracts\\Jointly.algo.ts:127",
+          "pc": [
+            653
+          ]
+        },
+        {
+          "teal": 578,
+          "source": "contracts\\Jointly.algo.ts:127",
+          "pc": [
+            654,
+            655,
+            656
+          ]
+        },
+        {
+          "teal": 579,
+          "source": "contracts\\Jointly.algo.ts:127",
+          "pc": [
+            657
+          ]
+        },
+        {
+          "teal": 580,
+          "source": "contracts\\Jointly.algo.ts:127",
+          "pc": [
+            658
+          ]
+        },
+        {
+          "teal": 581,
+          "source": "contracts\\Jointly.algo.ts:127",
+          "pc": [
+            659,
+            660
+          ]
+        },
+        {
+          "teal": 582,
+          "source": "contracts\\Jointly.algo.ts:127",
+          "pc": [
+            661
+          ]
+        },
+        {
+          "teal": 583,
+          "source": "contracts\\Jointly.algo.ts:127",
+          "pc": [
+            662
+          ]
+        },
+        {
+          "teal": 584,
+          "source": "contracts\\Jointly.algo.ts:127",
+          "pc": [
+            663
+          ]
+        },
+        {
+          "teal": 587,
+          "source": "contracts\\Jointly.algo.ts:127",
+          "pc": [
+            664,
+            665,
+            666
+          ]
+        },
+        {
+          "teal": 592,
+          "source": "contracts\\Jointly.algo.ts:128",
+          "pc": [
+            667
+          ]
+        },
+        {
+          "teal": 593,
+          "source": "contracts\\Jointly.algo.ts:128",
+          "pc": [
+            668
+          ]
+        },
+        {
+          "teal": 594,
+          "source": "contracts\\Jointly.algo.ts:128",
+          "pc": [
+            669
+          ]
+        },
+        {
+          "teal": 595,
+          "source": "contracts\\Jointly.algo.ts:128",
+          "pc": [
+            670
+          ]
+        },
+        {
+          "teal": 598,
+          "source": "contracts\\Jointly.algo.ts:128",
+          "errorMessage": "box value does not exist: this.proposalListings({key:this.counter.value}).value",
+          "pc": [
+            671
+          ]
+        },
+        {
+          "teal": 599,
+          "source": "contracts\\Jointly.algo.ts:128",
+          "pc": [
+            672,
+            673
+          ]
+        },
+        {
+          "teal": 600,
+          "source": "contracts\\Jointly.algo.ts:128",
+          "pc": [
+            674,
+            675
+          ]
+        },
+        {
+          "teal": 601,
+          "source": "contracts\\Jointly.algo.ts:128",
+          "pc": [
+            676,
+            677,
+            678
+          ]
+        },
+        {
+          "teal": 602,
+          "source": "contracts\\Jointly.algo.ts:128",
+          "pc": [
+            679,
+            680
+          ]
+        },
+        {
+          "teal": 606,
+          "source": "contracts\\Jointly.algo.ts:129",
+          "pc": [
+            681
+          ]
+        },
+        {
+          "teal": 607,
+          "source": "contracts\\Jointly.algo.ts:129",
+          "pc": [
+            682
+          ]
+        },
+        {
+          "teal": 608,
+          "source": "contracts\\Jointly.algo.ts:129",
+          "pc": [
+            683
+          ]
+        },
+        {
+          "teal": 609,
+          "source": "contracts\\Jointly.algo.ts:129",
+          "pc": [
+            684
+          ]
+        },
+        {
+          "teal": 612,
+          "source": "contracts\\Jointly.algo.ts:129",
+          "errorMessage": "box value does not exist: this.proposalListings({key:this.counter.value}).value",
+          "pc": [
+            685
+          ]
+        },
+        {
+          "teal": 613,
+          "source": "contracts\\Jointly.algo.ts:129",
+          "pc": [
+            686,
+            687
+          ]
+        },
+        {
+          "teal": 614,
+          "source": "contracts\\Jointly.algo.ts:129",
+          "pc": [
+            688,
+            689
+          ]
+        },
+        {
+          "teal": 615,
+          "source": "contracts\\Jointly.algo.ts:129",
+          "pc": [
+            690,
+            691
+          ]
+        },
+        {
+          "teal": 616,
+          "source": "contracts\\Jointly.algo.ts:129",
+          "pc": [
+            692,
+            693
+          ]
+        },
+        {
+          "teal": 617,
+          "source": "contracts\\Jointly.algo.ts:129",
+          "pc": [
+            694,
+            695
+          ]
+        },
+        {
+          "teal": 618,
+          "source": "contracts\\Jointly.algo.ts:129",
+          "pc": [
+            696
+          ]
+        },
+        {
+          "teal": 619,
+          "source": "contracts\\Jointly.algo.ts:129",
+          "pc": [
+            697
+          ]
+        },
+        {
+          "teal": 620,
+          "source": "contracts\\Jointly.algo.ts:129",
+          "pc": [
+            698,
+            699
+          ]
+        },
+        {
+          "teal": 621,
+          "source": "contracts\\Jointly.algo.ts:129",
+          "pc": [
+            700
+          ]
+        },
+        {
+          "teal": 622,
+          "source": "contracts\\Jointly.algo.ts:129",
+          "pc": [
+            701
+          ]
+        },
+        {
+          "teal": 623,
+          "source": "contracts\\Jointly.algo.ts:129",
+          "pc": [
+            702
+          ]
+        },
+        {
+          "teal": 624,
+          "source": "contracts\\Jointly.algo.ts:129",
+          "pc": [
+            703
+          ]
+        },
+        {
+          "teal": 625,
+          "source": "contracts\\Jointly.algo.ts:129",
+          "pc": [
+            704
+          ]
+        },
+        {
+          "teal": 626,
+          "source": "contracts\\Jointly.algo.ts:129",
+          "pc": [
+            705
+          ]
+        },
+        {
+          "teal": 627,
+          "source": "contracts\\Jointly.algo.ts:129",
+          "pc": [
+            706
+          ]
+        },
+        {
+          "teal": 628,
+          "source": "contracts\\Jointly.algo.ts:129",
+          "pc": [
+            707,
+            708,
+            709
+          ]
+        },
+        {
+          "teal": 629,
+          "source": "contracts\\Jointly.algo.ts:129",
+          "pc": [
+            710,
+            711
+          ]
+        },
+        {
+          "teal": 633,
+          "source": "contracts\\Jointly.algo.ts:130",
+          "pc": [
+            712
+          ]
+        },
+        {
+          "teal": 634,
+          "source": "contracts\\Jointly.algo.ts:130",
+          "pc": [
+            713
+          ]
+        },
+        {
+          "teal": 635,
+          "source": "contracts\\Jointly.algo.ts:130",
+          "pc": [
+            714
+          ]
+        },
+        {
+          "teal": 636,
+          "source": "contracts\\Jointly.algo.ts:130",
+          "pc": [
+            715
+          ]
+        },
+        {
+          "teal": 639,
+          "source": "contracts\\Jointly.algo.ts:130",
+          "errorMessage": "box value does not exist: this.proposalListings({key:this.counter.value}).value",
+          "pc": [
+            716
+          ]
+        },
+        {
+          "teal": 640,
+          "source": "contracts\\Jointly.algo.ts:130",
+          "pc": [
+            717,
+            718
+          ]
+        },
+        {
+          "teal": 641,
+          "source": "contracts\\Jointly.algo.ts:130",
+          "pc": [
+            719,
+            720
+          ]
+        },
+        {
+          "teal": 642,
+          "source": "contracts\\Jointly.algo.ts:130",
+          "pc": [
+            721,
+            722
+          ]
+        },
+        {
+          "teal": 643,
+          "source": "contracts\\Jointly.algo.ts:130",
+          "pc": [
+            723,
+            724
+          ]
+        },
+        {
+          "teal": 644,
+          "source": "contracts\\Jointly.algo.ts:130",
+          "pc": [
+            725,
+            726
+          ]
+        },
+        {
+          "teal": 645,
+          "source": "contracts\\Jointly.algo.ts:130",
+          "pc": [
+            727
+          ]
+        },
+        {
+          "teal": 646,
+          "source": "contracts\\Jointly.algo.ts:130",
+          "pc": [
+            728
+          ]
+        },
+        {
+          "teal": 647,
+          "source": "contracts\\Jointly.algo.ts:130",
+          "pc": [
+            729,
+            730
+          ]
+        },
+        {
+          "teal": 648,
+          "source": "contracts\\Jointly.algo.ts:130",
+          "pc": [
+            731
+          ]
+        },
+        {
+          "teal": 649,
+          "source": "contracts\\Jointly.algo.ts:130",
+          "pc": [
+            732
+          ]
+        },
+        {
+          "teal": 650,
+          "source": "contracts\\Jointly.algo.ts:130",
+          "pc": [
+            733
+          ]
+        },
+        {
+          "teal": 651,
+          "source": "contracts\\Jointly.algo.ts:130",
+          "pc": [
+            734
+          ]
+        },
+        {
+          "teal": 652,
+          "source": "contracts\\Jointly.algo.ts:130",
+          "pc": [
+            735
+          ]
+        },
+        {
+          "teal": 653,
+          "source": "contracts\\Jointly.algo.ts:130",
+          "pc": [
+            736
+          ]
+        },
+        {
+          "teal": 654,
+          "source": "contracts\\Jointly.algo.ts:130",
+          "pc": [
+            737
+          ]
+        },
+        {
+          "teal": 655,
+          "source": "contracts\\Jointly.algo.ts:130",
+          "pc": [
+            738,
+            739,
+            740
+          ]
+        },
+        {
+          "teal": 656,
+          "source": "contracts\\Jointly.algo.ts:130",
+          "pc": [
+            741,
+            742
+          ]
+        },
+        {
+          "teal": 668,
+          "source": "contracts\\Jointly.algo.ts:131",
+          "pc": [
+            743
+          ]
+        },
+        {
+          "teal": 669,
+          "source": "contracts\\Jointly.algo.ts:131",
+          "pc": [
+            744
+          ]
+        },
+        {
+          "teal": 670,
+          "source": "contracts\\Jointly.algo.ts:131",
+          "pc": [
+            745
+          ]
+        },
+        {
+          "teal": 671,
+          "source": "contracts\\Jointly.algo.ts:131",
+          "pc": [
+            746
+          ]
+        },
+        {
+          "teal": 672,
+          "source": "contracts\\Jointly.algo.ts:131",
+          "pc": [
+            747
+          ]
+        },
+        {
+          "teal": 673,
+          "source": "contracts\\Jointly.algo.ts:131",
+          "pc": [
+            748
+          ]
+        },
+        {
+          "teal": 674,
+          "source": "contracts\\Jointly.algo.ts:131",
+          "pc": [
+            749
+          ]
+        },
+        {
+          "teal": 675,
+          "source": "contracts\\Jointly.algo.ts:131",
+          "pc": [
+            750
+          ]
+        },
+        {
+          "teal": 676,
+          "source": "contracts\\Jointly.algo.ts:131",
+          "pc": [
+            751,
+            752
+          ]
+        },
+        {
+          "teal": 677,
+          "source": "contracts\\Jointly.algo.ts:132",
+          "pc": [
+            753
+          ]
+        },
+        {
+          "teal": 678,
+          "source": "contracts\\Jointly.algo.ts:132",
+          "pc": [
+            754
+          ]
+        },
+        {
+          "teal": 679,
+          "source": "contracts\\Jointly.algo.ts:132",
+          "pc": [
+            755
+          ]
+        },
+        {
+          "teal": 680,
+          "source": "contracts\\Jointly.algo.ts:132",
+          "pc": [
+            756,
+            757,
+            758
+          ]
+        },
+        {
+          "teal": 681,
+          "source": "contracts\\Jointly.algo.ts:133",
+          "pc": [
+            759
+          ]
+        },
+        {
+          "teal": 682,
+          "source": "contracts\\Jointly.algo.ts:133",
+          "pc": [
+            760
+          ]
+        },
+        {
+          "teal": 683,
+          "source": "contracts\\Jointly.algo.ts:133",
+          "pc": [
+            761
+          ]
+        },
+        {
+          "teal": 684,
+          "source": "contracts\\Jointly.algo.ts:133",
+          "pc": [
+            762,
+            763,
+            764
+          ]
+        },
+        {
+          "teal": 685,
+          "source": "contracts\\Jointly.algo.ts:134",
+          "pc": [
+            765,
+            766
+          ]
+        },
+        {
+          "teal": 686,
+          "source": "contracts\\Jointly.algo.ts:134",
+          "pc": [
+            767
+          ]
+        },
+        {
+          "teal": 687,
+          "source": "contracts\\Jointly.algo.ts:134",
+          "pc": [
+            768
+          ]
+        },
+        {
+          "teal": 688,
+          "source": "contracts\\Jointly.algo.ts:134",
+          "pc": [
+            769,
+            770,
+            771
+          ]
+        },
+        {
+          "teal": 689,
+          "source": "contracts\\Jointly.algo.ts:135",
+          "pc": [
+            772,
+            773,
+            774,
+            775,
+            776,
+            777,
+            778,
+            779,
+            780,
+            781
+          ]
+        },
+        {
+          "teal": 690,
+          "source": "contracts\\Jointly.algo.ts:135",
+          "pc": [
+            782,
+            783,
+            784
+          ]
+        },
+        {
+          "teal": 691,
+          "source": "contracts\\Jointly.algo.ts:136",
+          "pc": [
+            785,
+            786
+          ]
+        },
+        {
+          "teal": 692,
+          "source": "contracts\\Jointly.algo.ts:136",
+          "pc": [
+            787,
+            788,
+            789
+          ]
+        },
+        {
+          "teal": 693,
+          "source": "contracts\\Jointly.algo.ts:137",
+          "pc": [
+            790,
+            791
+          ]
+        },
+        {
+          "teal": 694,
+          "source": "contracts\\Jointly.algo.ts:137",
+          "pc": [
+            792
+          ]
+        },
+        {
+          "teal": 695,
+          "source": "contracts\\Jointly.algo.ts:137",
+          "pc": [
+            793
+          ]
+        },
+        {
+          "teal": 696,
+          "source": "contracts\\Jointly.algo.ts:137",
+          "pc": [
+            794
+          ]
+        },
+        {
+          "teal": 697,
+          "source": "contracts\\Jointly.algo.ts:137",
+          "pc": [
+            795,
+            796,
+            797
+          ]
+        },
+        {
+          "teal": 698,
+          "source": "contracts\\Jointly.algo.ts:137",
+          "pc": [
+            798
+          ]
+        },
+        {
+          "teal": 699,
+          "source": "contracts\\Jointly.algo.ts:137",
+          "pc": [
+            799
+          ]
+        },
+        {
+          "teal": 700,
+          "source": "contracts\\Jointly.algo.ts:137",
+          "pc": [
+            800,
+            801,
+            802
+          ]
+        },
+        {
+          "teal": 701,
+          "source": "contracts\\Jointly.algo.ts:138",
+          "pc": [
+            803,
+            804
+          ]
+        },
+        {
+          "teal": 702,
+          "source": "contracts\\Jointly.algo.ts:138",
+          "pc": [
+            805
+          ]
+        },
+        {
+          "teal": 703,
+          "source": "contracts\\Jointly.algo.ts:138",
+          "pc": [
+            806
+          ]
+        },
+        {
+          "teal": 704,
+          "source": "contracts\\Jointly.algo.ts:138",
+          "pc": [
+            807
+          ]
+        },
+        {
+          "teal": 705,
+          "source": "contracts\\Jointly.algo.ts:138",
+          "pc": [
+            808,
+            809,
+            810
+          ]
+        },
+        {
+          "teal": 706,
+          "source": "contracts\\Jointly.algo.ts:138",
+          "pc": [
+            811
+          ]
+        },
+        {
+          "teal": 707,
+          "source": "contracts\\Jointly.algo.ts:138",
+          "pc": [
+            812
+          ]
+        },
+        {
+          "teal": 708,
+          "source": "contracts\\Jointly.algo.ts:138",
+          "pc": [
+            813,
+            814,
+            815
+          ]
+        },
+        {
+          "teal": 709,
+          "source": "contracts\\Jointly.algo.ts:131",
+          "pc": [
+            816
+          ]
+        },
+        {
+          "teal": 710,
+          "source": "contracts\\Jointly.algo.ts:131",
+          "pc": [
+            817
+          ]
+        },
+        {
+          "teal": 711,
+          "source": "contracts\\Jointly.algo.ts:131",
+          "pc": [
+            818
+          ]
+        },
+        {
+          "teal": 715,
+          "source": "contracts\\Jointly.algo.ts:140",
+          "pc": [
+            819,
+            820
+          ]
+        },
+        {
+          "teal": 716,
+          "source": "contracts\\Jointly.algo.ts:140",
+          "pc": [
+            821,
+            822
+          ]
+        },
+        {
+          "teal": 717,
+          "source": "contracts\\Jointly.algo.ts:140",
+          "pc": [
+            823
+          ]
+        },
+        {
+          "teal": 721,
+          "source": "contracts\\Jointly.algo.ts:141",
+          "pc": [
+            824
+          ]
+        },
+        {
+          "teal": 722,
+          "source": "contracts\\Jointly.algo.ts:141",
+          "pc": [
+            825
+          ]
+        },
+        {
+          "teal": 723,
+          "source": "contracts\\Jointly.algo.ts:141",
+          "pc": [
+            826
+          ]
+        },
+        {
+          "teal": 727,
+          "source": "contracts\\Jointly.algo.ts:142",
+          "pc": [
+            827
+          ]
+        },
+        {
+          "teal": 728,
+          "source": "contracts\\Jointly.algo.ts:142",
+          "pc": [
+            828
+          ]
+        },
+        {
+          "teal": 729,
+          "source": "contracts\\Jointly.algo.ts:142",
+          "pc": [
+            829
+          ]
+        },
+        {
+          "teal": 733,
+          "source": "contracts\\Jointly.algo.ts:143",
+          "pc": [
+            830,
+            831
+          ]
+        },
+        {
+          "teal": 734,
+          "source": "contracts\\Jointly.algo.ts:143",
+          "pc": [
+            832
+          ]
+        },
+        {
+          "teal": 735,
+          "source": "contracts\\Jointly.algo.ts:143",
+          "pc": [
+            833
+          ]
+        },
+        {
+          "teal": 739,
+          "source": "contracts\\Jointly.algo.ts:144",
+          "pc": [
+            834,
+            835
+          ]
+        },
+        {
+          "teal": 740,
+          "source": "contracts\\Jointly.algo.ts:144",
+          "pc": [
+            836
+          ]
+        },
+        {
+          "teal": 741,
+          "source": "contracts\\Jointly.algo.ts:144",
+          "pc": [
+            837,
+            838
+          ]
+        },
+        {
+          "teal": 742,
+          "source": "contracts\\Jointly.algo.ts:144",
+          "pc": [
+            839
+          ]
+        },
+        {
+          "teal": 743,
+          "source": "contracts\\Jointly.algo.ts:144",
+          "pc": [
+            840,
+            841
+          ]
+        },
+        {
+          "teal": 744,
+          "source": "contracts\\Jointly.algo.ts:144",
+          "pc": [
+            842
+          ]
+        },
+        {
+          "teal": 745,
+          "source": "contracts\\Jointly.algo.ts:144",
+          "pc": [
+            843
+          ]
+        },
+        {
+          "teal": 749,
+          "source": "contracts\\Jointly.algo.ts:145",
+          "pc": [
+            844
+          ]
+        },
+        {
+          "teal": 750,
+          "source": "contracts\\Jointly.algo.ts:145",
+          "pc": [
+            845
+          ]
+        },
+        {
+          "teal": 751,
+          "source": "contracts\\Jointly.algo.ts:145",
+          "pc": [
+            846
+          ]
+        },
+        {
+          "teal": 752,
+          "source": "contracts\\Jointly.algo.ts:145",
+          "pc": [
+            847
+          ]
+        },
+        {
+          "teal": 753,
+          "source": "contracts\\Jointly.algo.ts:145",
+          "pc": [
+            848
+          ]
+        },
+        {
+          "teal": 754,
+          "source": "contracts\\Jointly.algo.ts:145",
+          "pc": [
+            849
+          ]
+        },
+        {
+          "teal": 755,
+          "source": "contracts\\Jointly.algo.ts:127",
+          "pc": [
+            850,
+            851,
+            852
+          ]
+        },
+        {
+          "teal": 760,
+          "source": "contracts\\Jointly.algo.ts:146",
+          "pc": [
+            853
+          ]
+        },
+        {
+          "teal": 761,
+          "source": "contracts\\Jointly.algo.ts:146",
+          "pc": [
+            854
+          ]
+        },
+        {
+          "teal": 762,
+          "source": "contracts\\Jointly.algo.ts:146",
+          "pc": [
+            855,
+            856
+          ]
+        },
+        {
+          "teal": 763,
+          "source": "contracts\\Jointly.algo.ts:146",
+          "pc": [
+            857
+          ]
+        },
+        {
+          "teal": 764,
+          "source": "contracts\\Jointly.algo.ts:146",
+          "pc": [
+            858
+          ]
+        },
+        {
+          "teal": 765,
+          "source": "contracts\\Jointly.algo.ts:146",
+          "pc": [
+            859,
+            860,
+            861
+          ]
+        },
+        {
+          "teal": 766,
+          "source": "contracts\\Jointly.algo.ts:146",
+          "pc": [
+            862
+          ]
+        },
+        {
+          "teal": 767,
+          "source": "contracts\\Jointly.algo.ts:146",
+          "pc": [
+            863
+          ]
+        },
+        {
+          "teal": 768,
+          "source": "contracts\\Jointly.algo.ts:146",
+          "pc": [
+            864,
+            865
+          ]
+        },
+        {
+          "teal": 769,
+          "source": "contracts\\Jointly.algo.ts:146",
+          "pc": [
+            866
+          ]
+        },
+        {
+          "teal": 770,
+          "source": "contracts\\Jointly.algo.ts:146",
+          "pc": [
+            867
+          ]
+        },
+        {
+          "teal": 771,
+          "source": "contracts\\Jointly.algo.ts:146",
+          "pc": [
+            868
+          ]
+        },
+        {
+          "teal": 774,
+          "source": "contracts\\Jointly.algo.ts:146",
+          "pc": [
+            869,
+            870,
+            871
+          ]
+        },
+        {
+          "teal": 779,
+          "source": "contracts\\Jointly.algo.ts:147",
+          "pc": [
+            872
+          ]
+        },
+        {
+          "teal": 780,
+          "source": "contracts\\Jointly.algo.ts:147",
+          "pc": [
+            873
+          ]
+        },
+        {
+          "teal": 781,
+          "source": "contracts\\Jointly.algo.ts:147",
+          "pc": [
+            874
+          ]
+        },
+        {
+          "teal": 782,
+          "source": "contracts\\Jointly.algo.ts:147",
+          "pc": [
+            875
+          ]
+        },
+        {
+          "teal": 785,
+          "source": "contracts\\Jointly.algo.ts:147",
+          "errorMessage": "box value does not exist: this.proposalListings({key:this.counter.value}).value",
+          "pc": [
+            876
+          ]
+        },
+        {
+          "teal": 786,
+          "source": "contracts\\Jointly.algo.ts:147",
+          "pc": [
+            877,
+            878
+          ]
+        },
+        {
+          "teal": 787,
+          "source": "contracts\\Jointly.algo.ts:147",
+          "pc": [
+            879,
+            880
+          ]
+        },
+        {
+          "teal": 788,
+          "source": "contracts\\Jointly.algo.ts:147",
+          "pc": [
+            881,
+            882,
+            883
+          ]
+        },
+        {
+          "teal": 789,
+          "source": "contracts\\Jointly.algo.ts:147",
+          "pc": [
+            884,
+            885
+          ]
+        },
+        {
+          "teal": 793,
+          "source": "contracts\\Jointly.algo.ts:148",
+          "pc": [
+            886
+          ]
+        },
+        {
+          "teal": 794,
+          "source": "contracts\\Jointly.algo.ts:148",
+          "pc": [
+            887
+          ]
+        },
+        {
+          "teal": 795,
+          "source": "contracts\\Jointly.algo.ts:148",
+          "pc": [
+            888
+          ]
+        },
+        {
+          "teal": 796,
+          "source": "contracts\\Jointly.algo.ts:148",
+          "pc": [
+            889
+          ]
+        },
+        {
+          "teal": 799,
+          "source": "contracts\\Jointly.algo.ts:148",
+          "errorMessage": "box value does not exist: this.proposalListings({key:this.counter.value}).value",
+          "pc": [
+            890
+          ]
+        },
+        {
+          "teal": 800,
+          "source": "contracts\\Jointly.algo.ts:148",
+          "pc": [
+            891,
+            892
+          ]
+        },
+        {
+          "teal": 801,
+          "source": "contracts\\Jointly.algo.ts:148",
+          "pc": [
+            893,
+            894
+          ]
+        },
+        {
+          "teal": 802,
+          "source": "contracts\\Jointly.algo.ts:148",
+          "pc": [
+            895,
+            896
+          ]
+        },
+        {
+          "teal": 803,
+          "source": "contracts\\Jointly.algo.ts:148",
+          "pc": [
+            897,
+            898
+          ]
+        },
+        {
+          "teal": 804,
+          "source": "contracts\\Jointly.algo.ts:148",
+          "pc": [
+            899,
+            900
+          ]
+        },
+        {
+          "teal": 805,
+          "source": "contracts\\Jointly.algo.ts:148",
+          "pc": [
+            901
+          ]
+        },
+        {
+          "teal": 806,
+          "source": "contracts\\Jointly.algo.ts:148",
+          "pc": [
+            902
+          ]
+        },
+        {
+          "teal": 807,
+          "source": "contracts\\Jointly.algo.ts:148",
+          "pc": [
+            903,
+            904
+          ]
+        },
+        {
+          "teal": 808,
+          "source": "contracts\\Jointly.algo.ts:148",
+          "pc": [
+            905
+          ]
+        },
+        {
+          "teal": 809,
+          "source": "contracts\\Jointly.algo.ts:148",
+          "pc": [
+            906
+          ]
+        },
+        {
+          "teal": 810,
+          "source": "contracts\\Jointly.algo.ts:148",
+          "pc": [
+            907
+          ]
+        },
+        {
+          "teal": 811,
+          "source": "contracts\\Jointly.algo.ts:148",
+          "pc": [
+            908
+          ]
+        },
+        {
+          "teal": 812,
+          "source": "contracts\\Jointly.algo.ts:148",
+          "pc": [
+            909
+          ]
+        },
+        {
+          "teal": 813,
+          "source": "contracts\\Jointly.algo.ts:148",
+          "pc": [
+            910
+          ]
+        },
+        {
+          "teal": 814,
+          "source": "contracts\\Jointly.algo.ts:148",
+          "pc": [
+            911
+          ]
+        },
+        {
+          "teal": 815,
+          "source": "contracts\\Jointly.algo.ts:148",
+          "pc": [
+            912,
+            913,
+            914
+          ]
+        },
+        {
+          "teal": 816,
+          "source": "contracts\\Jointly.algo.ts:148",
+          "pc": [
+            915,
+            916
+          ]
+        },
+        {
+          "teal": 820,
+          "source": "contracts\\Jointly.algo.ts:149",
+          "pc": [
+            917
+          ]
+        },
+        {
+          "teal": 821,
+          "source": "contracts\\Jointly.algo.ts:149",
+          "pc": [
+            918
+          ]
+        },
+        {
+          "teal": 822,
+          "source": "contracts\\Jointly.algo.ts:149",
+          "pc": [
+            919
+          ]
+        },
+        {
+          "teal": 823,
+          "source": "contracts\\Jointly.algo.ts:149",
+          "pc": [
+            920
+          ]
+        },
+        {
+          "teal": 826,
+          "source": "contracts\\Jointly.algo.ts:149",
+          "errorMessage": "box value does not exist: this.proposalListings({key:this.counter.value}).value",
+          "pc": [
+            921
+          ]
+        },
+        {
+          "teal": 827,
+          "source": "contracts\\Jointly.algo.ts:149",
+          "pc": [
+            922,
+            923
+          ]
+        },
+        {
+          "teal": 828,
+          "source": "contracts\\Jointly.algo.ts:149",
+          "pc": [
+            924,
+            925
+          ]
+        },
+        {
+          "teal": 829,
+          "source": "contracts\\Jointly.algo.ts:149",
+          "pc": [
+            926,
+            927
+          ]
+        },
+        {
+          "teal": 830,
+          "source": "contracts\\Jointly.algo.ts:149",
+          "pc": [
+            928,
+            929
+          ]
+        },
+        {
+          "teal": 831,
+          "source": "contracts\\Jointly.algo.ts:149",
+          "pc": [
+            930,
+            931
+          ]
+        },
+        {
+          "teal": 832,
+          "source": "contracts\\Jointly.algo.ts:149",
+          "pc": [
+            932
+          ]
+        },
+        {
+          "teal": 833,
+          "source": "contracts\\Jointly.algo.ts:149",
+          "pc": [
+            933
+          ]
+        },
+        {
+          "teal": 834,
+          "source": "contracts\\Jointly.algo.ts:149",
+          "pc": [
+            934,
+            935
+          ]
+        },
+        {
+          "teal": 835,
+          "source": "contracts\\Jointly.algo.ts:149",
+          "pc": [
+            936
+          ]
+        },
+        {
+          "teal": 836,
+          "source": "contracts\\Jointly.algo.ts:149",
+          "pc": [
+            937
+          ]
+        },
+        {
+          "teal": 837,
+          "source": "contracts\\Jointly.algo.ts:149",
+          "pc": [
+            938
+          ]
+        },
+        {
+          "teal": 838,
+          "source": "contracts\\Jointly.algo.ts:149",
+          "pc": [
+            939
+          ]
+        },
+        {
+          "teal": 839,
+          "source": "contracts\\Jointly.algo.ts:149",
+          "pc": [
+            940
+          ]
+        },
+        {
+          "teal": 840,
+          "source": "contracts\\Jointly.algo.ts:149",
+          "pc": [
+            941
+          ]
+        },
+        {
+          "teal": 841,
+          "source": "contracts\\Jointly.algo.ts:149",
+          "pc": [
+            942
+          ]
+        },
+        {
+          "teal": 842,
+          "source": "contracts\\Jointly.algo.ts:149",
+          "pc": [
+            943,
+            944,
+            945
+          ]
+        },
+        {
+          "teal": 843,
+          "source": "contracts\\Jointly.algo.ts:149",
+          "pc": [
+            946,
+            947
+          ]
+        },
+        {
+          "teal": 855,
+          "source": "contracts\\Jointly.algo.ts:150",
+          "pc": [
+            948
+          ]
+        },
+        {
+          "teal": 856,
+          "source": "contracts\\Jointly.algo.ts:150",
+          "pc": [
+            949
+          ]
+        },
+        {
+          "teal": 857,
+          "source": "contracts\\Jointly.algo.ts:150",
+          "pc": [
+            950
+          ]
+        },
+        {
+          "teal": 858,
+          "source": "contracts\\Jointly.algo.ts:150",
+          "pc": [
+            951
+          ]
+        },
+        {
+          "teal": 859,
+          "source": "contracts\\Jointly.algo.ts:150",
+          "pc": [
+            952
+          ]
+        },
+        {
+          "teal": 860,
+          "source": "contracts\\Jointly.algo.ts:150",
+          "pc": [
+            953
+          ]
+        },
+        {
+          "teal": 861,
+          "source": "contracts\\Jointly.algo.ts:150",
+          "pc": [
+            954
+          ]
+        },
+        {
+          "teal": 862,
+          "source": "contracts\\Jointly.algo.ts:150",
+          "pc": [
+            955
+          ]
+        },
+        {
+          "teal": 863,
+          "source": "contracts\\Jointly.algo.ts:150",
+          "pc": [
+            956,
+            957
+          ]
+        },
+        {
+          "teal": 864,
+          "source": "contracts\\Jointly.algo.ts:151",
+          "pc": [
+            958
+          ]
+        },
+        {
+          "teal": 865,
+          "source": "contracts\\Jointly.algo.ts:151",
+          "pc": [
+            959
+          ]
+        },
+        {
+          "teal": 866,
+          "source": "contracts\\Jointly.algo.ts:151",
+          "pc": [
+            960
+          ]
+        },
+        {
+          "teal": 867,
+          "source": "contracts\\Jointly.algo.ts:151",
+          "pc": [
+            961,
+            962,
+            963
+          ]
+        },
+        {
+          "teal": 868,
+          "source": "contracts\\Jointly.algo.ts:152",
+          "pc": [
+            964
+          ]
+        },
+        {
+          "teal": 869,
+          "source": "contracts\\Jointly.algo.ts:152",
+          "pc": [
+            965
+          ]
+        },
+        {
+          "teal": 870,
+          "source": "contracts\\Jointly.algo.ts:152",
+          "pc": [
+            966
+          ]
+        },
+        {
+          "teal": 871,
+          "source": "contracts\\Jointly.algo.ts:152",
+          "pc": [
+            967,
+            968,
+            969
+          ]
+        },
+        {
+          "teal": 872,
+          "source": "contracts\\Jointly.algo.ts:153",
+          "pc": [
+            970,
+            971
+          ]
+        },
+        {
+          "teal": 873,
+          "source": "contracts\\Jointly.algo.ts:153",
+          "pc": [
+            972
+          ]
+        },
+        {
+          "teal": 874,
+          "source": "contracts\\Jointly.algo.ts:153",
+          "pc": [
+            973
+          ]
+        },
+        {
+          "teal": 875,
+          "source": "contracts\\Jointly.algo.ts:153",
+          "pc": [
+            974,
+            975,
+            976
+          ]
+        },
+        {
+          "teal": 876,
+          "source": "contracts\\Jointly.algo.ts:154",
+          "pc": [
+            977,
+            978
+          ]
+        },
+        {
+          "teal": 877,
+          "source": "contracts\\Jointly.algo.ts:154",
+          "pc": [
+            979,
+            980,
+            981
+          ]
+        },
+        {
+          "teal": 878,
+          "source": "contracts\\Jointly.algo.ts:155",
+          "pc": [
+            982,
+            983
+          ]
+        },
+        {
+          "teal": 879,
+          "source": "contracts\\Jointly.algo.ts:155",
+          "pc": [
+            984,
+            985,
+            986
+          ]
+        },
+        {
+          "teal": 880,
+          "source": "contracts\\Jointly.algo.ts:156",
+          "pc": [
+            987,
+            988
+          ]
+        },
+        {
+          "teal": 881,
+          "source": "contracts\\Jointly.algo.ts:156",
+          "pc": [
+            989
+          ]
+        },
+        {
+          "teal": 882,
+          "source": "contracts\\Jointly.algo.ts:156",
+          "pc": [
+            990
+          ]
+        },
+        {
+          "teal": 883,
+          "source": "contracts\\Jointly.algo.ts:156",
+          "pc": [
+            991
+          ]
+        },
+        {
+          "teal": 884,
+          "source": "contracts\\Jointly.algo.ts:156",
+          "pc": [
+            992,
+            993,
+            994
+          ]
+        },
+        {
+          "teal": 885,
+          "source": "contracts\\Jointly.algo.ts:156",
+          "pc": [
+            995
+          ]
+        },
+        {
+          "teal": 886,
+          "source": "contracts\\Jointly.algo.ts:156",
+          "pc": [
+            996
+          ]
+        },
+        {
+          "teal": 887,
+          "source": "contracts\\Jointly.algo.ts:156",
+          "pc": [
+            997,
+            998,
+            999
+          ]
+        },
+        {
+          "teal": 888,
+          "source": "contracts\\Jointly.algo.ts:157",
+          "pc": [
+            1000,
+            1001
+          ]
+        },
+        {
+          "teal": 889,
+          "source": "contracts\\Jointly.algo.ts:157",
+          "pc": [
+            1002
+          ]
+        },
+        {
+          "teal": 890,
+          "source": "contracts\\Jointly.algo.ts:157",
+          "pc": [
+            1003
+          ]
+        },
+        {
+          "teal": 891,
+          "source": "contracts\\Jointly.algo.ts:157",
+          "pc": [
+            1004
+          ]
+        },
+        {
+          "teal": 892,
+          "source": "contracts\\Jointly.algo.ts:157",
+          "pc": [
+            1005,
+            1006,
+            1007
+          ]
+        },
+        {
+          "teal": 893,
+          "source": "contracts\\Jointly.algo.ts:157",
+          "pc": [
+            1008
+          ]
+        },
+        {
+          "teal": 894,
+          "source": "contracts\\Jointly.algo.ts:157",
+          "pc": [
+            1009
+          ]
+        },
+        {
+          "teal": 895,
+          "source": "contracts\\Jointly.algo.ts:157",
+          "pc": [
+            1010,
+            1011,
+            1012
+          ]
+        },
+        {
+          "teal": 896,
+          "source": "contracts\\Jointly.algo.ts:150",
+          "pc": [
+            1013
+          ]
+        },
+        {
+          "teal": 897,
+          "source": "contracts\\Jointly.algo.ts:150",
+          "pc": [
+            1014
+          ]
+        },
+        {
+          "teal": 898,
+          "source": "contracts\\Jointly.algo.ts:150",
+          "pc": [
+            1015
+          ]
+        },
+        {
+          "teal": 902,
+          "source": "contracts\\Jointly.algo.ts:159",
+          "pc": [
+            1016,
+            1017
+          ]
+        },
+        {
+          "teal": 903,
+          "source": "contracts\\Jointly.algo.ts:159",
+          "pc": [
+            1018,
+            1019
+          ]
+        },
+        {
+          "teal": 904,
+          "source": "contracts\\Jointly.algo.ts:159",
+          "pc": [
+            1020
+          ]
+        },
+        {
+          "teal": 908,
+          "source": "contracts\\Jointly.algo.ts:160",
+          "pc": [
+            1021
+          ]
+        },
+        {
+          "teal": 909,
+          "source": "contracts\\Jointly.algo.ts:160",
+          "pc": [
+            1022
+          ]
+        },
+        {
+          "teal": 910,
+          "source": "contracts\\Jointly.algo.ts:160",
+          "pc": [
+            1023
+          ]
+        },
+        {
+          "teal": 914,
+          "source": "contracts\\Jointly.algo.ts:161",
+          "pc": [
+            1024
+          ]
+        },
+        {
+          "teal": 915,
+          "source": "contracts\\Jointly.algo.ts:161",
+          "pc": [
+            1025
+          ]
+        },
+        {
+          "teal": 916,
+          "source": "contracts\\Jointly.algo.ts:161",
+          "pc": [
+            1026
+          ]
+        },
+        {
+          "teal": 920,
+          "source": "contracts\\Jointly.algo.ts:162",
+          "pc": [
+            1027,
+            1028
+          ]
+        },
+        {
+          "teal": 921,
+          "source": "contracts\\Jointly.algo.ts:162",
+          "pc": [
+            1029
+          ]
+        },
+        {
+          "teal": 922,
+          "source": "contracts\\Jointly.algo.ts:162",
+          "pc": [
+            1030
+          ]
+        },
+        {
+          "teal": 926,
+          "source": "contracts\\Jointly.algo.ts:163",
+          "pc": [
+            1031,
+            1032
+          ]
+        },
+        {
+          "teal": 927,
+          "source": "contracts\\Jointly.algo.ts:163",
+          "pc": [
+            1033
+          ]
+        },
+        {
+          "teal": 928,
+          "source": "contracts\\Jointly.algo.ts:163",
+          "pc": [
+            1034,
+            1035
+          ]
+        },
+        {
+          "teal": 929,
+          "source": "contracts\\Jointly.algo.ts:163",
+          "pc": [
+            1036
+          ]
+        },
+        {
+          "teal": 930,
+          "source": "contracts\\Jointly.algo.ts:163",
+          "pc": [
+            1037,
+            1038
+          ]
+        },
+        {
+          "teal": 931,
+          "source": "contracts\\Jointly.algo.ts:163",
+          "pc": [
+            1039
+          ]
+        },
+        {
+          "teal": 932,
+          "source": "contracts\\Jointly.algo.ts:163",
+          "pc": [
+            1040
+          ]
+        },
+        {
+          "teal": 936,
+          "source": "contracts\\Jointly.algo.ts:164",
+          "pc": [
+            1041
+          ]
+        },
+        {
+          "teal": 937,
+          "source": "contracts\\Jointly.algo.ts:164",
+          "pc": [
+            1042
+          ]
+        },
+        {
+          "teal": 938,
+          "source": "contracts\\Jointly.algo.ts:164",
+          "pc": [
+            1043
+          ]
+        },
+        {
+          "teal": 939,
+          "source": "contracts\\Jointly.algo.ts:164",
+          "pc": [
+            1044
+          ]
+        },
+        {
+          "teal": 940,
+          "source": "contracts\\Jointly.algo.ts:164",
+          "pc": [
+            1045
+          ]
+        },
+        {
+          "teal": 941,
+          "source": "contracts\\Jointly.algo.ts:164",
+          "pc": [
+            1046
+          ]
+        },
+        {
+          "teal": 942,
+          "source": "contracts\\Jointly.algo.ts:146",
+          "pc": [
+            1047,
+            1048,
+            1049
+          ]
+        },
+        {
+          "teal": 947,
+          "source": "contracts\\Jointly.algo.ts:121",
+          "pc": [
+            1050
+          ]
+        },
+        {
+          "teal": 950,
+          "source": "contracts\\Jointly.algo.ts:32",
+          "pc": [
+            1051,
+            1052,
+            1053,
+            1054,
+            1055,
+            1056
+          ]
+        },
+        {
+          "teal": 951,
+          "source": "contracts\\Jointly.algo.ts:32",
+          "pc": [
+            1057,
+            1058,
+            1059
+          ]
+        },
+        {
+          "teal": 952,
+          "source": "contracts\\Jointly.algo.ts:32",
+          "pc": [
+            1060,
+            1061,
+            1062,
+            1063
+          ]
+        },
+        {
+          "teal": 955,
+          "source": "contracts\\Jointly.algo.ts:32",
+          "errorMessage": "this contract does not implement the given ABI method for create NoOp",
+          "pc": [
+            1064
+          ]
+        },
+        {
+          "teal": 958,
+          "source": "contracts\\Jointly.algo.ts:32",
+          "pc": [
+            1065,
+            1066,
+            1067,
+            1068,
+            1069,
+            1070
+          ]
+        },
+        {
+          "teal": 959,
+          "source": "contracts\\Jointly.algo.ts:32",
+          "pc": [
+            1071,
+            1072,
+            1073,
+            1074,
+            1075,
+            1076
+          ]
+        },
+        {
+          "teal": 960,
+          "source": "contracts\\Jointly.algo.ts:32",
+          "pc": [
+            1077,
+            1078,
+            1079,
+            1080,
+            1081,
+            1082
+          ]
+        },
+        {
+          "teal": 961,
+          "source": "contracts\\Jointly.algo.ts:32",
+          "pc": [
+            1083,
+            1084,
+            1085,
+            1086,
+            1087,
+            1088
+          ]
+        },
+        {
+          "teal": 962,
+          "source": "contracts\\Jointly.algo.ts:32",
+          "pc": [
+            1089,
+            1090,
+            1091,
+            1092,
+            1093,
+            1094
+          ]
+        },
+        {
+          "teal": 963,
+          "source": "contracts\\Jointly.algo.ts:32",
+          "pc": [
+            1095,
+            1096,
+            1097
+          ]
+        },
+        {
+          "teal": 964,
+          "source": "contracts\\Jointly.algo.ts:32",
+          "pc": [
+            1098,
+            1099,
+            1100,
+            1101,
+            1102,
+            1103,
+            1104,
+            1105,
+            1106,
+            1107,
+            1108,
+            1109
+          ]
+        },
+        {
+          "teal": 967,
+          "source": "contracts\\Jointly.algo.ts:32",
+          "errorMessage": "this contract does not implement the given ABI method for call NoOp",
+          "pc": [
+            1110
+          ]
+        },
+        {
+          "teal": 970,
+          "source": "contracts\\Jointly.algo.ts:32",
+          "pc": [
+            1111,
+            1112,
+            1113
+          ]
+        },
+        {
+          "teal": 971,
+          "source": "contracts\\Jointly.algo.ts:32",
+          "pc": [
+            1114,
+            1115
+          ]
+        },
+        {
+          "teal": 972,
+          "source": "contracts\\Jointly.algo.ts:32",
+          "pc": [
+            1116,
+            1117
+          ]
+        },
+        {
+          "teal": 973,
+          "source": "contracts\\Jointly.algo.ts:32",
+          "pc": [
+            1118
+          ]
+        },
+        {
+          "teal": 974,
+          "source": "contracts\\Jointly.algo.ts:32",
+          "pc": [
+            1119,
+            1120
+          ]
+        },
+        {
+          "teal": 975,
+          "source": "contracts\\Jointly.algo.ts:32",
+          "pc": [
+            1121,
+            1122
+          ]
+        },
+        {
+          "teal": 976,
+          "source": "contracts\\Jointly.algo.ts:32",
+          "pc": [
+            1123
+          ]
+        },
+        {
+          "teal": 979,
+          "source": "contracts\\Jointly.algo.ts:32",
+          "pc": [
+            1124,
+            1125,
+            1126
+          ]
+        },
+        {
+          "teal": 980,
+          "source": "contracts\\Jointly.algo.ts:32",
+          "pc": [
+            1127,
+            1128
+          ]
+        },
+        {
+          "teal": 981,
+          "source": "contracts\\Jointly.algo.ts:32",
+          "pc": [
+            1129,
+            1130
+          ]
+        },
+        {
+          "teal": 982,
+          "source": "contracts\\Jointly.algo.ts:32",
+          "pc": [
+            1131
+          ]
+        },
+        {
+          "teal": 983,
+          "source": "contracts\\Jointly.algo.ts:32",
+          "pc": [
+            1132,
+            1133
+          ]
+        },
+        {
+          "teal": 984,
+          "source": "contracts\\Jointly.algo.ts:32",
+          "pc": [
+            1134,
+            1135
+          ]
+        },
+        {
+          "teal": 985,
+          "source": "contracts\\Jointly.algo.ts:32",
+          "pc": [
+            1136
+          ]
+        },
+        {
+          "teal": 986,
+          "source": "contracts\\Jointly.algo.ts:32",
+          "pc": [
+            1137
+          ]
+        },
+        {
+          "teal": 987,
+          "source": "contracts\\Jointly.algo.ts:32",
+          "pc": [
+            1138,
+            1139
+          ]
+        },
+        {
+          "teal": 988,
+          "source": "contracts\\Jointly.algo.ts:32",
+          "pc": [
+            1140
+          ]
+        },
+        {
+          "teal": 989,
+          "source": "contracts\\Jointly.algo.ts:32",
+          "pc": [
+            1141
+          ]
+        },
+        {
+          "teal": 990,
+          "source": "contracts\\Jointly.algo.ts:32",
+          "pc": [
+            1142
+          ]
+        },
+        {
+          "teal": 991,
+          "source": "contracts\\Jointly.algo.ts:32",
+          "pc": [
+            1143,
+            1144,
+            1145
+          ]
+        },
+        {
+          "teal": 992,
+          "source": "contracts\\Jointly.algo.ts:32",
+          "pc": [
+            1146,
+            1147
+          ]
+        },
+        {
+          "teal": 993,
+          "source": "contracts\\Jointly.algo.ts:32",
+          "pc": [
+            1148,
+            1149
+          ]
+        },
+        {
+          "teal": 994,
+          "source": "contracts\\Jointly.algo.ts:32",
+          "pc": [
+            1150
+          ]
+        },
+        {
+          "teal": 995,
+          "source": "contracts\\Jointly.algo.ts:32",
+          "pc": [
+            1151
+          ]
+        },
+        {
+          "teal": 996,
+          "source": "contracts\\Jointly.algo.ts:32",
+          "pc": [
+            1152,
+            1153
+          ]
+        },
+        {
+          "teal": 997,
+          "source": "contracts\\Jointly.algo.ts:32",
+          "pc": [
+            1154,
+            1155
+          ]
+        },
+        {
+          "teal": 998,
+          "source": "contracts\\Jointly.algo.ts:32",
+          "pc": [
+            1156,
+            1157
+          ]
+        },
+        {
+          "teal": 999,
+          "source": "contracts\\Jointly.algo.ts:32",
+          "pc": [
+            1158,
+            1159
+          ]
+        },
+        {
+          "teal": 1000,
+          "source": "contracts\\Jointly.algo.ts:32",
+          "pc": [
+            1160
+          ]
+        }
+      ],
+      "pcOffsetMethod": "none"
+    },
+    "clear": {
+      "sourceInfo": [],
+      "pcOffsetMethod": "none"
+    }
+  },
+  "source": {
+    "approval": "I3ByYWdtYSB2ZXJzaW9uIDEwCmludGNibG9jayAxIDAgMiAzMiA2NCA2NgpieXRlY2Jsb2NrIDB4NjM2Zjc1NmU3NDY1NzIgMHggMHg3NjZmNzQ2NTczNDk2ZTQ2NjE3NjZmNzIgMHg3NDZmNzQ2MTZjNTY2Zjc0NjUgMHg3NDZmNzQ2MTZjNGQ2NTZkNjI2NTcyNzMgMHg3NjZmNzQ2NTczNDE2NzYxNjk2ZTczNzQgMHg2NTc4NjU2Mzc1NzQ2NTY0IDB4MDAwMDAwMDAwMDAwMDAwMCAweDAwIDB4NzA3MjZmNzA2ZjczNjE2YyAweDAwNDQgMHgwMDAwCgovLyBUaGlzIFRFQUwgd2FzIGdlbmVyYXRlZCBieSBURUFMU2NyaXB0IHYwLjEwNS4zCi8vIGh0dHBzOi8vZ2l0aHViLmNvbS9hbGdvcmFuZGZvdW5kYXRpb24vVEVBTFNjcmlwdAoKLy8gVGhpcyBjb250cmFjdCBpcyBjb21wbGlhbnQgd2l0aCBhbmQvb3IgaW1wbGVtZW50cyB0aGUgZm9sbG93aW5nIEFSQ3M6IFsgQVJDNCBdCgovLyBUaGUgZm9sbG93aW5nIHRlbiBsaW5lcyBvZiBURUFMIGhhbmRsZSBpbml0aWFsIHByb2dyYW0gZmxvdwovLyBUaGlzIHBhdHRlcm4gaXMgdXNlZCB0byBtYWtlIGl0IGVhc3kgZm9yIGFueW9uZSB0byBwYXJzZSB0aGUgc3RhcnQgb2YgdGhlIHByb2dyYW0gYW5kIGRldGVybWluZSBpZiBhIHNwZWNpZmljIGFjdGlvbiBpcyBhbGxvd2VkCi8vIEhlcmUsIGFjdGlvbiByZWZlcnMgdG8gdGhlIE9uQ29tcGxldGUgaW4gY29tYmluYXRpb24gd2l0aCB3aGV0aGVyIHRoZSBhcHAgaXMgYmVpbmcgY3JlYXRlZCBvciBjYWxsZWQKLy8gRXZlcnkgcG9zc2libGUgYWN0aW9uIGZvciB0aGlzIGNvbnRyYWN0IGlzIHJlcHJlc2VudGVkIGluIHRoZSBzd2l0Y2ggc3RhdGVtZW50Ci8vIElmIHRoZSBhY3Rpb24gaXMgbm90IGltcGxlbWVudGVkIGluIHRoZSBjb250cmFjdCwgaXRzIHJlc3BlY3RpdmUgYnJhbmNoIHdpbGwgYmUgIipOT1RfSU1QTEVNRU5URUQiIHdoaWNoIGp1c3QgY29udGFpbnMgImVyciIKdHhuIEFwcGxpY2F0aW9uSUQKIQpwdXNoaW50IDYKKgp0eG4gT25Db21wbGV0aW9uCisKc3dpdGNoICpjYWxsX05vT3AgKk5PVF9JTVBMRU1FTlRFRCAqTk9UX0lNUExFTUVOVEVEICpOT1RfSU1QTEVNRU5URUQgKk5PVF9JTVBMRU1FTlRFRCAqTk9UX0lNUExFTUVOVEVEICpjcmVhdGVfTm9PcCAqTk9UX0lNUExFTUVOVEVEICpOT1RfSU1QTEVNRU5URUQgKk5PVF9JTVBMRU1FTlRFRCAqTk9UX0lNUExFTUVOVEVEICpOT1RfSU1QTEVNRU5URUQKCipOT1RfSU1QTEVNRU5URUQ6CgkvLyBUaGUgcmVxdWVzdGVkIGFjdGlvbiBpcyBub3QgaW1wbGVtZW50ZWQgaW4gdGhpcyBjb250cmFjdC4gQXJlIHlvdSB1c2luZyB0aGUgY29ycmVjdCBPbkNvbXBsZXRlPyBEaWQgeW91IHNldCB5b3VyIGFwcCBJRD8KCWVycgoKLy8gY3JlYXRlQXBwbGljYXRpb24oKXZvaWQKKmFiaV9yb3V0ZV9jcmVhdGVBcHBsaWNhdGlvbjoKCS8vIGV4ZWN1dGUgY3JlYXRlQXBwbGljYXRpb24oKXZvaWQKCWNhbGxzdWIgY3JlYXRlQXBwbGljYXRpb24KCWludGMgMCAvLyAxCglyZXR1cm4KCi8vIGNyZWF0ZUFwcGxpY2F0aW9uKCk6IHZvaWQKY3JlYXRlQXBwbGljYXRpb246Cglwcm90byAwIDAKCgkvLyBjb250cmFjdHNcSm9pbnRseS5hbGdvLnRzOjUxCgkvLyB0aGlzLnRvdGFsTWVtYmVycy52YWx1ZSA9IDAKCWJ5dGVjIDQgLy8gICJ0b3RhbE1lbWJlcnMiCglpbnRjIDEgLy8gMAoJYXBwX2dsb2JhbF9wdXQKCgkvLyBjb250cmFjdHNcSm9pbnRseS5hbGdvLnRzOjUyCgkvLyB0aGlzLmV4ZWN1dGVkLnZhbHVlID0gZmFsc2UKCWJ5dGVjIDYgLy8gICJleGVjdXRlZCIKCWludGMgMSAvLyAwCglieXRlYyA4IC8vIDB4MDAKCWludGMgMSAvLyAwCgl1bmNvdmVyIDIKCXNldGJpdAoJYXBwX2dsb2JhbF9wdXQKCgkvLyBjb250cmFjdHNcSm9pbnRseS5hbGdvLnRzOjUzCgkvLyB0aGlzLmNvdW50ZXIudmFsdWUgPSAxCglieXRlYyAwIC8vICAiY291bnRlciIKCWludGMgMCAvLyAxCglhcHBfZ2xvYmFsX3B1dAoJcmV0c3ViCgovLyBhdXRob3JpemVPbmx5Q3JlYXRvcigpdm9pZAoqYWJpX3JvdXRlX2F1dGhvcml6ZU9ubHlDcmVhdG9yOgoJLy8gZXhlY3V0ZSBhdXRob3JpemVPbmx5Q3JlYXRvcigpdm9pZAoJY2FsbHN1YiBhdXRob3JpemVPbmx5Q3JlYXRvcgoJaW50YyAwIC8vIDEKCXJldHVybgoKLy8gYXV0aG9yaXplT25seUNyZWF0b3IoKTogdm9pZAphdXRob3JpemVPbmx5Q3JlYXRvcjoKCXByb3RvIDAgMAoKCS8vIGNvbnRyYWN0c1xKb2ludGx5LmFsZ28udHM6NTcKCS8vIGFzc2VydCh0aGlzLnR4bi5zZW5kZXIgPT0gdGhpcy5hcHAuY3JlYXRvciwgJ3lvdSBhcmUgbm90IGF1dGhvcml6ZShhcHAgY3JlYXRvciknKQoJdHhuIFNlbmRlcgoJdHhuYSBBcHBsaWNhdGlvbnMgMAoJYXBwX3BhcmFtc19nZXQgQXBwQ3JlYXRvcgoJcG9wCgk9PQoKCS8vIHlvdSBhcmUgbm90IGF1dGhvcml6ZShhcHAgY3JlYXRvcikKCWFzc2VydAoJcmV0c3ViCgovLyBhZGRNZW1iZXIocGF5LGFkZHJlc3Msc3RyaW5nKXZvaWQKKmFiaV9yb3V0ZV9hZGRNZW1iZXI6CgkvLyBtZW1iZXJOYW1lOiBzdHJpbmcKCXR4bmEgQXBwbGljYXRpb25BcmdzIDIKCWV4dHJhY3QgMiAwCgoJLy8gbWVtYmVyQWRkcmVzczogYWRkcmVzcwoJdHhuYSBBcHBsaWNhdGlvbkFyZ3MgMQoJZHVwCglsZW4KCWludGMgMyAvLyAzMgoJPT0KCgkvLyBhcmd1bWVudCAxIChtZW1iZXJBZGRyZXNzKSBmb3IgYWRkTWVtYmVyIG11c3QgYmUgYSBhZGRyZXNzCglhc3NlcnQKCgkvLyBtYnJQYXk6IHBheQoJdHhuIEdyb3VwSW5kZXgKCWludGMgMCAvLyAxCgktCglkdXAKCWd0eG5zIFR5cGVFbnVtCglpbnRjIDAgLy8gIHBheQoJPT0KCgkvLyBhcmd1bWVudCAyIChtYnJQYXkpIGZvciBhZGRNZW1iZXIgbXVzdCBiZSBhIHBheSB0cmFuc2FjdGlvbgoJYXNzZXJ0CgoJLy8gZXhlY3V0ZSBhZGRNZW1iZXIocGF5LGFkZHJlc3Msc3RyaW5nKXZvaWQKCWNhbGxzdWIgYWRkTWVtYmVyCglpbnRjIDAgLy8gMQoJcmV0dXJuCgovLyBhZGRNZW1iZXIobWJyUGF5OiBQYXlUeG4sIG1lbWJlckFkZHJlc3M6IEFkZHJlc3MsIG1lbWJlck5hbWU6IHN0cmluZyk6IHZvaWQKYWRkTWVtYmVyOgoJcHJvdG8gMyAwCgoJLy8gY29udHJhY3RzXEpvaW50bHkuYWxnby50czo2MQoJLy8gdGhpcy5hdXRob3JpemVPbmx5Q3JlYXRvcigpCgljYWxsc3ViIGF1dGhvcml6ZU9ubHlDcmVhdG9yCgoJLy8gY29udHJhY3RzXEpvaW50bHkuYWxnby50czo2MgoJLy8gYXNzZXJ0KCF0aGlzLm1lbWJlcnNMaXN0aW5ncyh7IG1lbWJlckFkZHJlc3M6IG1lbWJlckFkZHJlc3N9KS5leGlzdHMsICdNZW1iZXIgYWxyZWFkeSBleGlzdCcpCglmcmFtZV9kaWcgLTIgLy8gbWVtYmVyQWRkcmVzczogQWRkcmVzcwoJYm94X2xlbgoJc3dhcAoJcG9wCgkhCgoJLy8gTWVtYmVyIGFscmVhZHkgZXhpc3QKCWFzc2VydAoKCS8vIGNvbnRyYWN0c1xKb2ludGx5LmFsZ28udHM6NjMKCS8vIHZlcmlmeVBheVR4bihtYnJQYXksIHsKCS8vICAgICAgIHNlbmRlcjogdGhpcy5hcHAuY3JlYXRvciwKCS8vICAgICAgIHJlY2VpdmVyOiB0aGlzLmFwcC5hZGRyZXNzLAoJLy8gICAgICAgYW1vdW50OiBtZW1iZXJzTWJyLAoJLy8gICAgIH0pCgkvLyB2ZXJpZnkgc2VuZGVyCglmcmFtZV9kaWcgLTEgLy8gbWJyUGF5OiBQYXlUeG4KCWd0eG5zIFNlbmRlcgoJdHhuYSBBcHBsaWNhdGlvbnMgMAoJYXBwX3BhcmFtc19nZXQgQXBwQ3JlYXRvcgoJcG9wCgk9PQoKCS8vIHRyYW5zYWN0aW9uIHZlcmlmaWNhdGlvbiBmYWlsZWQ6IHsidHhuIjoibWJyUGF5IiwiZmllbGQiOiJzZW5kZXIiLCJleHBlY3RlZCI6InRoaXMuYXBwLmNyZWF0b3IifQoJYXNzZXJ0CgoJLy8gdmVyaWZ5IHJlY2VpdmVyCglmcmFtZV9kaWcgLTEgLy8gbWJyUGF5OiBQYXlUeG4KCWd0eG5zIFJlY2VpdmVyCglnbG9iYWwgQ3VycmVudEFwcGxpY2F0aW9uQWRkcmVzcwoJPT0KCgkvLyB0cmFuc2FjdGlvbiB2ZXJpZmljYXRpb24gZmFpbGVkOiB7InR4biI6Im1iclBheSIsImZpZWxkIjoicmVjZWl2ZXIiLCJleHBlY3RlZCI6InRoaXMuYXBwLmFkZHJlc3MifQoJYXNzZXJ0CgoJLy8gdmVyaWZ5IGFtb3VudAoJZnJhbWVfZGlnIC0xIC8vIG1iclBheTogUGF5VHhuCglndHhucyBBbW91bnQKCXB1c2hpbnQgNjgxMDAKCT09CgoJLy8gdHJhbnNhY3Rpb24gdmVyaWZpY2F0aW9uIGZhaWxlZDogeyJ0eG4iOiJtYnJQYXkiLCJmaWVsZCI6ImFtb3VudCIsImV4cGVjdGVkIjoibWVtYmVyc01iciJ9Cglhc3NlcnQKCgkvLyBjb250cmFjdHNcSm9pbnRseS5hbGdvLnRzOjY5CgkvLyB0aGlzLm1lbWJlcnNMaXN0aW5ncyh7IG1lbWJlckFkZHJlc3M6IG1lbWJlckFkZHJlc3N9KS52YWx1ZSA9IHsKCS8vICAgICAgIG1lbWJlckFkZHJlc3M6IG1lbWJlckFkZHJlc3MsCgkvLyAgICAgICBtZW1iZXJOYW1lOiBtZW1iZXJOYW1lLAoJLy8gICAgIH0KCWZyYW1lX2RpZyAtMiAvLyBtZW1iZXJBZGRyZXNzOiBBZGRyZXNzCglkdXAKCWJveF9kZWwKCXBvcAoJYnl0ZWMgMSAvLyAgaW5pdGlhbCBoZWFkCglieXRlYyAxIC8vICBpbml0aWFsIHRhaWwKCXB1c2hieXRlcyAweDAwMjIgLy8gaW5pdGlhbCBoZWFkIG9mZnNldAoJZnJhbWVfZGlnIC0yIC8vIG1lbWJlckFkZHJlc3M6IEFkZHJlc3MKCWNhbGxzdWIgKnByb2Nlc3Nfc3RhdGljX3R1cGxlX2VsZW1lbnQKCWZyYW1lX2RpZyAtMyAvLyBtZW1iZXJOYW1lOiBzdHJpbmcKCWR1cAoJbGVuCglpdG9iCglleHRyYWN0IDYgMgoJc3dhcAoJY29uY2F0CgljYWxsc3ViICpwcm9jZXNzX2R5bmFtaWNfdHVwbGVfZWxlbWVudAoJcG9wIC8vIHBvcCBoZWFkIG9mZnNldAoJY29uY2F0IC8vIGNvbmNhdCBoZWFkIGFuZCB0YWlsCglib3hfcHV0CgoJLy8gY29udHJhY3RzXEpvaW50bHkuYWxnby50czo3MwoJLy8gdGhpcy50b3RhbE1lbWJlcnMudmFsdWUgPSB0aGlzLnRvdGFsTWVtYmVycy52YWx1ZSArMQoJYnl0ZWMgNCAvLyAgInRvdGFsTWVtYmVycyIKCWR1cAoJYXBwX2dsb2JhbF9nZXQKCWludGMgMCAvLyAxCgkrCglhcHBfZ2xvYmFsX3B1dAoJcmV0c3ViCgovLyBnZXRBc3NldCgpdWludDY0CiphYmlfcm91dGVfZ2V0QXNzZXQ6CgkvLyBUaGUgQUJJIHJldHVybiBwcmVmaXgKCXB1c2hieXRlcyAweDE1MWY3Yzc1CgoJLy8gZXhlY3V0ZSBnZXRBc3NldCgpdWludDY0CgljYWxsc3ViIGdldEFzc2V0CglpdG9iCgljb25jYXQKCWxvZwoJaW50YyAwIC8vIDEKCXJldHVybgoKLy8gZ2V0QXNzZXQoKTogQXNzZXRJRApnZXRBc3NldDoKCXByb3RvIDAgMQoKCS8vIGNvbnRyYWN0c1xKb2ludGx5LmFsZ28udHM6NzcKCS8vIHJldHVybiB0aGlzLnJlZ2lzdGVyZWRBc3NldENyZWF0ZWQudmFsdWU7CglwdXNoYnl0ZXMgMHg3MjY1Njc2OTczNzQ2NTcyNjU2NDQxNzM3MzY1NzQ0MzcyNjU2MTc0NjU2NCAvLyAicmVnaXN0ZXJlZEFzc2V0Q3JlYXRlZCIKCWFwcF9nbG9iYWxfZ2V0CglyZXRzdWIKCi8vIHNldFByb3Bvc2FsKHBheSxhZGRyZXNzLHN0cmluZyxzdHJpbmcpdm9pZAoqYWJpX3JvdXRlX3NldFByb3Bvc2FsOgoJLy8gcHJvcG9zYWw6IHN0cmluZwoJdHhuYSBBcHBsaWNhdGlvbkFyZ3MgMwoJZXh0cmFjdCAyIDAKCgkvLyBwcm9wb3Nlck5hbWU6IHN0cmluZwoJdHhuYSBBcHBsaWNhdGlvbkFyZ3MgMgoJZXh0cmFjdCAyIDAKCgkvLyBwcm9wb3NlckFkZHJlc3M6IGFkZHJlc3MKCXR4bmEgQXBwbGljYXRpb25BcmdzIDEKCWR1cAoJbGVuCglpbnRjIDMgLy8gMzIKCT09CgoJLy8gYXJndW1lbnQgMiAocHJvcG9zZXJBZGRyZXNzKSBmb3Igc2V0UHJvcG9zYWwgbXVzdCBiZSBhIGFkZHJlc3MKCWFzc2VydAoKCS8vIG1iclBheTogcGF5Cgl0eG4gR3JvdXBJbmRleAoJaW50YyAwIC8vIDEKCS0KCWR1cAoJZ3R4bnMgVHlwZUVudW0KCWludGMgMCAvLyAgcGF5Cgk9PQoKCS8vIGFyZ3VtZW50IDMgKG1iclBheSkgZm9yIHNldFByb3Bvc2FsIG11c3QgYmUgYSBwYXkgdHJhbnNhY3Rpb24KCWFzc2VydAoKCS8vIGV4ZWN1dGUgc2V0UHJvcG9zYWwocGF5LGFkZHJlc3Msc3RyaW5nLHN0cmluZyl2b2lkCgljYWxsc3ViIHNldFByb3Bvc2FsCglpbnRjIDAgLy8gMQoJcmV0dXJuCgovLyBzZXRQcm9wb3NhbChtYnJQYXk6IFBheVR4biwgcHJvcG9zZXJBZGRyZXNzOiBBZGRyZXNzLCBwcm9wb3Nlck5hbWU6c3RyaW5nLCBwcm9wb3NhbDogc3RyaW5nKTogdm9pZApzZXRQcm9wb3NhbDoKCXByb3RvIDQgMAoKCS8vIGNvbnRyYWN0c1xKb2ludGx5LmFsZ28udHM6ODEKCS8vIGFzc2VydCh0aGlzLmV4ZWN1dGVkLnZhbHVlID09PSBmYWxzZSwgIlRoZXJlIGlzIGFuIG9uZ29pbmcgcHJvcG9zYWwiKQoJYnl0ZWMgNiAvLyAgImV4ZWN1dGVkIgoJYXBwX2dsb2JhbF9nZXQKCWludGMgMSAvLyAwCglnZXRiaXQKCWludGMgMSAvLyAwCgk9PQoKCS8vIFRoZXJlIGlzIGFuIG9uZ29pbmcgcHJvcG9zYWwKCWFzc2VydAoKCS8vIGNvbnRyYWN0c1xKb2ludGx5LmFsZ28udHM6ODIKCS8vIGFzc2VydCh0aGlzLm1lbWJlcnNMaXN0aW5ncyh7IG1lbWJlckFkZHJlc3M6IHByb3Bvc2VyQWRkcmVzc30pLmV4aXN0cywgJ01lbWJlciBkb2VzIG5vdCBleGlzdCcpCglmcmFtZV9kaWcgLTIgLy8gcHJvcG9zZXJBZGRyZXNzOiBBZGRyZXNzCglib3hfbGVuCglzd2FwCglwb3AKCgkvLyBNZW1iZXIgZG9lcyBub3QgZXhpc3QKCWFzc2VydAoKCS8vIGNvbnRyYWN0c1xKb2ludGx5LmFsZ28udHM6ODMKCS8vIGFzc2VydCghdGhpcy5wcm9wb3NhbExpc3RpbmdzKHtrZXk6dGhpcy5jb3VudGVyLnZhbHVlfSkuZXhpc3RzLCAnUHJvcG9zYWwgYWxyZWFkeSBleGlzdCcpCglieXRlYyAwIC8vICAiY291bnRlciIKCWFwcF9nbG9iYWxfZ2V0CglpdG9iCglib3hfbGVuCglzd2FwCglwb3AKCSEKCgkvLyBQcm9wb3NhbCBhbHJlYWR5IGV4aXN0Cglhc3NlcnQKCgkvLyBjb250cmFjdHNcSm9pbnRseS5hbGdvLnRzOjg0CgkvLyB0aGlzLnByb3Bvc2VyTmFtZS52YWx1ZSA9IHByb3Bvc2VyTmFtZQoJcHVzaGJ5dGVzIDB4NzA3MjZmNzA2ZjczNjU3MjRlNjE2ZDY1IC8vICJwcm9wb3Nlck5hbWUiCglmcmFtZV9kaWcgLTMgLy8gcHJvcG9zZXJOYW1lOiBzdHJpbmcKCWR1cAoJbGVuCglpdG9iCglleHRyYWN0IDYgMgoJc3dhcAoJY29uY2F0CglhcHBfZ2xvYmFsX3B1dAoKCS8vIGNvbnRyYWN0c1xKb2ludGx5LmFsZ28udHM6ODUKCS8vIHRoaXMucHJvcG9zYWwudmFsdWUgPSBwcm9wb3NhbAoJYnl0ZWMgOSAvLyAgInByb3Bvc2FsIgoJZnJhbWVfZGlnIC00IC8vIHByb3Bvc2FsOiBzdHJpbmcKCWR1cAoJbGVuCglpdG9iCglleHRyYWN0IDYgMgoJc3dhcAoJY29uY2F0CglhcHBfZ2xvYmFsX3B1dAoKCS8vIGNvbnRyYWN0c1xKb2ludGx5LmFsZ28udHM6ODYKCS8vIHRoaXMudG90YWxWb3RlLnZhbHVlID0gMAoJYnl0ZWMgMyAvLyAgInRvdGFsVm90ZSIKCWludGMgMSAvLyAwCglhcHBfZ2xvYmFsX3B1dAoKCS8vIGNvbnRyYWN0c1xKb2ludGx5LmFsZ28udHM6ODcKCS8vIHRoaXMudm90ZXNJbkZhdm9yLnZhbHVlID0gMAoJYnl0ZWMgMiAvLyAgInZvdGVzSW5GYXZvciIKCWludGMgMSAvLyAwCglhcHBfZ2xvYmFsX3B1dAoKCS8vIGNvbnRyYWN0c1xKb2ludGx5LmFsZ28udHM6ODgKCS8vIHRoaXMudm90ZXNBZ2FpbnN0LnZhbHVlID0gMAoJYnl0ZWMgNSAvLyAgInZvdGVzQWdhaW5zdCIKCWludGMgMSAvLyAwCglhcHBfZ2xvYmFsX3B1dAoKCS8vIGNvbnRyYWN0c1xKb2ludGx5LmFsZ28udHM6OTAKCS8vIHZlcmlmeVBheVR4bihtYnJQYXksIHsKCS8vICAgICAgIHNlbmRlcjogdGhpcy5hcHAuY3JlYXRvciwKCS8vICAgICAgIHJlY2VpdmVyOiB0aGlzLmFwcC5hZGRyZXNzLAoJLy8gICAgICAgYW1vdW50OiBwcm9wb3NhbE1iciwKCS8vICAgICB9KQoJLy8gdmVyaWZ5IHNlbmRlcgoJZnJhbWVfZGlnIC0xIC8vIG1iclBheTogUGF5VHhuCglndHhucyBTZW5kZXIKCXR4bmEgQXBwbGljYXRpb25zIDAKCWFwcF9wYXJhbXNfZ2V0IEFwcENyZWF0b3IKCXBvcAoJPT0KCgkvLyB0cmFuc2FjdGlvbiB2ZXJpZmljYXRpb24gZmFpbGVkOiB7InR4biI6Im1iclBheSIsImZpZWxkIjoic2VuZGVyIiwiZXhwZWN0ZWQiOiJ0aGlzLmFwcC5jcmVhdG9yIn0KCWFzc2VydAoKCS8vIHZlcmlmeSByZWNlaXZlcgoJZnJhbWVfZGlnIC0xIC8vIG1iclBheTogUGF5VHhuCglndHhucyBSZWNlaXZlcgoJZ2xvYmFsIEN1cnJlbnRBcHBsaWNhdGlvbkFkZHJlc3MKCT09CgoJLy8gdHJhbnNhY3Rpb24gdmVyaWZpY2F0aW9uIGZhaWxlZDogeyJ0eG4iOiJtYnJQYXkiLCJmaWVsZCI6InJlY2VpdmVyIiwiZXhwZWN0ZWQiOiJ0aGlzLmFwcC5hZGRyZXNzIn0KCWFzc2VydAoKCS8vIHZlcmlmeSBhbW91bnQKCWZyYW1lX2RpZyAtMSAvLyBtYnJQYXk6IFBheVR4bgoJZ3R4bnMgQW1vdW50CglwdXNoaW50IDcxMzAwCgk9PQoKCS8vIHRyYW5zYWN0aW9uIHZlcmlmaWNhdGlvbiBmYWlsZWQ6IHsidHhuIjoibWJyUGF5IiwiZmllbGQiOiJhbW91bnQiLCJleHBlY3RlZCI6InByb3Bvc2FsTWJyIn0KCWFzc2VydAoKCS8vIGNvbnRyYWN0c1xKb2ludGx5LmFsZ28udHM6OTYKCS8vIHRoaXMucHJvcG9zYWxMaXN0aW5ncyh7a2V5OnRoaXMuY291bnRlci52YWx1ZX0pLnZhbHVlID0gewoJLy8gICAgICAgdG90YWxWb3RlOiAwLAoJLy8gICAgICAgdm90ZXNJbkZhdm9yOiAwLAoJLy8gICAgICAgdm90ZXNBZ2FpbnN0OiAwLAoJLy8gICAgICAgZXhlY3V0ZWQ6IDAsCgkvLyAgICAgICBwcm9wb3NlckFkZHJlc3M6IHByb3Bvc2VyQWRkcmVzcywKCS8vICAgICAgIHByb3Bvc2VyTmFtZTogcHJvcG9zZXJOYW1lLAoJLy8gICAgICAgcHJvcG9zYWw6IHByb3Bvc2FsLAoJLy8gICAgIH0KCWJ5dGVjIDAgLy8gICJjb3VudGVyIgoJYXBwX2dsb2JhbF9nZXQKCWl0b2IKCWR1cAoJYm94X2RlbAoJcG9wCglieXRlYyAxIC8vICBpbml0aWFsIGhlYWQKCWJ5dGVjIDEgLy8gIGluaXRpYWwgdGFpbAoJYnl0ZWMgMTAgLy8gIGluaXRpYWwgaGVhZCBvZmZzZXQKCWJ5dGVjIDcgLy8gMHgwMDAwMDAwMDAwMDAwMDAwCgljYWxsc3ViICpwcm9jZXNzX3N0YXRpY190dXBsZV9lbGVtZW50CglieXRlYyA3IC8vIDB4MDAwMDAwMDAwMDAwMDAwMAoJY2FsbHN1YiAqcHJvY2Vzc19zdGF0aWNfdHVwbGVfZWxlbWVudAoJYnl0ZWMgNyAvLyAweDAwMDAwMDAwMDAwMDAwMDAKCWNhbGxzdWIgKnByb2Nlc3Nfc3RhdGljX3R1cGxlX2VsZW1lbnQKCWJ5dGVjIDcgLy8gMHgwMDAwMDAwMDAwMDAwMDAwCgljYWxsc3ViICpwcm9jZXNzX3N0YXRpY190dXBsZV9lbGVtZW50CglmcmFtZV9kaWcgLTIgLy8gcHJvcG9zZXJBZGRyZXNzOiBBZGRyZXNzCgljYWxsc3ViICpwcm9jZXNzX3N0YXRpY190dXBsZV9lbGVtZW50CglmcmFtZV9kaWcgLTMgLy8gcHJvcG9zZXJOYW1lOiBzdHJpbmcKCWR1cAoJbGVuCglpdG9iCglleHRyYWN0IDYgMgoJc3dhcAoJY29uY2F0CgljYWxsc3ViICpwcm9jZXNzX2R5bmFtaWNfdHVwbGVfZWxlbWVudAoJZnJhbWVfZGlnIC00IC8vIHByb3Bvc2FsOiBzdHJpbmcKCWR1cAoJbGVuCglpdG9iCglleHRyYWN0IDYgMgoJc3dhcAoJY29uY2F0CgljYWxsc3ViICpwcm9jZXNzX2R5bmFtaWNfdHVwbGVfZWxlbWVudAoJcG9wIC8vIHBvcCBoZWFkIG9mZnNldAoJY29uY2F0IC8vIGNvbmNhdCBoZWFkIGFuZCB0YWlsCglib3hfcHV0CgoJLy8gY29udHJhY3RzXEpvaW50bHkuYWxnby50czoxMDUKCS8vIHRoaXMuZXhlY3V0ZWQudmFsdWUgPSB0cnVlCglieXRlYyA2IC8vICAiZXhlY3V0ZWQiCglpbnRjIDAgLy8gMQoJYnl0ZWMgOCAvLyAweDAwCglpbnRjIDEgLy8gMAoJdW5jb3ZlciAyCglzZXRiaXQKCWFwcF9nbG9iYWxfcHV0CglyZXRzdWIKCi8vIHZvdGUoYm9vbCxhZGRyZXNzKXZvaWQKKmFiaV9yb3V0ZV92b3RlOgoJLy8gbWVtYmVyQWRkcmVzczogYWRkcmVzcwoJdHhuYSBBcHBsaWNhdGlvbkFyZ3MgMgoJZHVwCglsZW4KCWludGMgMyAvLyAzMgoJPT0KCgkvLyBhcmd1bWVudCAwIChtZW1iZXJBZGRyZXNzKSBmb3Igdm90ZSBtdXN0IGJlIGEgYWRkcmVzcwoJYXNzZXJ0CgoJLy8gaW5GYXZvcjogYm9vbAoJdHhuYSBBcHBsaWNhdGlvbkFyZ3MgMQoJZHVwCglsZW4KCWludGMgMCAvLyAxCgk9PQoKCS8vIGFyZ3VtZW50IDEgKGluRmF2b3IpIGZvciB2b3RlIG11c3QgYmUgYSBib29sCglhc3NlcnQKCWludGMgMSAvLyAwCglnZXRiaXQKCgkvLyBleGVjdXRlIHZvdGUoYm9vbCxhZGRyZXNzKXZvaWQKCWNhbGxzdWIgdm90ZQoJaW50YyAwIC8vIDEKCXJldHVybgoKLy8gdm90ZShpbkZhdm9yOiBib29sZWFuLCBtZW1iZXJBZGRyZXNzOiBBZGRyZXNzKTogdm9pZAp2b3RlOgoJcHJvdG8gMiAwCgoJLy8gY29udHJhY3RzXEpvaW50bHkuYWxnby50czoxMDkKCS8vIGFzc2VydCh0aGlzLm1lbWJlcnNMaXN0aW5ncyh7IG1lbWJlckFkZHJlc3M6IG1lbWJlckFkZHJlc3N9KS5leGlzdHMpCglmcmFtZV9kaWcgLTIgLy8gbWVtYmVyQWRkcmVzczogQWRkcmVzcwoJYm94X2xlbgoJc3dhcAoJcG9wCglhc3NlcnQKCgkvLyBjb250cmFjdHNcSm9pbnRseS5hbGdvLnRzOjExMAoJLy8gYXNzZXJ0KHRoaXMuZXhlY3V0ZWQudmFsdWUgPT09IHRydWUsICJUaGVyZSBpcyBubyBvbmdvaW5nIHByb3Bvc2FsIikKCWJ5dGVjIDYgLy8gICJleGVjdXRlZCIKCWFwcF9nbG9iYWxfZ2V0CglpbnRjIDEgLy8gMAoJZ2V0Yml0CglpbnRjIDAgLy8gMQoJPT0KCgkvLyBUaGVyZSBpcyBubyBvbmdvaW5nIHByb3Bvc2FsCglhc3NlcnQKCgkvLyBjb250cmFjdHNcSm9pbnRseS5hbGdvLnRzOjExMgoJLy8gdGhpcy50b3RhbFZvdGUudmFsdWUgPSB0aGlzLnRvdGFsVm90ZS52YWx1ZSArIDEKCWJ5dGVjIDMgLy8gICJ0b3RhbFZvdGUiCglkdXAKCWFwcF9nbG9iYWxfZ2V0CglpbnRjIDAgLy8gMQoJKwoJYXBwX2dsb2JhbF9wdXQKCgkvLyAqaWYwX2NvbmRpdGlvbgoJLy8gY29udHJhY3RzXEpvaW50bHkuYWxnby50czoxMTMKCS8vIGluRmF2b3IKCWZyYW1lX2RpZyAtMSAvLyBpbkZhdm9yOiBib29sZWFuCglieiAqaWYwX2Vsc2UKCgkvLyAqaWYwX2NvbnNlcXVlbnQKCS8vIGNvbnRyYWN0c1xKb2ludGx5LmFsZ28udHM6MTE0CgkvLyB0aGlzLnZvdGVzSW5GYXZvci52YWx1ZSA9IHRoaXMudm90ZXNJbkZhdm9yLnZhbHVlICsgMQoJYnl0ZWMgMiAvLyAgInZvdGVzSW5GYXZvciIKCWR1cAoJYXBwX2dsb2JhbF9nZXQKCWludGMgMCAvLyAxCgkrCglhcHBfZ2xvYmFsX3B1dAoJYiAqaWYwX2VuZAoKKmlmMF9lbHNlOgoJLy8gY29udHJhY3RzXEpvaW50bHkuYWxnby50czoxMTYKCS8vIHRoaXMudm90ZXNBZ2FpbnN0LnZhbHVlID0gdGhpcy52b3Rlc0FnYWluc3QudmFsdWUgKyAxCglieXRlYyA1IC8vICAidm90ZXNBZ2FpbnN0IgoJZHVwCglhcHBfZ2xvYmFsX2dldAoJaW50YyAwIC8vIDEKCSsKCWFwcF9nbG9iYWxfcHV0CgoqaWYwX2VuZDoKCS8vIGNvbnRyYWN0c1xKb2ludGx5LmFsZ28udHM6MTE4CgkvLyB0aGlzLmV4ZWN1dGVQcm9wb3NhbCgpCgljYWxsc3ViIGV4ZWN1dGVQcm9wb3NhbAoJcmV0c3ViCgovLyBleGVjdXRlUHJvcG9zYWwoKTogdm9pZApleGVjdXRlUHJvcG9zYWw6Cglwcm90byAwIDAKCgkvLyBQdXNoIGVtcHR5IGJ5dGVzIGFmdGVyIHRoZSBmcmFtZSBwb2ludGVyIHRvIHJlc2VydmUgc3BhY2UgZm9yIGxvY2FsIHZhcmlhYmxlcwoJYnl0ZWMgMSAvLyAweAoJZHVwbiA2CgoJLy8gY29udHJhY3RzXEpvaW50bHkuYWxnby50czoxMjIKCS8vIG1ham9yaXR5UmVxdWlyZWQ6dWludDY0ID0gMQoJaW50YyAwIC8vIDEKCWZyYW1lX2J1cnkgMCAvLyBtYWpvcml0eVJlcXVpcmVkOiB1aW50NjQKCgkvLyAqaWYxX2NvbmRpdGlvbgoJLy8gY29udHJhY3RzXEpvaW50bHkuYWxnby50czoxMjMKCS8vIHRoaXMudG90YWxNZW1iZXJzLnZhbHVlID49IDIKCWJ5dGVjIDQgLy8gICJ0b3RhbE1lbWJlcnMiCglhcHBfZ2xvYmFsX2dldAoJaW50YyAyIC8vIDIKCT49CglieiAqaWYxX2VuZAoKCS8vICppZjFfY29uc2VxdWVudAoJLy8gY29udHJhY3RzXEpvaW50bHkuYWxnby50czoxMjQKCS8vIG1ham9yaXR5UmVxdWlyZWQgPSAodGhpcy50b3RhbE1lbWJlcnMudmFsdWUgLyAyKQoJYnl0ZWMgNCAvLyAgInRvdGFsTWVtYmVycyIKCWFwcF9nbG9iYWxfZ2V0CglpbnRjIDIgLy8gMgoJLwoJZnJhbWVfYnVyeSAwIC8vIG1ham9yaXR5UmVxdWlyZWQ6IHVpbnQ2NAoKKmlmMV9lbmQ6CgkvLyAqaWYyX2NvbmRpdGlvbgoJLy8gY29udHJhY3RzXEpvaW50bHkuYWxnby50czoxMjcKCS8vIHRoaXMudm90ZXNJbkZhdm9yLnZhbHVlID49IG1ham9yaXR5UmVxdWlyZWQgJiYgdGhpcy50b3RhbFZvdGUudmFsdWUgPj0gdGhpcy50b3RhbE1lbWJlcnMudmFsdWUKCWJ5dGVjIDIgLy8gICJ2b3Rlc0luRmF2b3IiCglhcHBfZ2xvYmFsX2dldAoJZnJhbWVfZGlnIDAgLy8gbWFqb3JpdHlSZXF1aXJlZDogdWludDY0Cgk+PQoJZHVwCglieiAqc2tpcF9hbmQwCglieXRlYyAzIC8vICAidG90YWxWb3RlIgoJYXBwX2dsb2JhbF9nZXQKCWJ5dGVjIDQgLy8gICJ0b3RhbE1lbWJlcnMiCglhcHBfZ2xvYmFsX2dldAoJPj0KCSYmCgoqc2tpcF9hbmQwOgoJYnogKmlmMl9lbHNlaWYxX2NvbmRpdGlvbgoKCS8vICppZjJfY29uc2VxdWVudAoJLy8gY29udHJhY3RzXEpvaW50bHkuYWxnby50czoxMjgKCS8vIGN1cnJlbnRNZW1iZXJBZGRyZXNzID0gdGhpcy5wcm9wb3NhbExpc3RpbmdzKHtrZXk6dGhpcy5jb3VudGVyLnZhbHVlfSkudmFsdWUucHJvcG9zZXJBZGRyZXNzCglieXRlYyAwIC8vICAiY291bnRlciIKCWFwcF9nbG9iYWxfZ2V0CglpdG9iCglib3hfZ2V0CgoJLy8gYm94IHZhbHVlIGRvZXMgbm90IGV4aXN0OiB0aGlzLnByb3Bvc2FsTGlzdGluZ3Moe2tleTp0aGlzLmNvdW50ZXIudmFsdWV9KS52YWx1ZQoJYXNzZXJ0CglzdG9yZSAyNTUgLy8gZnVsbCBhcnJheQoJbG9hZCAyNTUgLy8gZnVsbCBhcnJheQoJZXh0cmFjdCAzMiAzMgoJZnJhbWVfYnVyeSAxIC8vIGN1cnJlbnRNZW1iZXJBZGRyZXNzOiBhZGRyZXNzCgoJLy8gY29udHJhY3RzXEpvaW50bHkuYWxnby50czoxMjkKCS8vIGN1cnJlbnRQcm9wb3Nlck5hbWUgPSB0aGlzLnByb3Bvc2FsTGlzdGluZ3Moe2tleTp0aGlzLmNvdW50ZXIudmFsdWV9KS52YWx1ZS5wcm9wb3Nlck5hbWUKCWJ5dGVjIDAgLy8gICJjb3VudGVyIgoJYXBwX2dsb2JhbF9nZXQKCWl0b2IKCWJveF9nZXQKCgkvLyBib3ggdmFsdWUgZG9lcyBub3QgZXhpc3Q6IHRoaXMucHJvcG9zYWxMaXN0aW5ncyh7a2V5OnRoaXMuY291bnRlci52YWx1ZX0pLnZhbHVlCglhc3NlcnQKCXN0b3JlIDI1NSAvLyBmdWxsIGFycmF5CglpbnRjIDQgLy8gNjQKCWxvYWQgMjU1IC8vIGZ1bGwgYXJyYXkKCWxvYWQgMjU1IC8vIGZ1bGwgYXJyYXkKCXVuY292ZXIgMgoJZXh0cmFjdF91aW50MTYKCWR1cCAvLyBkdXBsaWNhdGUgc3RhcnQgb2YgZWxlbWVudAoJbG9hZCAyNTUgLy8gZnVsbCBhcnJheQoJc3dhcAoJZXh0cmFjdF91aW50MTYgLy8gZ2V0IG51bWJlciBvZiBlbGVtZW50cwoJaW50YyAwIC8vICBnZXQgdHlwZSBsZW5ndGgKCSogLy8gbXVsdGlwbHkgYnkgdHlwZSBsZW5ndGgKCWludGMgMiAvLyAyCgkrIC8vIGFkZCB0d28gZm9yIGxlbmd0aAoJZXh0cmFjdDMKCWV4dHJhY3QgMiAwCglmcmFtZV9idXJ5IDIgLy8gY3VycmVudFByb3Bvc2VyTmFtZTogc3RyaW5nCgoJLy8gY29udHJhY3RzXEpvaW50bHkuYWxnby50czoxMzAKCS8vIGN1cnJlbnRQcm9wb3NhbCA9IHRoaXMucHJvcG9zYWxMaXN0aW5ncyh7a2V5OnRoaXMuY291bnRlci52YWx1ZX0pLnZhbHVlLnByb3Bvc2FsCglieXRlYyAwIC8vICAiY291bnRlciIKCWFwcF9nbG9iYWxfZ2V0CglpdG9iCglib3hfZ2V0CgoJLy8gYm94IHZhbHVlIGRvZXMgbm90IGV4aXN0OiB0aGlzLnByb3Bvc2FsTGlzdGluZ3Moe2tleTp0aGlzLmNvdW50ZXIudmFsdWV9KS52YWx1ZQoJYXNzZXJ0CglzdG9yZSAyNTUgLy8gZnVsbCBhcnJheQoJaW50YyA1IC8vIDY2Cglsb2FkIDI1NSAvLyBmdWxsIGFycmF5Cglsb2FkIDI1NSAvLyBmdWxsIGFycmF5Cgl1bmNvdmVyIDIKCWV4dHJhY3RfdWludDE2CglkdXAgLy8gZHVwbGljYXRlIHN0YXJ0IG9mIGVsZW1lbnQKCWxvYWQgMjU1IC8vIGZ1bGwgYXJyYXkKCXN3YXAKCWV4dHJhY3RfdWludDE2IC8vIGdldCBudW1iZXIgb2YgZWxlbWVudHMKCWludGMgMCAvLyAgZ2V0IHR5cGUgbGVuZ3RoCgkqIC8vIG11bHRpcGx5IGJ5IHR5cGUgbGVuZ3RoCglpbnRjIDIgLy8gMgoJKyAvLyBhZGQgdHdvIGZvciBsZW5ndGgKCWV4dHJhY3QzCglleHRyYWN0IDIgMAoJZnJhbWVfYnVyeSAzIC8vIGN1cnJlbnRQcm9wb3NhbDogc3RyaW5nCgoJLy8gY29udHJhY3RzXEpvaW50bHkuYWxnby50czoxMzEKCS8vIHRoaXMucHJvcG9zYWxMaXN0aW5ncyh7a2V5OnRoaXMuY291bnRlci52YWx1ZX0pLnZhbHVlID0gewoJLy8gICAgICAgICB0b3RhbFZvdGU6IHRoaXMudG90YWxWb3RlLnZhbHVlLAoJLy8gICAgICAgICB2b3Rlc0luRmF2b3I6IHRoaXMudm90ZXNJbkZhdm9yLnZhbHVlLAoJLy8gICAgICAgICB2b3Rlc0FnYWluc3Q6IHRoaXMudm90ZXNBZ2FpbnN0LnZhbHVlLAoJLy8gICAgICAgICBleGVjdXRlZDogMSwKCS8vICAgICAgICAgcHJvcG9zZXJBZGRyZXNzOiBjdXJyZW50TWVtYmVyQWRkcmVzcywKCS8vICAgICAgICAgcHJvcG9zZXJOYW1lOiBjdXJyZW50UHJvcG9zZXJOYW1lLAoJLy8gICAgICAgICBwcm9wb3NhbDogY3VycmVudFByb3Bvc2FsLAoJLy8gICAgICAgfQoJYnl0ZWMgMCAvLyAgImNvdW50ZXIiCglhcHBfZ2xvYmFsX2dldAoJaXRvYgoJZHVwCglib3hfZGVsCglwb3AKCWJ5dGVjIDEgLy8gIGluaXRpYWwgaGVhZAoJYnl0ZWMgMSAvLyAgaW5pdGlhbCB0YWlsCglieXRlYyAxMCAvLyAgaW5pdGlhbCBoZWFkIG9mZnNldAoJYnl0ZWMgMyAvLyAgInRvdGFsVm90ZSIKCWFwcF9nbG9iYWxfZ2V0CglpdG9iCgljYWxsc3ViICpwcm9jZXNzX3N0YXRpY190dXBsZV9lbGVtZW50CglieXRlYyAyIC8vICAidm90ZXNJbkZhdm9yIgoJYXBwX2dsb2JhbF9nZXQKCWl0b2IKCWNhbGxzdWIgKnByb2Nlc3Nfc3RhdGljX3R1cGxlX2VsZW1lbnQKCWJ5dGVjIDUgLy8gICJ2b3Rlc0FnYWluc3QiCglhcHBfZ2xvYmFsX2dldAoJaXRvYgoJY2FsbHN1YiAqcHJvY2Vzc19zdGF0aWNfdHVwbGVfZWxlbWVudAoJcHVzaGJ5dGVzIDB4MDAwMDAwMDAwMDAwMDAwMQoJY2FsbHN1YiAqcHJvY2Vzc19zdGF0aWNfdHVwbGVfZWxlbWVudAoJZnJhbWVfZGlnIDEgLy8gY3VycmVudE1lbWJlckFkZHJlc3M6IGFkZHJlc3MKCWNhbGxzdWIgKnByb2Nlc3Nfc3RhdGljX3R1cGxlX2VsZW1lbnQKCWZyYW1lX2RpZyAyIC8vIGN1cnJlbnRQcm9wb3Nlck5hbWU6IHN0cmluZwoJZHVwCglsZW4KCWl0b2IKCWV4dHJhY3QgNiAyCglzd2FwCgljb25jYXQKCWNhbGxzdWIgKnByb2Nlc3NfZHluYW1pY190dXBsZV9lbGVtZW50CglmcmFtZV9kaWcgMyAvLyBjdXJyZW50UHJvcG9zYWw6IHN0cmluZwoJZHVwCglsZW4KCWl0b2IKCWV4dHJhY3QgNiAyCglzd2FwCgljb25jYXQKCWNhbGxzdWIgKnByb2Nlc3NfZHluYW1pY190dXBsZV9lbGVtZW50Cglwb3AgLy8gcG9wIGhlYWQgb2Zmc2V0Cgljb25jYXQgLy8gY29uY2F0IGhlYWQgYW5kIHRhaWwKCWJveF9wdXQKCgkvLyBjb250cmFjdHNcSm9pbnRseS5hbGdvLnRzOjE0MAoJLy8gdGhpcy5wcm9wb3NhbC52YWx1ZSA9ICIiCglieXRlYyA5IC8vICAicHJvcG9zYWwiCglieXRlYyAxMSAvLyAweDAwMDAKCWFwcF9nbG9iYWxfcHV0CgoJLy8gY29udHJhY3RzXEpvaW50bHkuYWxnby50czoxNDEKCS8vIHRoaXMudG90YWxWb3RlLnZhbHVlID0gMAoJYnl0ZWMgMyAvLyAgInRvdGFsVm90ZSIKCWludGMgMSAvLyAwCglhcHBfZ2xvYmFsX3B1dAoKCS8vIGNvbnRyYWN0c1xKb2ludGx5LmFsZ28udHM6MTQyCgkvLyB0aGlzLnZvdGVzSW5GYXZvci52YWx1ZSA9IDAKCWJ5dGVjIDIgLy8gICJ2b3Rlc0luRmF2b3IiCglpbnRjIDEgLy8gMAoJYXBwX2dsb2JhbF9wdXQKCgkvLyBjb250cmFjdHNcSm9pbnRseS5hbGdvLnRzOjE0MwoJLy8gdGhpcy52b3Rlc0FnYWluc3QudmFsdWUgPSAwCglieXRlYyA1IC8vICAidm90ZXNBZ2FpbnN0IgoJaW50YyAxIC8vIDAKCWFwcF9nbG9iYWxfcHV0CgoJLy8gY29udHJhY3RzXEpvaW50bHkuYWxnby50czoxNDQKCS8vIHRoaXMuZXhlY3V0ZWQudmFsdWUgPSBmYWxzZQoJYnl0ZWMgNiAvLyAgImV4ZWN1dGVkIgoJaW50YyAxIC8vIDAKCWJ5dGVjIDggLy8gMHgwMAoJaW50YyAxIC8vIDAKCXVuY292ZXIgMgoJc2V0Yml0CglhcHBfZ2xvYmFsX3B1dAoKCS8vIGNvbnRyYWN0c1xKb2ludGx5LmFsZ28udHM6MTQ1CgkvLyB0aGlzLmNvdW50ZXIudmFsdWUgPSB0aGlzLmNvdW50ZXIudmFsdWUgKzEKCWJ5dGVjIDAgLy8gICJjb3VudGVyIgoJZHVwCglhcHBfZ2xvYmFsX2dldAoJaW50YyAwIC8vIDEKCSsKCWFwcF9nbG9iYWxfcHV0CgliICppZjJfZW5kCgoqaWYyX2Vsc2VpZjFfY29uZGl0aW9uOgoJLy8gY29udHJhY3RzXEpvaW50bHkuYWxnby50czoxNDYKCS8vIHRoaXMudm90ZXNJbkZhdm9yLnZhbHVlIDwgbWFqb3JpdHlSZXF1aXJlZCAmJiB0aGlzLnRvdGFsVm90ZS52YWx1ZSA+PSB0aGlzLnRvdGFsTWVtYmVycy52YWx1ZQoJYnl0ZWMgMiAvLyAgInZvdGVzSW5GYXZvciIKCWFwcF9nbG9iYWxfZ2V0CglmcmFtZV9kaWcgMCAvLyBtYWpvcml0eVJlcXVpcmVkOiB1aW50NjQKCTwKCWR1cAoJYnogKnNraXBfYW5kMQoJYnl0ZWMgMyAvLyAgInRvdGFsVm90ZSIKCWFwcF9nbG9iYWxfZ2V0CglieXRlYyA0IC8vICAidG90YWxNZW1iZXJzIgoJYXBwX2dsb2JhbF9nZXQKCT49CgkmJgoKKnNraXBfYW5kMToKCWJ6ICppZjJfZWxzZQoKCS8vICppZjJfZWxzZWlmMV9jb25zZXF1ZW50CgkvLyBjb250cmFjdHNcSm9pbnRseS5hbGdvLnRzOjE0NwoJLy8gY3VycmVudFByb3Bvc2VyQWRkcmVzcyA9IHRoaXMucHJvcG9zYWxMaXN0aW5ncyh7a2V5OnRoaXMuY291bnRlci52YWx1ZX0pLnZhbHVlLnByb3Bvc2VyQWRkcmVzcwoJYnl0ZWMgMCAvLyAgImNvdW50ZXIiCglhcHBfZ2xvYmFsX2dldAoJaXRvYgoJYm94X2dldAoKCS8vIGJveCB2YWx1ZSBkb2VzIG5vdCBleGlzdDogdGhpcy5wcm9wb3NhbExpc3RpbmdzKHtrZXk6dGhpcy5jb3VudGVyLnZhbHVlfSkudmFsdWUKCWFzc2VydAoJc3RvcmUgMjU1IC8vIGZ1bGwgYXJyYXkKCWxvYWQgMjU1IC8vIGZ1bGwgYXJyYXkKCWV4dHJhY3QgMzIgMzIKCWZyYW1lX2J1cnkgNCAvLyBjdXJyZW50UHJvcG9zZXJBZGRyZXNzOiBhZGRyZXNzCgoJLy8gY29udHJhY3RzXEpvaW50bHkuYWxnby50czoxNDgKCS8vIGN1cnJlbnRQcm9wb3Nlck5hbWUgPSB0aGlzLnByb3Bvc2FsTGlzdGluZ3Moe2tleTp0aGlzLmNvdW50ZXIudmFsdWV9KS52YWx1ZS5wcm9wb3Nlck5hbWUKCWJ5dGVjIDAgLy8gICJjb3VudGVyIgoJYXBwX2dsb2JhbF9nZXQKCWl0b2IKCWJveF9nZXQKCgkvLyBib3ggdmFsdWUgZG9lcyBub3QgZXhpc3Q6IHRoaXMucHJvcG9zYWxMaXN0aW5ncyh7a2V5OnRoaXMuY291bnRlci52YWx1ZX0pLnZhbHVlCglhc3NlcnQKCXN0b3JlIDI1NSAvLyBmdWxsIGFycmF5CglpbnRjIDQgLy8gNjQKCWxvYWQgMjU1IC8vIGZ1bGwgYXJyYXkKCWxvYWQgMjU1IC8vIGZ1bGwgYXJyYXkKCXVuY292ZXIgMgoJZXh0cmFjdF91aW50MTYKCWR1cCAvLyBkdXBsaWNhdGUgc3RhcnQgb2YgZWxlbWVudAoJbG9hZCAyNTUgLy8gZnVsbCBhcnJheQoJc3dhcAoJZXh0cmFjdF91aW50MTYgLy8gZ2V0IG51bWJlciBvZiBlbGVtZW50cwoJaW50YyAwIC8vICBnZXQgdHlwZSBsZW5ndGgKCSogLy8gbXVsdGlwbHkgYnkgdHlwZSBsZW5ndGgKCWludGMgMiAvLyAyCgkrIC8vIGFkZCB0d28gZm9yIGxlbmd0aAoJZXh0cmFjdDMKCWV4dHJhY3QgMiAwCglmcmFtZV9idXJ5IDUgLy8gY3VycmVudFByb3Bvc2VyTmFtZTogc3RyaW5nCgoJLy8gY29udHJhY3RzXEpvaW50bHkuYWxnby50czoxNDkKCS8vIGN1cnJlbnRQcm9wb3NhbCA9IHRoaXMucHJvcG9zYWxMaXN0aW5ncyh7a2V5OnRoaXMuY291bnRlci52YWx1ZX0pLnZhbHVlLnByb3Bvc2FsCglieXRlYyAwIC8vICAiY291bnRlciIKCWFwcF9nbG9iYWxfZ2V0CglpdG9iCglib3hfZ2V0CgoJLy8gYm94IHZhbHVlIGRvZXMgbm90IGV4aXN0OiB0aGlzLnByb3Bvc2FsTGlzdGluZ3Moe2tleTp0aGlzLmNvdW50ZXIudmFsdWV9KS52YWx1ZQoJYXNzZXJ0CglzdG9yZSAyNTUgLy8gZnVsbCBhcnJheQoJaW50YyA1IC8vIDY2Cglsb2FkIDI1NSAvLyBmdWxsIGFycmF5Cglsb2FkIDI1NSAvLyBmdWxsIGFycmF5Cgl1bmNvdmVyIDIKCWV4dHJhY3RfdWludDE2CglkdXAgLy8gZHVwbGljYXRlIHN0YXJ0IG9mIGVsZW1lbnQKCWxvYWQgMjU1IC8vIGZ1bGwgYXJyYXkKCXN3YXAKCWV4dHJhY3RfdWludDE2IC8vIGdldCBudW1iZXIgb2YgZWxlbWVudHMKCWludGMgMCAvLyAgZ2V0IHR5cGUgbGVuZ3RoCgkqIC8vIG11bHRpcGx5IGJ5IHR5cGUgbGVuZ3RoCglpbnRjIDIgLy8gMgoJKyAvLyBhZGQgdHdvIGZvciBsZW5ndGgKCWV4dHJhY3QzCglleHRyYWN0IDIgMAoJZnJhbWVfYnVyeSA2IC8vIGN1cnJlbnRQcm9wb3NhbDogc3RyaW5nCgoJLy8gY29udHJhY3RzXEpvaW50bHkuYWxnby50czoxNTAKCS8vIHRoaXMucHJvcG9zYWxMaXN0aW5ncyh7a2V5OnRoaXMuY291bnRlci52YWx1ZX0pLnZhbHVlID0gewoJLy8gICAgICAgICB0b3RhbFZvdGU6IHRoaXMudG90YWxWb3RlLnZhbHVlLAoJLy8gICAgICAgICB2b3Rlc0luRmF2b3I6IHRoaXMudm90ZXNJbkZhdm9yLnZhbHVlLAoJLy8gICAgICAgICB2b3Rlc0FnYWluc3Q6IHRoaXMudm90ZXNBZ2FpbnN0LnZhbHVlLAoJLy8gICAgICAgICBleGVjdXRlZDogMCwKCS8vICAgICAgICAgcHJvcG9zZXJBZGRyZXNzOiBjdXJyZW50UHJvcG9zZXJBZGRyZXNzLAoJLy8gICAgICAgICBwcm9wb3Nlck5hbWU6IGN1cnJlbnRQcm9wb3Nlck5hbWUsCgkvLyAgICAgICAgIHByb3Bvc2FsOiBjdXJyZW50UHJvcG9zYWwsCgkvLyAgICAgICB9CglieXRlYyAwIC8vICAiY291bnRlciIKCWFwcF9nbG9iYWxfZ2V0CglpdG9iCglkdXAKCWJveF9kZWwKCXBvcAoJYnl0ZWMgMSAvLyAgaW5pdGlhbCBoZWFkCglieXRlYyAxIC8vICBpbml0aWFsIHRhaWwKCWJ5dGVjIDEwIC8vICBpbml0aWFsIGhlYWQgb2Zmc2V0CglieXRlYyAzIC8vICAidG90YWxWb3RlIgoJYXBwX2dsb2JhbF9nZXQKCWl0b2IKCWNhbGxzdWIgKnByb2Nlc3Nfc3RhdGljX3R1cGxlX2VsZW1lbnQKCWJ5dGVjIDIgLy8gICJ2b3Rlc0luRmF2b3IiCglhcHBfZ2xvYmFsX2dldAoJaXRvYgoJY2FsbHN1YiAqcHJvY2Vzc19zdGF0aWNfdHVwbGVfZWxlbWVudAoJYnl0ZWMgNSAvLyAgInZvdGVzQWdhaW5zdCIKCWFwcF9nbG9iYWxfZ2V0CglpdG9iCgljYWxsc3ViICpwcm9jZXNzX3N0YXRpY190dXBsZV9lbGVtZW50CglieXRlYyA3IC8vIDB4MDAwMDAwMDAwMDAwMDAwMAoJY2FsbHN1YiAqcHJvY2Vzc19zdGF0aWNfdHVwbGVfZWxlbWVudAoJZnJhbWVfZGlnIDQgLy8gY3VycmVudFByb3Bvc2VyQWRkcmVzczogYWRkcmVzcwoJY2FsbHN1YiAqcHJvY2Vzc19zdGF0aWNfdHVwbGVfZWxlbWVudAoJZnJhbWVfZGlnIDUgLy8gY3VycmVudFByb3Bvc2VyTmFtZTogc3RyaW5nCglkdXAKCWxlbgoJaXRvYgoJZXh0cmFjdCA2IDIKCXN3YXAKCWNvbmNhdAoJY2FsbHN1YiAqcHJvY2Vzc19keW5hbWljX3R1cGxlX2VsZW1lbnQKCWZyYW1lX2RpZyA2IC8vIGN1cnJlbnRQcm9wb3NhbDogc3RyaW5nCglkdXAKCWxlbgoJaXRvYgoJZXh0cmFjdCA2IDIKCXN3YXAKCWNvbmNhdAoJY2FsbHN1YiAqcHJvY2Vzc19keW5hbWljX3R1cGxlX2VsZW1lbnQKCXBvcCAvLyBwb3AgaGVhZCBvZmZzZXQKCWNvbmNhdCAvLyBjb25jYXQgaGVhZCBhbmQgdGFpbAoJYm94X3B1dAoKCS8vIGNvbnRyYWN0c1xKb2ludGx5LmFsZ28udHM6MTU5CgkvLyB0aGlzLnByb3Bvc2FsLnZhbHVlID0gIiIKCWJ5dGVjIDkgLy8gICJwcm9wb3NhbCIKCWJ5dGVjIDExIC8vIDB4MDAwMAoJYXBwX2dsb2JhbF9wdXQKCgkvLyBjb250cmFjdHNcSm9pbnRseS5hbGdvLnRzOjE2MAoJLy8gdGhpcy50b3RhbFZvdGUudmFsdWUgPSAwCglieXRlYyAzIC8vICAidG90YWxWb3RlIgoJaW50YyAxIC8vIDAKCWFwcF9nbG9iYWxfcHV0CgoJLy8gY29udHJhY3RzXEpvaW50bHkuYWxnby50czoxNjEKCS8vIHRoaXMudm90ZXNJbkZhdm9yLnZhbHVlID0gMAoJYnl0ZWMgMiAvLyAgInZvdGVzSW5GYXZvciIKCWludGMgMSAvLyAwCglhcHBfZ2xvYmFsX3B1dAoKCS8vIGNvbnRyYWN0c1xKb2ludGx5LmFsZ28udHM6MTYyCgkvLyB0aGlzLnZvdGVzQWdhaW5zdC52YWx1ZSA9IDAKCWJ5dGVjIDUgLy8gICJ2b3Rlc0FnYWluc3QiCglpbnRjIDEgLy8gMAoJYXBwX2dsb2JhbF9wdXQKCgkvLyBjb250cmFjdHNcSm9pbnRseS5hbGdvLnRzOjE2MwoJLy8gdGhpcy5leGVjdXRlZC52YWx1ZSA9IGZhbHNlCglieXRlYyA2IC8vICAiZXhlY3V0ZWQiCglpbnRjIDEgLy8gMAoJYnl0ZWMgOCAvLyAweDAwCglpbnRjIDEgLy8gMAoJdW5jb3ZlciAyCglzZXRiaXQKCWFwcF9nbG9iYWxfcHV0CgoJLy8gY29udHJhY3RzXEpvaW50bHkuYWxnby50czoxNjQKCS8vIHRoaXMuY291bnRlci52YWx1ZSA9IHRoaXMuY291bnRlci52YWx1ZSArMQoJYnl0ZWMgMCAvLyAgImNvdW50ZXIiCglkdXAKCWFwcF9nbG9iYWxfZ2V0CglpbnRjIDAgLy8gMQoJKwoJYXBwX2dsb2JhbF9wdXQKCWIgKmlmMl9lbmQKCippZjJfZWxzZToKCippZjJfZW5kOgoJcmV0c3ViCgoqY3JlYXRlX05vT3A6CglwdXNoYnl0ZXMgMHhiODQ0N2IzNiAvLyBtZXRob2QgImNyZWF0ZUFwcGxpY2F0aW9uKCl2b2lkIgoJdHhuYSBBcHBsaWNhdGlvbkFyZ3MgMAoJbWF0Y2ggKmFiaV9yb3V0ZV9jcmVhdGVBcHBsaWNhdGlvbgoKCS8vIHRoaXMgY29udHJhY3QgZG9lcyBub3QgaW1wbGVtZW50IHRoZSBnaXZlbiBBQkkgbWV0aG9kIGZvciBjcmVhdGUgTm9PcAoJZXJyCgoqY2FsbF9Ob09wOgoJcHVzaGJ5dGVzIDB4NDQwYTJlMDAgLy8gbWV0aG9kICJhdXRob3JpemVPbmx5Q3JlYXRvcigpdm9pZCIKCXB1c2hieXRlcyAweDA2ZDQzOGRjIC8vIG1ldGhvZCAiYWRkTWVtYmVyKHBheSxhZGRyZXNzLHN0cmluZyl2b2lkIgoJcHVzaGJ5dGVzIDB4MWJkZTQ3ZDUgLy8gbWV0aG9kICJnZXRBc3NldCgpdWludDY0IgoJcHVzaGJ5dGVzIDB4ODQzNTRkMDAgLy8gbWV0aG9kICJzZXRQcm9wb3NhbChwYXksYWRkcmVzcyxzdHJpbmcsc3RyaW5nKXZvaWQiCglwdXNoYnl0ZXMgMHhlN2IxZTMyMiAvLyBtZXRob2QgInZvdGUoYm9vbCxhZGRyZXNzKXZvaWQiCgl0eG5hIEFwcGxpY2F0aW9uQXJncyAwCgltYXRjaCAqYWJpX3JvdXRlX2F1dGhvcml6ZU9ubHlDcmVhdG9yICphYmlfcm91dGVfYWRkTWVtYmVyICphYmlfcm91dGVfZ2V0QXNzZXQgKmFiaV9yb3V0ZV9zZXRQcm9wb3NhbCAqYWJpX3JvdXRlX3ZvdGUKCgkvLyB0aGlzIGNvbnRyYWN0IGRvZXMgbm90IGltcGxlbWVudCB0aGUgZ2l2ZW4gQUJJIG1ldGhvZCBmb3IgY2FsbCBOb09wCgllcnIKCipwcm9jZXNzX3N0YXRpY190dXBsZV9lbGVtZW50OgoJcHJvdG8gNCAzCglmcmFtZV9kaWcgLTQgLy8gdHVwbGUgaGVhZAoJZnJhbWVfZGlnIC0xIC8vIGVsZW1lbnQKCWNvbmNhdAoJZnJhbWVfZGlnIC0zIC8vIHR1cGxlIHRhaWwKCWZyYW1lX2RpZyAtMiAvLyBoZWFkIG9mZnNldAoJcmV0c3ViCgoqcHJvY2Vzc19keW5hbWljX3R1cGxlX2VsZW1lbnQ6Cglwcm90byA0IDMKCWZyYW1lX2RpZyAtNCAvLyB0dXBsZSBoZWFkCglmcmFtZV9kaWcgLTIgLy8gaGVhZCBvZmZzZXQKCWNvbmNhdAoJZnJhbWVfYnVyeSAtNCAvLyB0dXBsZSBoZWFkCglmcmFtZV9kaWcgLTEgLy8gZWxlbWVudAoJZHVwCglsZW4KCWZyYW1lX2RpZyAtMiAvLyBoZWFkIG9mZnNldAoJYnRvaQoJKwoJaXRvYgoJZXh0cmFjdCA2IDIKCWZyYW1lX2J1cnkgLTIgLy8gaGVhZCBvZmZzZXQKCWZyYW1lX2RpZyAtMyAvLyB0dXBsZSB0YWlsCglzd2FwCgljb25jYXQKCWZyYW1lX2J1cnkgLTMgLy8gdHVwbGUgdGFpbAoJZnJhbWVfZGlnIC00IC8vIHR1cGxlIGhlYWQKCWZyYW1lX2RpZyAtMyAvLyB0dXBsZSB0YWlsCglmcmFtZV9kaWcgLTIgLy8gaGVhZCBvZmZzZXQKCXJldHN1Yg==",
+    "clear": "I3ByYWdtYSB2ZXJzaW9uIDEw"
+  },
+  "byteCode": {
+    "approval": "CiAGAQACIEBCJgwHY291bnRlcgAMdm90ZXNJbkZhdm9yCXRvdGFsVm90ZQx0b3RhbE1lbWJlcnMMdm90ZXNBZ2FpbnN0CGV4ZWN1dGVkCAAAAAAAAAAAAQAIcHJvcG9zYWwCAEQCAAAxGBSBBgsxGQiNDAOeAAAAAAAAAAAAAAOQAAAAAAAAAAAAAACIAAIiQ4oAACcEI2cnBiMnCCNPAlRnKCJniYgAAiJDigAAMQA2MgByB0gSRIk2GgJXAgA2GgFJFSUSRDEWIglJOBAiEkSIAAIiQ4oDAIj/z4v+vUxIFESL/zgANjIAcgdIEkSL/zgHMgoSRIv/OAiBhJQEEkSL/km8SCkpgAIAIov+iANGi/1JFRZXBgJMUIgDRkhQvycESWQiCGeJgAQVH3x1iAAFFlCwIkOKAAGAFnJlZ2lzdGVyZWRBc3NldENyZWF0ZWRkiTYaA1cCADYaAlcCADYaAUkVJRJEMRYiCUk4ECISRIgAAiJDigQAJwZkI1MjEkSL/r1MSEQoZBa9TEgURIAMcHJvcG9zZXJOYW1li/1JFRZXBgJMUGcnCYv8SRUWVwYCTFBnKyNnKiNnJwUjZ4v/OAA2MgByB0gSRIv/OAcyChJEi/84CIGErQQSRChkFkm8SCkpJwonB4gCaicHiAJlJweIAmAnB4gCW4v+iAJWi/1JFRZXBgJMUIgCVov8SRUWVwYCTFCIAklIUL8nBiInCCNPAlRniTYaAkkVJRJENhoBSRUiEkQjU4gAAiJDigIAi/69TEhEJwZkI1MiEkQrSWQiCGeL/0EACSpJZCIIZ0IABycFSWQiCGeIAAGJigAAKUcGIowAJwRkJA9BAAcnBGQkCowAKmSLAA9JQQAHK2QnBGQPEEEAuihkFr5ENf80/1cgIIwBKGQWvkQ1/yEENP80/08CWUk0/0xZIgskCFhXAgCMAihkFr5ENf8hBTT/NP9PAllJNP9MWSILJAhYVwIAjAMoZBZJvEgpKScKK2QWiAFgKmQWiAFaJwVkFogBU4AIAAAAAAAAAAGIAUaLAYgBQYsCSRUWVwYCTFCIAUGLA0kVFlcGAkxQiAE0SFC/JwknC2crI2cqI2cnBSNnJwYjJwgjTwJUZyhJZCIIZ0IAxSpkiwAMSUEABytkJwRkDxBBALIoZBa+RDX/NP9XICCMBChkFr5ENf8hBDT/NP9PAllJNP9MWSILJAhYVwIAjAUoZBa+RDX/IQU0/zT/TwJZSTT/TFkiCyQIWFcCAIwGKGQWSbxIKSknCitkFogAkypkFogAjScFZBaIAIYnB4gAgYsEiAB8iwVJFRZXBgJMUIgAfIsGSRUWVwYCTFCIAG9IUL8nCScLZysjZyojZycFI2cnBiMnCCNPAlRnKElkIghnQgAAiYAEuER7NjYaAI4B/GQAgARECi4AgAQG1DjcgAQb3kfVgASENU0AgATnseMiNhoAjgX8UPxj/NP8/v3TAIoEA4v8i/9Qi/2L/omKBAOL/Iv+UIz8i/9JFYv+FwgWVwYCjP6L/UxQjP2L/Iv9i/6J",
+    "clear": "Cg=="
+  },
+  "compilerInfo": {
+    "compiler": "algod",
+    "compilerVersion": {
+      "major": 3,
+      "minor": 26,
+      "patch": 0,
+      "commitHash": "0d10b244"
+    }
+  }
+}
