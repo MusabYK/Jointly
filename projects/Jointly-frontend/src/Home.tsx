@@ -8,7 +8,7 @@ import ConnectWallet from './components/ConnectWallet'
 import MethodCall from './components/MethodCall'
 import Footer from './components/Footer'
 import Feature from './components/Feature'
-import { DaoAccountClient } from './contracts/DaoAccount'
+import { JointlyClient } from './contracts/Jointly'
 import * as methods from './methods'
 import { getAlgodConfigFromViteEnvironment } from './utils/network/getAlgoClientConfigs'
 import { TextAnimate } from './components/TextAnimate'
@@ -65,7 +65,7 @@ const Home: React.FC<HomeProps> = () => {
   const algorand = AlgorandClient.fromConfig({ algodConfig })
   algorand.setDefaultSigner(signer)
 
-  const dmClient = new DaoAccountClient(
+  const dmClient = new JointlyClient(
     {
       resolveBy: 'id',
       id: appId,
@@ -203,7 +203,7 @@ const Home: React.FC<HomeProps> = () => {
         </div>
         {/* Create Joint account section */}
         {/* Main Interface */}
-        
+
       </div>
 
       {/* Footer Section */}

@@ -1,6 +1,5 @@
-import React from 'react'
 import { motion } from 'framer-motion'
-import { Wallet } from 'lucide-react'
+import React from 'react'
 
 interface AnimatedWalletButtonProps {
   onClick: () => void
@@ -27,7 +26,7 @@ const AnimatedWalletButton: React.FC<AnimatedWalletButtonProps> = ({ onClick }) 
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.3 }}
       >
-        <span>Create Account</span>
+        <span>Connect Wallet</span>
       </motion.div>
     </motion.button>
   )
