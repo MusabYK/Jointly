@@ -158,8 +158,8 @@ describe('MusAppDAO', () => {
       const votesAgainst = decodeUint64(boxContent.slice(16, 24), 'safe');
       const executed = decodeUint64(boxContent.slice(24, 32), 'safe');
       const proposerAddress = encodeAddress(boxContent.slice(32, 64));
-      const proposerName = new TextDecoder().decode(boxContent.slice(64, 114));
-      const proposal = new TextDecoder().decode(boxContent.slice(114, 164));
+      const proposerName = new TextDecoder().decode(boxContent.slice(70, 75));
+      const proposal = new TextDecoder().decode(boxContent.slice(76, 164));
 
       console.log("totalVotes = "+totalVotes);
       console.log("votesInFavor = "+votesInFavor);

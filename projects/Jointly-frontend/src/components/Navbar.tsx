@@ -2,14 +2,7 @@ import React, { useState } from 'react'
 import { AnimatedModalDemo } from './ModalButton'
 import { AlignJustify, WalletMinimal, X } from 'lucide-react'
 import { motion, AnimatePresence } from "framer-motion"
-import WalletConnect from './WalletButton'
-import ConnectWallet from './ConnectWallet'
-
-const [openWalletModal, setOpenWalletModal] = useState<boolean>(false)
-
-const toggleWalletModal = () => {
-  setOpenWalletModal(!openWalletModal)
-}
+import AnimatedWalletButton from './ScaleBtn'
 
 interface LinkProps {
   id: number
@@ -26,7 +19,7 @@ const links: LinkProps[] = [
   {
     id: 2,
     name: 'Services',
-    url: '/'
+    url: 'services/'
   },
   {
     id: 3,
@@ -34,6 +27,7 @@ const links: LinkProps[] = [
     url: '/'
   },
 ]
+
 
 const Navbar = () => {
   const [showSide, setShowSide] = useState<boolean>(false)
@@ -72,7 +66,7 @@ const Navbar = () => {
   }
 
   return (
-    <div className='flex items-center justify-between mx-auto bg-black py-2 px-[5%]'>
+    <div className='flex items-center justify-between mx-auto bg-black/80 py-2 px-[5%]'>
       <a href='/' className='text-2xl flex items-center font-bold text-white'>
         <div className='text-3xl me-2 hover:animate-bounce transition-all ease-in duration-100'>
           <WalletMinimal />
@@ -82,7 +76,7 @@ const Navbar = () => {
       <div className='space-x-5 hidden md:flex'>
         {links.map(link => (
           <a
-            className='text-white'
+            className='text-white hover:animate-pulse'
             key={link.id}
             href={link.url}
           >
@@ -139,9 +133,9 @@ const Navbar = () => {
         <AlignJustify size={35} />
       </button>
       <div className='hidden lg:block'>
-        <WalletConnect text='Wallet connection' onClick={toggleWalletModal} />
+        <AnimatedModalDemo/>
+        {/* <AnimatedWalletButton onClick={toggleWalletModal} /> */}
       </div>
-      <ConnectWallet openModal={openWalletModal} closeModal={toggleWalletModal} />
     </div>
   )
 }

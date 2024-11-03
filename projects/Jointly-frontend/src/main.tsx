@@ -1,28 +1,37 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
-import { createBrowserRouter, RouterProvider } from 'react-router-dom'
-import Account from './Account'
+import { BrowserRouter as Router } from 'react-router-dom'
 import App from './App'
 import ErrorBoundary from './components/ErrorBoundary'
-import Navbar from './components/Navbar'
 import './styles/main.css'
+// import Navbar from './components/Navbar'
+// import Account from './Account'
+// import CreateAccount from './CreateAccount'
+// import Dashboard from './CreateAccount'
+// import Contract from './Contract'
+// import N from './components/Navbar'
 
-const router = createBrowserRouter([
-  {
-    path: '/',
-    element: <App />,
-  },
-  {
-    path: 'account/',
-    element: <Account />,
-  },
-])
+// const router = createBrowserRouter([
+//   {
+//     path: '/',
+//     element: <App/>
+//   },
+//   {
+//     path: 'account/',
+//     element: <Account/>
+//   },
+//   {
+//     path: 'dashboard/',
+//     element: <Dashboard/>
+//   }
+// ])
 
 ReactDOM.createRoot(document.getElementById('root') as HTMLElement).render(
   <React.StrictMode>
     <ErrorBoundary>
-      {/* <Navbar /> */}
-      <RouterProvider router={router} />
+      <Router>
+        <App />
+      </Router>
     </ErrorBoundary>
   </React.StrictMode>,
 )

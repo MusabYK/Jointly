@@ -4,8 +4,12 @@ import { PeraWalletConnect } from '@perawallet/connect'
 import { PROVIDER_ID, ProvidersArray, WalletProvider, useInitializeProviders } from '@txnlab/use-wallet'
 import algosdk from 'algosdk'
 import { SnackbarProvider } from 'notistack'
+import { Route, Routes } from 'react-router-dom'
+import Account from './Account'
+import CreateAccount from './CreateAccount'
 import Home from './Home'
 import { getAlgodConfigFromViteEnvironment, getKmdConfigFromViteEnvironment } from './utils/network/getAlgoClientConfigs'
+import Services from './Services'
 
 let providersArray: ProvidersArray
 if (import.meta.env.VITE_ALGOD_NETWORK === '') {
@@ -48,10 +52,19 @@ export default function App() {
   })
 
   return (
-    <SnackbarProvider maxSnack={3}>
-      <WalletProvider value={walletProviders}>
-        <Home />
-      </WalletProvider>
-    </SnackbarProvider>
+    <>
+      <SnackbarProvider maxSnack={3}>
+        <WalletProvider value={walletProviders}>
+          {/* <CreateAccount /> */}
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path='/dashboard' element={<CreateAccount/>}/>
+        <Route path="/account" element={<Account />} />
+        <Route path="/services" element={<Services />} />
+      </Routes>
+        </WalletProvider>
+      </SnackbarProvider>
+
+    </>
   )
 }
