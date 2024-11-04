@@ -129,6 +129,17 @@ export default function CreateAccount() {
               </div>
             </div>
             <div className="flex items-center">
+              {/* {activeTab === 'connect' && activeAddress && ( */}
+              <div className='flex space-x-4 mr-3'>
+              <div className='text-white'>
+                Bal: <span>0.001</span>
+              </div>
+              <div className='text-white'>
+                ASA: <span>0.00</span>
+              </div>
+              </div>
+
+              {/* )} */}
               <button
                 data-test-id="connect-wallet"
                 className="px-6 py-2 rounded-lg bg-gradient-to-r from-blue-500 to-purple-600 text-white font-medium hover:from-blue-600 hover:to-purple-700 transition-all duration-200 shadow-lg hover:shadow-xl"
